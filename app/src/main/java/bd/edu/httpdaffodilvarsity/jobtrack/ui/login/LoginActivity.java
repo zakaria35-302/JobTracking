@@ -1,11 +1,11 @@
 package bd.edu.httpdaffodilvarsity.jobtrack.ui.login;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

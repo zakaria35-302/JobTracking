@@ -9,6 +9,10 @@
     <string name="positive_button_create">Create</string>
     <string name="text_you">You</string>
 
+    <string name="text_current_password">Current Password</string>
+    <string name="text_new_password">New Password</string>
+    <string name="text_confirm_new_password">Confire New Password</string>
+    <string name="button_ok">Ok</string>
 
     <!-- Base Error Strings-->
     <string name="log_error_updating_data">Error updating data: </string>

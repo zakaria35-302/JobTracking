@@ -218,11 +218,6 @@
     <string-array name="employee_gender">
         <item>Male</item>
         <item>Female</item>
-        <item></item>
-        <item>France</item>
-        <item>Germany</item>
-        <item>Turkey</item>
-        <item>Poland</item>
-        <item>India</item>
+        <item>Others</item>
     </string-array>
 </resources>

@@ -19,6 +19,8 @@
     <string name="button_ok">Ok</string>
 
     <string name="text_employee_gender">Gender</string>
+    <string name="text_employee_institute">Institute</string>
+    <string name="text_employee_department">Department</string>
     <!-- Base Error Strings-->
     <string name="log_error_updating_data">Error updating data: </string>
     <string name="log_error_the_read_failed">The read failed: </string>
@@ -220,4 +222,19 @@
         <item>Female</item>
         <item>Others</item>
     </string-array>
+    <string-array name="employee_institute">
+        <item>Daffodil</item>
+        <item>DIU</item>
+        <item>DCL</item>
+    </string-array>
+
+    <string-array name="employee_department">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>SWE</item>
+        <item>English</item>
+        <item>IT</item>
+        <item>ETE</item>
+    </string-array>
+
 </resources>

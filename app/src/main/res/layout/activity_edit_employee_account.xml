@@ -91,7 +91,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/text_employee_department"
             android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_employee_department"
+            android:nextFocusDown="@+id/spinner_employee_department_edit"
             android:id="@+id/employee_department_text" />
 
         <android.support.design.widget.TextInputLayout
@@ -110,20 +110,20 @@
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey"
+                android:nextFocusDown="@+id/employee_date_of_birth_text"
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>
-
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_employee_email"
+            android:text="@string/text_employee_date_of_birth"
             android:textColor="@color/primary"
-            android:nextFocusDown="@+id/edit_text_email_edit"
-            android:id="@+id/employee_date_of_birth" />
+            android:nextFocusDown="@+id/edit_text_date_of_birth_edit"
+            android:id="@+id/employee_date_of_birth_text" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/til_date_of_birth_edit"
@@ -139,21 +139,21 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 android:hint="@string/hint_enter_date_of_birth"
-                android:inputType="textEmailAddress"
+                android:inputType="date"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
-                android:nextFocusDown="@+id/employee_gender_text"
+                android:nextFocusDown="@+id/spinner_employee_gender"
                 android:textColorHint="@color/dark_grey"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
-        
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/text_employee_gender"
             android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_employee_gender"
+            android:nextFocusDown="@+id/spinner_employee_gender_edit"
             android:id="@+id/employee_gender_text" />
 
 
@@ -173,10 +173,198 @@
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey"
-                android:nextFocusDown="@+id/employee_institute_text"
+                android:nextFocusDown="@+id/employee_marital_status_text"
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_employee_marital_status"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_marital_status_edit"
+            android:id="@+id/employee_marital_status_text" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_marital_status_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_employee_marital_status_edit"
+                android:background="@android:color/white"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:nextFocusDown="@+id/text"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_employee_blood_group"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_blood_group_edit"
+            android:id="@+id/employee_blood_group_text" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_blood_group_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_employee_blood_group_edit"
+                android:background="@android:color/white"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:nextFocusDown="@+id/employee_im_text"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_employee_im"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/edit_text_im_edit"
+            android:id="@+id/employee_im_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_im_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <EditText
+                android:id="@+id/edit_text_im_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="@string/hint_enter_im"
+                android:inputType="text"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:nextFocusDown="@+id/employee_religion_text"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="@dimen/login_buttons_text_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_employee_religion"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_religion_edit"
+            android:id="@+id/employee_religion_text" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_religion_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_employee_religion_edit"
+                android:background="@android:color/white"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:nextFocusDown="@+id/employee_mobile_text"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_employee_mobile"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/edit_text_mobile_edit"
+            android:id="@+id/employee_mobile_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_mobile_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <EditText
+                android:id="@+id/edit_text_mobile_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="@string/hint_enter_mobile_number"
+                android:inputType="number"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:nextFocusDown="@+id/employee_office_phone_text"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="@dimen/login_buttons_text_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_employee_office_phone"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/edit_text_office_phone_edit"
+            android:id="@+id/employee_office_phone_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_office_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <EditText
+                android:id="@+id/edit_text_office_phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="@string/hint_enter_office_phone"
+                android:inputType="phone"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:nextFocusDown="@+id/employee_email_text"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="@dimen/login_buttons_text_size" />
+        </android.support.design.widget.TextInputLayout>
+
 
         <TextView
             android:layout_width="wrap_content"

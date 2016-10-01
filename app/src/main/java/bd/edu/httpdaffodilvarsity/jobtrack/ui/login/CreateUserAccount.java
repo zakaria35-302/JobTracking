@@ -52,4 +52,10 @@ public class CreateUserAccount extends Activity {
         Intent in = new Intent(CreateUserAccount.this, LoginActivity.class);
         startActivity(in);
     }
+
+    public  void  GoToEditUser(View v){
+        Intent in = new Intent(CreateUserAccount.this, EditEmployeeAccount.class);
+        startActivity(in);
+    }
+
 }

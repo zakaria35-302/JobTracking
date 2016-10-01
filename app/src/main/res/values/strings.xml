@@ -22,6 +22,14 @@
     <string name="text_employee_gender">Gender</string>
     <string name="text_employee_institute">Institute</string>
     <string name="text_employee_department">Department</string>
+    <string name="text_employee_date_of_birth">Date of Birth</string>
+    <string name="text_employee_marital_status">Marital Status</string>
+    <string name="text_employee_blood_group">Blood Group</string>
+    <string name="text_employee_im">IM</string>
+    <string name="text_employee_religion">Religion</string>
+    <string name="text_employee_mobile">Mobile</string>
+    <string name="text_employee_office_phone">Office Phone</string>
+
     <!-- Base Error Strings-->
     <string name="log_error_updating_data">Error updating data: </string>
     <string name="log_error_the_read_failed">The read failed: </string>
@@ -134,10 +142,16 @@
     <string name="button_sign_in">Sign In</string>
     <string name="button_signin_with_google">SIGN IN WITH GOOGLE</string>
     <string name="button_signin_with_password">SIGN IN</string>
+    <string name="button_got_to_edit_user">Go to Profile Update</string>
+
     <string name="hint_enter_email">Enter your email</string>
     <string name="hint_enter_employee_id">Enter your User Id</string>
     <string name="hint_enter_employeename">Enter your name</string>
     <string name="hint_enter_password">Enter password</string>
+    <string name="hint_enter_date_of_birth">Select Your Date of Birth</string>
+    <string name="hint_enter_im">Enter Your IM</string>
+    <string name="hint_enter_mobile_number">Enter Your Mobile Number</string>
+    <string name="hint_enter_office_phone">Enter Your Office Phone</string>
     <string name="image_view_logo_image">Logo Image</string>
 
     <string name="text_forget_password">Forgot Password?</string>
@@ -237,5 +251,28 @@
         <item>IT</item>
         <item>ETE</item>
     </string-array>
+
+    <string-array name="employee_marital_status">
+        <item>Married</item>
+        <item>Single</item>
+        <item>divorces</item>
+    </string-array>
+
+    <string-array name="employee_blood_group">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="employee_religion">
+        <item>Islam</item>
+        <item>Hindu</item>
+    </string-array>
+
 
 </resources>

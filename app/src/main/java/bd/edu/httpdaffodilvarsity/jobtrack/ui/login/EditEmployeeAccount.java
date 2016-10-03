@@ -2,8 +2,12 @@ package bd.edu.httpdaffodilvarsity.jobtrack.ui.login;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
@@ -16,6 +20,8 @@ public class EditEmployeeAccount extends Activity {
     Spinner spinnerEmployeeBloodGroup;
     Spinner spinnerEmployeeReligion;
 
+    ArrayAdapter<CharSequence> empGenderAdapter,empInstituteAdapter,
+            empDepartmentAdapter, empMaritelStatusAdapter,empBloodGroupAdapter,empReligionAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,48 +34,60 @@ public class EditEmployeeAccount extends Activity {
         spinnerEmployeeReligion = (Spinner) findViewById(R.id.spinner_employee_religion_edit);
 
         // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+        empGenderAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_gender, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empGenderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeGender.setAdapter(adapter);
+        spinnerEmployeeGender.setAdapter(empGenderAdapter);
+        spinnerEmployeeGender.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                //Toast.makeText(getBaseContext(), adapterView.getItemAtPosition(i) + " Selected ", Toast.LENGTH_SHORT).show();
+            }
 
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+
+        empInstituteAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_institute, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empInstituteAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeInstitute.setAdapter(adapter2);
+        spinnerEmployeeInstitute.setAdapter(empInstituteAdapter);
 
-        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,
+        empDepartmentAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_department, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empDepartmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeDepartment.setAdapter(adapter3);
+        spinnerEmployeeDepartment.setAdapter(empDepartmentAdapter);
 
-        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,
+        empMaritelStatusAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_marital_status, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empMaritelStatusAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeMaritalStatus.setAdapter(adapter4);
+        spinnerEmployeeMaritalStatus.setAdapter(empMaritelStatusAdapter);
 
 
-        ArrayAdapter<CharSequence> adapter5 = ArrayAdapter.createFromResource(this,
+        empBloodGroupAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_blood_group, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empBloodGroupAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeBloodGroup.setAdapter(adapter5);
+        spinnerEmployeeBloodGroup.setAdapter(empBloodGroupAdapter);
 
-        ArrayAdapter<CharSequence> adapter6 = ArrayAdapter.createFromResource(this,
+        empReligionAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_religion, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empReligionAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeReligion.setAdapter(adapter6);
+        spinnerEmployeeReligion.setAdapter(empReligionAdapter);
 
 
     }

@@ -161,8 +161,8 @@
             android:id="@+id/til_gender_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
+            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
             <Spinner

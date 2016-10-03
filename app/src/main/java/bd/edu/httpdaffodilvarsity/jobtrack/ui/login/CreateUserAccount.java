@@ -14,7 +14,7 @@ public class CreateUserAccount extends Activity {
     Spinner spinnerEmployeeGender;
     Spinner spinnerEmployeeInstitute;
     Spinner spinnerEmployeeDepartment;
-
+    ArrayAdapter<CharSequence> empGenderAdapter,empInstituteAdapter,empDepartmentAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,26 +26,33 @@ public class CreateUserAccount extends Activity {
 
 
         // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+        empGenderAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_gender, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empGenderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
        // Apply the adapter to the spinner
-        spinnerEmployeeGender.setAdapter(adapter);
+        spinnerEmployeeGender.setAdapter(empGenderAdapter);
 
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
+        empInstituteAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_institute, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empInstituteAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeInstitute.setAdapter(adapter2);
+        spinnerEmployeeInstitute.setAdapter(empInstituteAdapter);
 
-        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,
+        empDepartmentAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_department, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empDepartmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeDepartment.setAdapter(adapter3);
+        spinnerEmployeeDepartment.setAdapter(empDepartmentAdapter);
+
+       /* empInstituteAdapter = ArrayAdapter.createFromResource(this,
+                R.array.employee_institute, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        empInstituteAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinnerEmployeeInstitute.setAdapter(empInstituteAdapter);*/
     }
 
     public  void  GoToLoginActivity(View v){

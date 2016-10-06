@@ -2,10 +2,13 @@ package bd.edu.httpdaffodilvarsity.jobtrack.ui.login;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,13 +17,15 @@ import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
 public class TaskManagement extends Activity {
 
+    FloatingActionButton buttonCreateTask;
     private static ListView list_employee_task;
     TextView textViewTaskTitle,textViewTaskOwner, textViewTaskDepartment, textViewTaskGivenDate, textViewTaskEstDate,
             textViewTaskStatus, textViewTaskProgress, textViewTaskPriority;
 
     ArrayAdapter<String> adapter_employee_task_tittle,adapter_employee_task_owner,adapter_employee_task_department,
-            adapter_employee_task_given_date,adapter_employee_task_est_date,adapter_employee_task_status,
-            adapter_employee_task_progress,adapter_employee_task_priority;
+            adapter_employee_task_given_date,adapter_employee_task_est_date,adapter_employee_task_status,adapter_employee_task_priority;
+    ArrayAdapter<Integer>adapter_employee_task_progress;
+
     private static String[] EMPLOYEE_TASK_TITTLE = new String[]{"eCure Android Apps","Job Tracking System in Android " +
             "Platform", "Hospital Management", "Student Portal","School Management system","Attendance System"};
     private static String[] EMPLOYEE_TASK_OWNER = new String[]{"Mahmud Hasan","Abdul Gaffar", "Abu Jafar", "Akas Khan",
@@ -33,7 +38,7 @@ public class TaskManagement extends Activity {
             "10/10/2016","10/10/2016","10/10/2016", "10/10/2016"};
     private static String[] EMPLOYEE_TASK_STATUS = new String[]{"Ongoing","Ongoing", "Completed", "Ongoing","Ongoing",
             "Ongoing", "Ongoing"};
-    private static String[] EMPLOYEE_TASK_PROGRESS = new String[]{"50","10", "58", "2","30","80", "47"};
+    private static Integer[] EMPLOYEE_TASK_PROGRESS = new Integer[]{50,10, 58, 2,30,80, 47};
     private static String[] EMPLOYEE_TASK_PRIORITY = new String[]{"High","Very High", "Very High", "Very High","High",
             "Very High", "High"};
 
@@ -43,6 +48,14 @@ public class TaskManagement extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_management);
 
+        buttonCreateTask = (FloatingActionButton) findViewById(R.id.fab);
+        buttonCreateTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TaskManagement.this, CreateEmployeeTask.class);
+                startActivity(intent);
+            }
+        });
         textViewTaskTitle = (TextView) findViewById(R.id.text_view_task_title);
        /* textViewTaskTitle.setText("Title : ");*/
 
@@ -56,6 +69,10 @@ public class TaskManagement extends Activity {
         listView();
     }
 
+    /*public void showTaskManagementActivity(View View){
+        Intent intent = new Intent(TaskManagement.this, CreateEmployeeTask.class);
+        startActivity(intent);
+    }*/
     public void listView(){
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
         adapter_employee_task_tittle = new ArrayAdapter<String>(this,R.layout.job_list_employee,
@@ -88,7 +105,7 @@ public class TaskManagement extends Activity {
         list_employee_task.setAdapter(adapter_employee_task_status);
 
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_progress = new ArrayAdapter<String>(this,R.layout.job_list_employee,
+        adapter_employee_task_progress = new ArrayAdapter<Integer>(this,R.layout.job_list_employee,
                 R.id.text_view_task_progress,EMPLOYEE_TASK_PROGRESS);
         list_employee_task.setAdapter(adapter_employee_task_progress);
 

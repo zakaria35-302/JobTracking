@@ -47,7 +47,8 @@
         <activity android:name=".ui.login.ChangePassword" />
         <activity android:name=".ui.login.CreateUserAccount" />
         <activity android:name=".ui.login.SetPassword" />
-        <activity android:name=".ui.login.EditEmployeeAccount"></activity>
+        <activity android:name=".ui.login.EditEmployeeAccount" />
+        <activity android:name=".ui.login.TaskManagement"></activity>
     </application>
 
 </manifest>

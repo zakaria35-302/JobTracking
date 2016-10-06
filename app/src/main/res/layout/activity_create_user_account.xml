@@ -240,16 +240,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="GoToLoginActivity"
-                android:text="@string/button_sign_in" />
+                android:text="@string/button_sign_in"
+                android:nextFocusDown="@+id/tv_edit_user_account"/>
 
 
-            <TextView
+           <!-- <TextView
                 android:id="@+id/tv_edit_user_account"
                 style="@style/LoginCreateTextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="GoToEditUser"
-                android:text="@string/button_got_to_edit_user" />
+                android:nextFocusDown="@+id/tv_view_task_management"
+                android:text="@string/button_got_to_edit_user" />-->
+
+            <TextView
+                android:id="@+id/tv_view_task_management"
+                style="@style/LoginCreateTextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="GoToTaskManagement"
+                android:text="@string/button_task_management" />
+
         </LinearLayout>
 
     </LinearLayout>

@@ -32,10 +32,10 @@
     </style>
 
 
-    <!--<style name="FAB">
+    <style name="FAB">
         <item name="android:layout_margin">0dp</item>
         <item name="fabSize">normal</item>
         <item name="rippleColor">@android:color/white</item>
         <item name="backgroundTint">@color/primary</item>
-    </style>-->
+    </style>
 </resources>

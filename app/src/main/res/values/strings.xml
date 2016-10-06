@@ -19,6 +19,15 @@
     <string name="text_confirm_new_password">Confirm New Password</string>
     <string name="button_ok">Ok</string>
 
+    <string name="text_task_title">Task Title</string>
+    <string name="text_task_owner">Task Owner</string>
+    <string name="text_task_given_date">Given Date</string>
+    <string name="text_task_est_date">EST. Date</string>
+    <string name="text_task_status">Status</string>
+    <string name="text_task_progress">Progress</string>
+    <string name="text_task_priority">Priority</string>
+
+    <string name="button_task_management">Task Management</string>
     <string name="text_employee_gender">Gender</string>
     <string name="text_employee_institute">Institute</string>
     <string name="text_employee_department">Department</string>

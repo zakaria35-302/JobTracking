@@ -61,6 +61,30 @@
     <string name="hint_enter_im">Enter Your IM</string>
     <string name="hint_enter_mobile_number">Enter Your Mobile Number</string>
     <string name="hint_enter_office_phone">Enter Your Office Phone</string>
+    <string name="hint_enter_task_title">Enter task Title</string>
+    <string name="text_task_description">Description</string>
+    <string name="hint_enter_task_description">Enter task Description</string>
+    <string name="hint_enter_task_deadline">Select Task Deadline</string>
+    <string name="text_task_date">Date</string>
+    <string name="text_task_dead_line">Deadline</string>
+    <string name="check_box_task_had_dead_line">This task has a dead line</string>
+    <string name="hint_enter_task_dead">Select Task Dead</string>
+    <string name="text_task_Accesibility">Accesibility</string>
+    <string name="hint_enter_task_Accesibility">Select Task Accesibility</string>
+    <string name="hint_enter_task_progress">Select Task Progress</string>
+    <string name="hint_enter_task_priority">Select Task Priority</string>
+    <string name="hint_enter_task_status">Select Task Status</string>
+    <string name="hint_enter_task_department">Select Task Priority</string>
+    <string name="text_task_assign_to">Select Task assign to</string>
+    <string name="hint_enter_task_asign_to">Select Task Assign to</string>
+    <string name="text_task_role">Role</string>
+    <string name="hint_enter_task_role">Select Task Role</string>
+    <string name="task_activity_add_to_list">Add to List</string>
+    <string name="task_activity_remove_from_list">Remove from List</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+
+
     <string name="image_view_logo_image">Logo Image</string>
 
     <string name="text_forget_password">Forgot Password?</string>
@@ -108,5 +132,39 @@
         <item>Hindu</item>
     </string-array>
 
+    <string-array name="employee_task_accessability">
+        <item>Public</item>
+        <item>Proctected</item>
+        <item>Private</item>
+    </string-array>
+
+    <string-array name="employee_task_progress">
+        <item>0</item>
+        <item>20</item>
+        <item>0</item>
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="employee_task_priority">
+        <item>Very Low</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
+
+    <string-array name="employee_task_status">
+        <item>Pending</item>
+        <item>Ongoing</item>
+        <item>Complete</item>
+        <item>Done</item>
+    </string-array>
+
+    <string-array name="employee_task_role">
+        <item>In-Charge</item>
+        <item>Member</item>
+    </string-array>
 
 </resources>

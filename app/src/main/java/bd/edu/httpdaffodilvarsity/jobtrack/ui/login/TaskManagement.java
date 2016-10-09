@@ -69,10 +69,10 @@ public class TaskManagement extends Activity {
         listView();
     }
 
-    /*public void showTaskManagementActivity(View View){
+    public void showTaskManagementActivity(View View){
         Intent intent = new Intent(TaskManagement.this, CreateEmployeeTask.class);
         startActivity(intent);
-    }*/
+    }
     public void listView(){
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
         adapter_employee_task_tittle = new ArrayAdapter<String>(this,R.layout.job_list_employee,

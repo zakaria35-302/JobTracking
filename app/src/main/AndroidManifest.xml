@@ -49,9 +49,14 @@
         <activity android:name=".ui.login.CreateUserAccount" />
         <activity android:name=".ui.login.SetPassword" />
         <activity android:name=".ui.login.EditEmployeeAccount" />
+<<<<<<< HEAD
         <!-- <activity android:name=".ui.login.ProfileViewActivity" /> -->
         <!-- <activity android:name=".TabedActivity" /> -->
         <activity android:name=".TaskManagement"></activity>
+=======
+        <activity android:name=".ui.login.TaskManagement" />
+        <activity android:name=".ui.login.CreateEmployeeTask"></activity>
+>>>>>>> 278496c4fffac5487bc02b031ca043395f4a8895
     </application>
 
 </manifest>

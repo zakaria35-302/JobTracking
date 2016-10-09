@@ -27,13 +27,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_employee_id"
+            android:text="@string/text_task_title"
             android:textColor="@color/primary"
-            android:nextFocusDown="@+id/edit_text_employee_id"
-            android:id="@+id/user_id_text" />
+            android:nextFocusDown="@+id/edit_text_task_title"
+            android:id="@+id/user_task_title_text" />
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_employee_id"
+            android:id="@+id/til_task_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/Theme.AppCompat"
@@ -41,7 +41,7 @@
             app:hintTextAppearance="@style/HintText">
 
             <EditText
-                android:id="@+id/edit_text_employee_id"
+                android:id="@+id/edit_text_task_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_employee_name"
+            android:text="@string/text_task_description"
             android:textColor="@color/primary"
             android:nextFocusDown="@+id/edit_text_employeename_create"
             android:id="@+id/employee_name_text" />
@@ -85,11 +85,11 @@
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
-        <TextView
+        <TextViewl
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_employee_email"
+            android:text="@string/text_task_dead_line"
             android:textColor="@color/primary"
             android:nextFocusDown="@+id/edit_text_email_create"
             android:id="@+id/employee_email_text" />
@@ -120,7 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_employee_gender"
+            android:text="@string/text_task_date"
             android:textColor="@color/primary"
             android:nextFocusDown="@+id/spinner_employee_gender"
             android:id="@+id/employee_gender_text" />
@@ -134,7 +134,7 @@
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
-        <Spinner
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_gender"
@@ -152,7 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_employee_institute"
+            android:text="@string/text_task_Accesibility"
             android:textColor="@color/primary"
             android:nextFocusDown="@+id/spinner_employee_institute"
             android:id="@+id/employee_institute_text" />
@@ -183,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_employee_department"
+            android:text="@string/text_text_progress"
             android:textColor="@color/primary"
             android:nextFocusDown="@+id/spinner_employee_department"
             android:id="@+id/employee_department_text" />
@@ -208,17 +208,188 @@
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>
-   <!-- </LinearLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_task_priority"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_department"
+            android:id="@+id/employee_task_priority_text" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_text_priority"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_department"
+            android:id="@+id/employee_task_progress_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_employee_depratmen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_employee_department"
+                android:background="@android:color/white"
+                android:hint="@string/hint_enter_email"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_text_status"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_department"
+            android:id="@+id/employee_task_progress_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_employee_depratmen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_employee_department"
+                android:background="@android:color/white"
+                android:hint="@string/hint_enter_email"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_task_department"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_department"
+            android:id="@+id/employee_task_progress_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_employee_depratmen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_employee_department"
+                android:background="@android:color/white"
+                android:hint="@string/hint_enter_email"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_text_asign_to"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_department"
+            android:id="@+id/employee_task_progress_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_employee_depratmen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_employee_department"
+                android:background="@android:color/white"
+                android:hint="@string/hint_enter_email"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_text_role"
+            android:textColor="@color/primary"
+            android:nextFocusDown="@+id/spinner_employee_department"
+            android:id="@+id/employee_task_progress_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_employee_depratmen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_employee_department"
+                android:background="@android:color/white"
+                android:hint="@string/hint_enter_email"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+        <!-- </LinearLayout>-->
 
         <Button
             android:id="@+id/btn_create_account_final"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/input_field_height"
             android:background="@color/primary"
             android:onClick="onCreateAccountPressed"
             android:text="@string/title_activity_create_account"
             android:textColor="@android:color/white"
             android:textSize="@dimen/login_buttons_text_size" />
+
+        <Button
+            android:id="@+id/btn_create_account_final"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_field_height"
+            android:background="@color/primary"
+            android:onClick="onCreateAccountPressed"
+            android:text="@string/title_activity_create_account"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_buttons_text_size" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -244,14 +415,6 @@
                 android:nextFocusDown="@+id/tv_edit_user_account"/>
 
 
-           <!-- <TextView
-                android:id="@+id/tv_edit_user_account"
-                style="@style/LoginCreateTextButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="GoToEditUser"
-                android:nextFocusDown="@+id/tv_view_task_management"
-                android:text="@string/button_got_to_edit_user" />-->
 
             <TextView
                 android:id="@+id/tv_view_task_management"

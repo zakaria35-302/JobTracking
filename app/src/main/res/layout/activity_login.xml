@@ -44,7 +44,6 @@
             android:id="@+id/til_user_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin"
             app:hintTextAppearance="@style/HintText">
 
@@ -52,12 +51,12 @@
                 android:id="@+id/edit_text_user_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
                 android:hint="@string/hint_enter_employee_id"
+                android:background="@drawable/border"
                 android:nextFocusDown="@+id/text_password"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColorHint="@color/colorPrimaryDark"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
@@ -74,7 +73,6 @@
             android:id="@+id/til_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/margin_normal"
             app:hintTextAppearance="@style/HintText">
 
@@ -82,13 +80,13 @@
                 android:id="@+id/edit_text_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_password"
                 android:imeOptions="actionDone"
                 android:inputType="textPassword"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColorHint="@color/colorPrimaryDark"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
@@ -116,6 +114,7 @@
                 style="@style/LoginCreateText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/primary"
                 android:onClick="EmployeeFogetPassword"
                 android:text="@string/text_change_password" />
         </LinearLayout>
@@ -132,6 +131,7 @@
                 style="@style/LoginCreateText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/primary"
                 android:onClick="EmployeeSetPassword"
                 android:text="@string/text_set_password" />
         </LinearLayout>
@@ -148,6 +148,7 @@
                 style="@style/LoginCreateText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/primary"
                 android:text="@string/text_dont_have_account" />
 
             <TextView
@@ -155,6 +156,7 @@
                 style="@style/LoginCreateTextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/primary"
                 android:onClick="CreateUserAccount"
                 android:text="@string/button_create_account" />
         </LinearLayout>

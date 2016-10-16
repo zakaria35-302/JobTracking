@@ -37,7 +37,6 @@
             android:id="@+id/til_employeename_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin"
             app:hintTextAppearance="@style/HintText">
 
@@ -45,7 +44,7 @@
                 android:id="@+id/edit_text_employeename_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_employeename"
                 android:inputType="textCapWords"
                 android:padding="@dimen/edit_text_padding"
@@ -68,7 +67,6 @@
             android:id="@+id/til_employee_institute_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -76,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_institute_edit"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey"
@@ -98,7 +96,6 @@
             android:id="@+id/til_employee_depratment_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -106,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_department_edit"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey"
@@ -129,7 +126,6 @@
             android:id="@+id/til_date_of_birth_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -137,7 +133,7 @@
                 android:id="@+id/edit_text_date_of_birth_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_date_of_birth"
                 android:inputType="date"
                 android:padding="@dimen/edit_text_padding"
@@ -162,14 +158,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:hintTextAppearance="@style/HintText"
-            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_gender_edit"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey"
@@ -193,7 +188,6 @@
             android:id="@+id/til_marital_status_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -201,7 +195,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_marital_status_edit"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey"
@@ -224,7 +218,6 @@
             android:id="@+id/til_blood_group_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -232,7 +225,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_blood_group_edit"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey"
@@ -254,7 +247,6 @@
             android:id="@+id/til_im_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -262,7 +254,7 @@
                 android:id="@+id/edit_text_im_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_im"
                 android:inputType="text"
                 android:padding="@dimen/edit_text_padding"
@@ -286,7 +278,6 @@
             android:id="@+id/til_religion_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -294,7 +285,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_religion_edit"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey"
@@ -316,7 +307,6 @@
             android:id="@+id/til_mobile_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -324,7 +314,7 @@
                 android:id="@+id/edit_text_mobile_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_mobile_number"
                 android:inputType="number"
                 android:padding="@dimen/edit_text_padding"
@@ -347,7 +337,6 @@
             android:id="@+id/til_office_phone_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -355,7 +344,7 @@
                 android:id="@+id/edit_text_office_phone_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_office_phone"
                 android:inputType="phone"
                 android:padding="@dimen/edit_text_padding"
@@ -379,7 +368,6 @@
             android:id="@+id/til_email_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -387,7 +375,7 @@
                 android:id="@+id/edit_text_email_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_email"
                 android:inputType="textEmailAddress"
                 android:padding="@dimen/edit_text_padding"

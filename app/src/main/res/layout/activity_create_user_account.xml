@@ -36,7 +36,6 @@
             android:id="@+id/til_employee_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin"
             app:hintTextAppearance="@style/HintText">
 
@@ -44,7 +43,7 @@
                 android:id="@+id/edit_text_employee_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_employee_id"
                 android:nextFocusDown="@+id/employee_name_text"
                 android:padding="@dimen/edit_text_padding"
@@ -67,7 +66,6 @@
             android:id="@+id/til_employeename_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin"
             app:hintTextAppearance="@style/HintText">
 
@@ -75,7 +73,7 @@
                 android:id="@+id/edit_text_employeename_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_employeename"
                 android:inputType="textCapWords"
                 android:padding="@dimen/edit_text_padding"
@@ -98,7 +96,6 @@
             android:id="@+id/til_email_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -106,7 +103,7 @@
                 android:id="@+id/edit_text_email_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_email"
                 android:inputType="textEmailAddress"
                 android:padding="@dimen/edit_text_padding"
@@ -130,7 +127,6 @@
             android:id="@+id/til_gender_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -138,7 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_gender"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_email"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
@@ -161,7 +157,6 @@
             android:id="@+id/til_employee_institute"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -169,7 +164,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_institute"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_email"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
@@ -192,7 +187,6 @@
             android:id="@+id/til_employee_depratment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -200,7 +194,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_department"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_email"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
@@ -232,6 +226,7 @@
                 style="@style/LoginCreateText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/primary"
                 android:text="@string/text_already_have_account" />
 
             <TextView
@@ -241,6 +236,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="GoToLoginActivity"
                 android:text="@string/button_sign_in"
+                android:textColor="@color/primary"
                 android:nextFocusDown="@+id/tv_edit_user_account"/>
 
 
@@ -253,13 +249,12 @@
                 android:nextFocusDown="@+id/tv_view_task_management"
                 android:text="@string/button_got_to_edit_user" />-->
 
-            <TextView
+           <!-- <TextView
                 android:id="@+id/tv_view_task_management"
-                style="@style/LoginCreateTextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="GoToTaskManagement"
-                android:text="@string/button_task_management" />
+                android:text="@string/button_task_management" />-->
 
         </LinearLayout>
 

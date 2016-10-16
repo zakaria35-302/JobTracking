@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="@drawable/avatar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/edit_text_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:hint="Set Supervisor"
+                android:textStyle="bold"
+
+                android:textSize="@dimen/list_item_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:hint="Prof. Aminul Islam"
+                android:textStyle="bold"
+                android:textSize="@dimen/list_item_text_size"
+                android:allowUndo="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:hint="712929922"
+                android:textSize="@dimen/list_item_text_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:hint="Emeritus Professor"
+                android:textSize="@dimen/list_item_text_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:hint="Department of Natural Science"
+                android:textSize="@dimen/list_item_text_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:hint="Set Subordinate"
+                android:textStyle="bold"
+                android:textSize="@dimen/list_item_text_size" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

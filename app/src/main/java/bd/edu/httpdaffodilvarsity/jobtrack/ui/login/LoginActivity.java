@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
+import bd.edu.httpdaffodilvarsity.jobtrack.TabedActivity;
 
 public class LoginActivity extends Activity {
 
@@ -20,6 +21,10 @@ public class LoginActivity extends Activity {
 
     public void CreateUserAccount(View v){
         Intent in = new Intent(LoginActivity.this, CreateUserAccount.class);
+        startActivity(in);
+    }
+    public void onSignInPressed(View v){
+        Intent in = new Intent(LoginActivity.this, HomeTabActivity.class);
         startActivity(in);
     }
 

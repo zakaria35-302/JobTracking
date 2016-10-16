@@ -36,7 +36,6 @@
             android:id="@+id/til_task_title_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin"
             app:hintTextAppearance="@style/HintText">
 
@@ -44,7 +43,7 @@
                 android:id="@+id/edit_text_task_title_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_title"
                 android:nextFocusDown="@+id/task_description_text"
                 android:padding="@dimen/edit_text_padding"
@@ -68,7 +67,6 @@
             android:id="@+id/til_task_description_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin"
             app:hintTextAppearance="@style/HintText">
 
@@ -76,7 +74,7 @@
                 android:id="@+id/edit_text_task_description_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_description"
                 android:inputType="text"
                 android:padding="@dimen/edit_text_padding"
@@ -99,7 +97,6 @@
             android:id="@+id/til_task_deadline_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -129,7 +126,6 @@
             android:id="@+id/til_task_date_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -137,7 +133,7 @@
                 android:id="@+id/edit_text_task_dead_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_dead"
                 android:inputType="date"
                 android:padding="@dimen/edit_text_padding"
@@ -169,7 +165,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_task_Accesibility_create"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_Accesibility"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
@@ -192,7 +188,6 @@
             android:id="@+id/til_task_progress_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -200,7 +195,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_task_progress_create"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_progress"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
@@ -224,7 +219,6 @@
             android:id="@+id/til_task_priority_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -232,7 +226,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_task_priority_create"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_priority"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
@@ -255,7 +249,6 @@
             android:id="@+id/til_task_status_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -263,7 +256,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_task_status_create"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_status"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
@@ -286,7 +279,6 @@
             android:id="@+id/til_task_department_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -294,7 +286,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_task_department_create"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_department"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"
@@ -317,7 +309,6 @@
             android:id="@+id/til_task_asign_to_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -325,7 +316,7 @@
                 android:id="@+id/spinner_task_asign_to_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_asign_to"
                 android:inputType="textAutoComplete"
                 android:padding="@dimen/edit_text_padding"
@@ -349,7 +340,6 @@
             android:id="@+id/til_task_role_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -357,7 +347,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_task_role_create"
-                android:background="@android:color/white"
+                android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_role"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/black"

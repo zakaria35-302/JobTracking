@@ -1,0 +1,372 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TaskManagement">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_daily_activities"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/text_title_top"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_other_activities"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/text_title_top"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_management"
+            android:textSize="@dimen/text_title_top"
+            android:onClick="taskManagement"
+            android:textColor="@android:color/black"
+            android:background="@color/primary"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+
+            style="@style/Widget.Udacity.Button.Login"
+            android:padding="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/job_management"
+            android:textSize="@dimen/text_title_top"
+            android:onClick="jobManagement"
+            android:textColor="@android:color/black"
+            android:background="@color/primary"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            style="@style/Widget.Udacity.Button.Login"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/text_title_top"
+            android:textColor="@android:color/black"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/available_task"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_title_top"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:background="@color/primary"
+                android:paddingRight="15dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <TextView
+                android:hint="3 7"
+                android:textSize="@dimen/text_title_top"
+                android:id="@+id/number_of_available_task"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/primary"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Own Task "
+                android:textStyle="bold"
+                android:textSize="@dimen/text_title_top"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="35"
+                android:textStyle="bold"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Completed "
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="35"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Incomplete "
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="00"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Ever Ending "
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="35"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/most_used_tasks"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_title_top"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:background="@color/primary"
+                android:paddingRight="15dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <TextView
+                android:hint="357"
+                android:textSize="@dimen/text_title_top"
+                android:id="@+id/number_of_available_task"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/primary"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Own Activity "
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="10"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Total Parcipator "
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="2"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Involvement "
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="3"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Regular Job "
+                android:textStyle="bold"
+                android:textSize="@dimen/text_title_top"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="2"
+                android:textStyle="bold"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

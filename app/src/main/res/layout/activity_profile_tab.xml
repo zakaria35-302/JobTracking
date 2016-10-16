@@ -1,0 +1,370 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+       android:paddingLeft="@dimen/activity_horizontal_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="@drawable/avatar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:text="@string/text_employee_name"
+                android:layout_margin="@dimen/edit_text_padding"
+                android:textSize="@dimen/list_item_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:text="Profile View"
+                android:layout_margin="@dimen/edit_text_padding"
+                android:textSize="@dimen/list_item_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Udacity.Button.Login"
+                android:textColor="@android:color/black"
+                android:text="Change Password"
+                android:layout_margin="@dimen/edit_text_padding"
+                android:textSize="@dimen/list_item_text_size" />
+
+
+
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/job_statistics"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/text_title_top"
+            android:textColor="@android:color/black"/>
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="My Ranking "
+            android:textStyle="bold"
+            android:textSize="@dimen/list_item_text_size"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="357"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Own Task "
+            android:textStyle="bold"
+            android:textSize="@dimen/text_title_top"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="35"
+            android:textStyle="bold"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Completed "
+            android:textStyle="normal"
+            android:textSize="@dimen/list_item_text_size"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="35"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Incomplete "
+            android:textStyle="normal"
+            android:textSize="@dimen/list_item_text_size"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="00"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Ever Ending "
+            android:textStyle="normal"
+            android:textSize="@dimen/list_item_text_size"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="35"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Total Activity "
+            android:textStyle="bold"
+            android:textSize="@dimen/text_title_top"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="35"
+            android:textStyle="bold"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Own Activity "
+            android:textStyle="normal"
+            android:textSize="@dimen/list_item_text_size"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="10"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Total Parcipator "
+            android:textStyle="normal"
+            android:textSize="@dimen/list_item_text_size"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="2"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Involvement "
+            android:textStyle="normal"
+            android:textSize="@dimen/list_item_text_size"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="3"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Regular Job "
+            android:textStyle="bold"
+            android:textSize="@dimen/text_title_top"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:hint="2"
+            android:textStyle="bold"
+            android:textSize="@dimen/list_item_text_size"
+            android:id="@+id/text_profile_ranking"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>

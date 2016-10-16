@@ -4,8 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-
-    android:background="@android:color/black"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -63,11 +61,8 @@
 
         <TextView
             android:text="@string/text_employee_name"
-            android:textStyle="bold"
             android:textSize="@dimen/list_item_text_size"
-
-            android:textColor="@android:color/white"
-
+            android:textColor="@android:color/black"
             android:layout_width="0dp"
             android:paddingRight="15dp"
             android:layout_height="wrap_content"

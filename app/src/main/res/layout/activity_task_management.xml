@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -371,12 +370,12 @@
     </LinearLayout>
 
 </ScrollView>
-=======
+
 <!--<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/scrollView"
     xmlns:android="http://schemas.android.com/apk/res/android" >-->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rl_fragment_shopping_lists"
@@ -413,20 +412,20 @@
                 />
         </LinearLayout>
 
-       <!-- <ListView
+       &lt;!&ndash; <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/listEmployeeTask"
             android:background="@color/dark_grey"
-            android:layout_marginTop="60dp"></ListView>-->
+            android:layout_marginTop="60dp"></ListView>&ndash;&gt;
     </LinearLayout>
 
-   <!-- <ListView
+   &lt;!&ndash; <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listEmployeeTask"
         android:background="@color/dark_grey"
-        android:layout_marginTop="60dp"/>-->
+        android:layout_marginTop="60dp"/>&ndash;&gt;
 
  <ListView
         android:layout_width="wrap_content"
@@ -451,7 +450,5 @@
         app:elevation="6dp"
         app:pressedTranslationZ="12dp" />
 
-<!--</ScrollView>-->
-</RelativeLayout>
-
->>>>>>> 278496c4fffac5487bc02b031ca043395f4a8895
+&lt;!&ndash;</ScrollView>&ndash;&gt;
+</RelativeLayout>-->

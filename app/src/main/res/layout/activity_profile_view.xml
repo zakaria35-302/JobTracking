@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+
+    android:background="@android:color/black"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -36,14 +38,18 @@
            android:layout_width="wrap_content"
            android:layout_height="50dp"
            android:textStyle="bold"
+
+           style="@style/Widget.Udacity.Button.Login"
            android:padding="5dp"
            android:textColor="@android:color/white"
            android:background="@color/primary"
            android:text="@string/text_edit_profile"
            android:layout_margin="@dimen/edit_text_padding"
-           android:textSize="@dimen/btn_shopping_height"
            android:id="@+id/buttonEditPersonalProfile"
-           android:onClick="GoToEditUser"/>
+           android:onClick="GoToEditUser"
+
+           android:textSize="@dimen/btn_shopping_height" />
+
 
    </LinearLayout>
 
@@ -59,7 +65,9 @@
             android:text="@string/text_employee_name"
             android:textStyle="bold"
             android:textSize="@dimen/list_item_text_size"
-            android:textColor="@android:color/black"
+
+            android:textColor="@android:color/white"
+
             android:layout_width="0dp"
             android:paddingRight="15dp"
             android:layout_height="wrap_content"

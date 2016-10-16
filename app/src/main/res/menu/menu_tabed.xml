@@ -5,5 +5,9 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
+<<<<<<< HEAD
         android:title="abc" />
+=======
+        android:title="@string/action_settings" />
+>>>>>>> 8c24889989fbb4be198bdfcc8ce9f5f7f578564c
 </menu>

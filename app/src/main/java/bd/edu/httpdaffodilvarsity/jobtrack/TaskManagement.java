@@ -1,7 +1,9 @@
 package bd.edu.httpdaffodilvarsity.jobtrack;
 
 import android.app.Activity;
+
 import android.app.Fragment;
+
 import android.os.Bundle;
 
 public class TaskManagement extends Activity {
@@ -12,8 +14,10 @@ public class TaskManagement extends Activity {
         setContentView(R.layout.activity_task_management);
     }
 
+
     public static Fragment newInstance() {
 
         return null;
     }
+
 }

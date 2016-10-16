@@ -1,7 +1,5 @@
 <resources>
 
-    <string name="job_statistics"> <u>Job Statistics</u> </string>
-
 
     <!--String file for Task Management-->
 
@@ -15,7 +13,6 @@
     <string name="most_used_tasks">Most Used Tasks</string>
 
     <!--String file for Task Management-->
-
 
     <string name="app_name">Jobtrack</string>
 
@@ -196,6 +193,8 @@
         <item>0</item>
         <item>-1</item>
     </string-array>
+
+
 
     <!-- Example settings for Data & Sync -->
     <string name="pref_header_data_sync">Data &amp; sync</string>

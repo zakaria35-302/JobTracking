@@ -1,4 +1,4 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -369,13 +369,13 @@
 
     </LinearLayout>
 
-</ScrollView>
+</ScrollView>-->
 
 <!--<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/scrollView"
     xmlns:android="http://schemas.android.com/apk/res/android" >-->
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rl_fragment_shopping_lists"
@@ -412,20 +412,20 @@
                 />
         </LinearLayout>
 
-       &lt;!&ndash; <ListView
+       <!-- <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/listEmployeeTask"
             android:background="@color/dark_grey"
-            android:layout_marginTop="60dp"></ListView>&ndash;&gt;
+            android:layout_marginTop="60dp"></ListView>-->
     </LinearLayout>
 
-   &lt;!&ndash; <ListView
+   <!-- <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listEmployeeTask"
         android:background="@color/dark_grey"
-        android:layout_marginTop="60dp"/>&ndash;&gt;
+        android:layout_marginTop="60dp"/>-->
 
  <ListView
         android:layout_width="wrap_content"
@@ -450,5 +450,5 @@
         app:elevation="6dp"
         app:pressedTranslationZ="12dp" />
 
-&lt;!&ndash;</ScrollView>&ndash;&gt;
-</RelativeLayout>-->
+<!--</ScrollView>-->
+</RelativeLayout>

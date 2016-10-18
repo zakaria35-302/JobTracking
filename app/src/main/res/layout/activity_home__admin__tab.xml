@@ -9,4 +9,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="bd.edu.httpdaffodilvarsity.jobtrack.ui.login.Home_Admin_Tab">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/set_superior"
+            android:onClick="setEmployeeSuperior"
+            android:padding="@dimen/btn_shopping_height"
+            android:id="@+id/textViewAdminSetSuparior" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/set_department"
+            android:onClick="setEmployeeDepartment"
+            android:padding="@dimen/btn_shopping_height"
+            android:id="@+id/textViewAdminSetDepartment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/set_designation"
+            android:onClick="setEmployeeDesignation"
+            android:padding="@dimen/btn_shopping_height"
+            android:id="@+id/textViewAdminSetDesignation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/job_migration"
+            android:onClick="migrateEmployeeJob"
+            android:padding="@dimen/btn_shopping_height"
+            android:id="@+id/textViewAdminJobMigration" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/task_migration"
+            android:onClick="migrateEmployeeTask"
+            android:padding="@dimen/btn_shopping_height"
+            android:id="@+id/textViewAdminTaskMigration" />
+    </LinearLayout>
 </RelativeLayout>

@@ -55,8 +55,8 @@
                 android:background="@drawable/border"
                 android:nextFocusDown="@+id/text_password"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
@@ -85,8 +85,8 @@
                 android:imeOptions="actionDone"
                 android:inputType="textPassword"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 

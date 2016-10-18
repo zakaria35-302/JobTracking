@@ -8,18 +8,52 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
+import bd.edu.httpdaffodilvarsity.jobtrack.MainActivity;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
-public class SetDepartment extends DialogFragment {
+public class SetDepartment extends Activity {
+//public class SetDepartment extends DialogFragment {
+
+    private static ListView list_view_department;
+    private static String[] DEPARTMENTS = new String[]{"Computer Science and Engineering","Information Technology",
+            "Software Engineering", "English","Low","EEE", "Natural Science"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_set_department);
+        setContentView(R.layout.activity_set_department);
+
+
+        list_view_department = (ListView) findViewById(R.id.listEmployeeDepartment);
+
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, DEPARTMENTS);
+        list_view_department.setAdapter(adapter);
+
+
+        //listView();
     }
 
-    @Override
+    /*public void listView(){
+        list_view_department = (ListView) findViewById(R.id.listEmployeeDepartment);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.row_department,DEPARTMENTS);
+        list_view_department.setAdapter(adapter);;
+        list_view_department.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String value = (String) list_view_department.getItemAtPosition(position);
+                Toast.makeText(SetDepartment.this, "Position : " + position + " Values : " + value, Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }*/
+
+    /*@Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         // Get the layout inflater
@@ -41,5 +75,5 @@ public class SetDepartment extends DialogFragment {
                     }
                 });
         return builder.create();
-    }
+    }*/
 }

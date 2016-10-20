@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat">
-    <!--<style name="AppTheme" parent="AppTheme.Base">-->
-    </style>
-    <style name="LightThemeSelector" parent="android:Theme.Light">
 
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat">
+    &lt;!&ndash;<style name="AppTheme" parent="AppTheme.Base">&ndash;&gt;
     </style>
+
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
@@ -13,8 +13,10 @@
         <item name="android:colorBackground">@color/primary</item>
         <item name="android:textColorPrimary">@android:color/white</item>
         <item name="android:textColorSecondary">#fcfcfc</item>
-    </style>
+    </style>-->
+    <style name="LightThemeSelector" parent="android:Theme.Light">
 
+    </style>
 
     <style name="Toolbar" parent="Widget.AppCompat.Light.ActionBar">
         <item name="android:background">@color/primary</item>

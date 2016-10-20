@@ -121,11 +121,18 @@
             android:nextFocusDown="@+id/edit_text_task_dead_create"
             android:id="@+id/task_date_tex_create" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:focusableInTouchMode="true" >
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/til_task_date_create"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="5"
             app:hintTextAppearance="@style/HintText"
             android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
@@ -143,6 +150,16 @@
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/calendar_green_icon"
+            android:id="@+id/buttonTaskLastDateSelect"
+            android:onClick="showDatePicDialog"/>
+
+    </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"

@@ -62,7 +62,6 @@
         <TextView
             android:text="@string/text_employee_name"
             android:textSize="@dimen/list_item_text_size"
-            android:textColor="@android:color/black"
             android:layout_width="0dp"
             android:paddingRight="15dp"
             android:layout_height="wrap_content"

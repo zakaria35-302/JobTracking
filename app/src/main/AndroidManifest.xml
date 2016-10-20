@@ -78,7 +78,8 @@
         <activity android:name=".ui.login.HomeTabActivity" />
         <activity android:name=".ui.login.SuperiorSettingActivity" />
         <activity android:name=".ui.login.TaskMigration" />
-        <activity android:name=".JobManagement.JobManagement"></activity>
+        <activity android:name=".JobManagement.JobManagement" />
+        <activity android:name=".JobManagement.CreateEmployeeJob"></activity>
     </application>
 
 </manifest>

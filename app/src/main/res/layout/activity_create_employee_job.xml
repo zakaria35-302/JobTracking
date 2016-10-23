@@ -7,15 +7,15 @@
     tools:context=".JobManagement.CreateEmployeeJob">
 
     <LinearLayout
-        android:id="@+id/linear_layout_create_employee_job_activity"
+        android:id="@+id/linear_layout_create_employee_task_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin">
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="0px"
@@ -23,141 +23,172 @@
             android:focusable="true"
             android:focusableInTouchMode="true" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_title"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/edit_text_job_title"
-            android:id="@+id/user_task_title_text_create" />
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_job_title_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
-            app:hintTextAppearance="@style/HintText">
-
-            <EditText
-                android:id="@+id/edit_text_job_title_create"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_title"
-                android:nextFocusDown="@+id/task_description_text"
-                android:padding="@dimen/edit_text_padding"
-                android:inputType="text"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
-                android:textSize="@dimen/login_buttons_text_size" />
-        </android.support.design.widget.TextInputLayout>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_description"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/edit_text_task_description_create"
-            android:id="@+id/task_description_job_create" />
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_job_description_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
-            app:hintTextAppearance="@style/HintText">
-
-            <EditText
-                android:id="@+id/edit_text_job_description_create"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_description"
-                android:inputType="text"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:nextFocusDown="@+id/task_deadline_text_create"
-                android:textColorHint="@color/dark_grey"
-                android:textSize="@dimen/login_buttons_text_size" />
-        </android.support.design.widget.TextInputLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_dead_line"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/checkBox_task_deadline_create"
-            android:id="@+id/job_deadline_text_create" />
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_job_deadline_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintTextAppearance="@style/HintText"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/check_box_task_had_dead_line"
-                android:id="@+id/checkBox_task_had_deadline_create"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:nextFocusDown="@+id/task_date_tex_create"
-                android:textColorHint="@color/dark_grey"
-                android:textSize="@dimen/login_buttons_text_size" />
-        </android.support.design.widget.TextInputLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_date"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/edit_text_task_dead_create"
-            android:id="@+id/task_date_tex_create" />
-
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="true"
-            android:orientation="horizontal"
-            android:focusableInTouchMode="true" >
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_all_side">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_title"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/edit_text_task_title"
+                android:id="@+id/user_task_title_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_date_create"
-                android:layout_width="0dp"
+                android:id="@+id/til_task_title_create"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="5"
-                app:hintTextAppearance="@style/HintText"
-                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+                app:hintTextAppearance="@style/HintText">
 
                 <EditText
-                    android:id="@+id/edit_text_task_dead_create"
+                    android:id="@+id/edit_text_task_title_create"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border"
-                    android:hint="@string/hint_enter_task_dead"
-                    android:inputType="date"
+                    android:hint="@string/hint_enter_task_title"
+                    android:nextFocusDown="@+id/task_description_text"
                     android:padding="@dimen/edit_text_padding"
+                    android:inputType="text"
                     android:textColor="@color/black"
-                    android:nextFocusDown="@+id/task_Accesibility_text_create"
                     android:textColorHint="@color/dark_grey"
                     android:textSize="@dimen/login_buttons_text_size" />
-
             </android.support.design.widget.TextInputLayout>
 
-            <Button
-                android:layout_width="0dp"
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@mipmap/calendar_green_icon"
-                android:id="@+id/buttonTaskLastDateSelect"
-                android:onClick="showDatePicDialog"/>
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_description"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/edit_text_task_description_create"
+                android:id="@+id/task_description_text_create" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_description_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+                app:hintTextAppearance="@style/HintText">
+
+                <EditText
+                    android:id="@+id/edit_text_task_description_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:hint="@string/hint_enter_task_description"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:minLines="6"
+                    android:maxLines="6"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:nextFocusDown="@+id/task_deadline_text_create"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="@dimen/login_buttons_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_all_side">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_dead_line"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/checkBox_task_deadline_create"
+                android:id="@+id/task_deadline_text_create" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_deadline_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_box_task_had_dead_line"
+                    android:id="@+id/checkBox_task_had_deadline_create"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:nextFocusDown="@+id/task_date_tex_create"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="@dimen/login_buttons_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_date"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/edit_text_task_dead_create"
+                android:id="@+id/task_date_tex_create" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:focusableInTouchMode="true" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_task_date_create"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    app:hintTextAppearance="@style/HintText"
+                    android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+                    <EditText
+                        android:id="@+id/edit_text_task_dead_create"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:hint="@string/hint_enter_task_dead"
+                        android:inputType="date"
+                        android:padding="@dimen/edit_text_padding"
+                        android:textColor="@color/black"
+                        android:nextFocusDown="@+id/task_Accesibility_text_create"
+                        android:textColorHint="@color/dark_grey"
+                        android:textSize="@dimen/login_buttons_text_size" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/calendar_green_icon"
+                    android:id="@+id/buttonTaskLastDateSelect"
+                    android:onClick="showDatePicDialog"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -165,153 +196,176 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_Accesibility"
+            android:text="@string/text_task_Attribute"
             android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_task_Accesibility_create"
-            android:id="@+id/task_Accesibility_text_create" />
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:nextFocusDown="@+id/spinner_task_Accesibility_create"/>
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_task_Accesibility_create"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat"
-            app:hintTextAppearance="@style/HintText"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_all_side">
 
-            <Spinner
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_Accesibility"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/spinner_task_Accesibility_create"
+                android:id="@+id/task_Accesibility_text_create" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_Accesibility_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner_task_Accesibility_create"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_Accesibility"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
-                android:nextFocusDown="@+id/task_progress_text_create"
-                android:textSize="@dimen/login_buttons_text_size" />
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
-        </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_task_Accesibility_create"
+                    android:background="@drawable/border"
+                    android:hint="@string/hint_enter_task_Accesibility"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey"
+                    android:nextFocusDown="@+id/task_progress_text_create"
+                    android:textSize="@dimen/login_buttons_text_size" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_progress"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_task_progress_create"
-            android:id="@+id/task_progress_text_create" />
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_task_progress_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintTextAppearance="@style/HintText"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+            </android.support.design.widget.TextInputLayout>
 
-            <Spinner
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_progress"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/spinner_task_progress_create"
+                android:id="@+id/task_progress_text_create" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_progress_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner_task_progress_create"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_progress"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
-                android:nextFocusDown="@+id/task_priority_text_create"
-                android:textSize="@dimen/login_buttons_text_size" />
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
-        </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_task_progress_create"
+                    android:background="@drawable/border"
+                    android:hint="@string/hint_enter_task_progress"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey"
+                    android:nextFocusDown="@+id/task_priority_text_create"
+                    android:textSize="@dimen/login_buttons_text_size" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_priority"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_task_priority_create"
-            android:id="@+id/task_priority_text_create" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_priority"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/spinner_task_priority_create"
+                android:id="@+id/task_priority_text_create" />
 
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_task_priority_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintTextAppearance="@style/HintText"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
-
-            <Spinner
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_priority_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner_task_priority_create"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_priority"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
-                android:nextFocusDown="@+id/task_status_text_create"
-                android:textSize="@dimen/login_buttons_text_size" />
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
-        </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_task_priority_create"
+                    android:background="@drawable/border"
+                    android:hint="@string/hint_enter_task_priority"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey"
+                    android:nextFocusDown="@+id/task_status_text_create"
+                    android:textSize="@dimen/login_buttons_text_size" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_status"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_task_status_create"
-            android:id="@+id/task_status_text_create" />
+            </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_task_status_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintTextAppearance="@style/HintText"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_status"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/spinner_task_status_create"
+                android:id="@+id/task_status_text_create" />
 
-            <Spinner
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_status_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner_task_status_create"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_status"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
-                android:nextFocusDown="@+id/task_department_text_create"
-                android:textSize="@dimen/login_buttons_text_size" />
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
-        </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_task_status_create"
+                    android:background="@drawable/border"
+                    android:hint="@string/hint_enter_task_status"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey"
+                    android:nextFocusDown="@+id/task_department_text_create"
+                    android:textSize="@dimen/login_buttons_text_size" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_employee_department"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_task_department_create"
-            android:id="@+id/task_department_text_create" />
+            </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_task_department_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintTextAppearance="@style/HintText"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_employee_department"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/spinner_task_department_create"
+                android:id="@+id/task_department_text_create" />
 
-            <Spinner
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_department_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner_task_department_create"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_department"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
-                android:nextFocusDown="@+id/task_asign_to_text_create"
-                android:textSize="@dimen/login_buttons_text_size" />
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
-        </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_task_department_create"
+                    android:background="@drawable/border"
+                    android:hint="@string/hint_enter_task_department"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey"
+                    android:nextFocusDown="@+id/task_asign_to_text_create"
+                    android:textSize="@dimen/login_buttons_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -319,91 +373,127 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/text_task_assign_to"
             android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_task_asign_to_create"
-            android:id="@+id/task_asign_to_text_create" />
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_task_asign_to_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintTextAppearance="@style/HintText"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
-
-            <EditText
-                android:id="@+id/spinner_task_asign_to_create"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_asign_to"
-                android:inputType="textAutoComplete"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:nextFocusDown="@+id/task_role_text_create"
-                android:textColorHint="@color/dark_grey"
-                android:textSize="@dimen/login_buttons_text_size" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_task_role"
-            android:textColor="@color/primary"
-            android:nextFocusDown="@+id/spinner_task_role_create"
-            android:id="@+id/task_role_text_create" />
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_task_role_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintTextAppearance="@style/HintText"
-            android:layout_marginBottom="@dimen/lists_title_bottom_margin">
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner_task_role_create"
-                android:background="@drawable/border"
-                android:hint="@string/hint_enter_task_role"
-                android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
-                android:textSize="@dimen/login_buttons_text_size" />
-
-        </android.support.design.widget.TextInputLayout>
-        <!-- </LinearLayout>-->
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:nextFocusDown="@+id/spinner_task_Accesibility_create"/>
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="match_parent"
             android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingTop="@dimen/activity_vertical_margin">
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_all_side">
 
-            <Button
-                android:id="@+id/btn_task_add_to_list"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/input_field_height"
-                android:layout_weight="1"
-                android:background="@color/primary"
-                android:onClick="taskAddToList"
-                android:text="@string/task_activity_add_to_list"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/login_buttons_text_size"
-                android:paddingRight="@dimen/activity_horizontal_margin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_assign_to"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/spinner_task_asign_to_create"
+                android:id="@+id/task_asign_to_text_create" />
 
-            <Button
-                android:id="@+id/btn_task_remove_from_list"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/input_field_height"
-                android:layout_weight="1"
-                android:background="@color/primary"
-                android:onClick="taskRemoveFromList"
-                android:text="@string/task_activity_remove_from_list"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/login_buttons_text_size"
-                android:paddingLeft="@dimen/activity_horizontal_margin"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_asign_to_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+                <EditText
+                    android:id="@+id/spinner_task_asign_to_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:hint="@string/hint_enter_task_asign_to"
+                    android:inputType="textAutoComplete"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:nextFocusDown="@+id/task_role_text_create"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="@dimen/login_buttons_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_task_role"
+                android:textColor="@color/primary"
+                android:nextFocusDown="@+id/spinner_task_role_create"
+                android:id="@+id/task_role_text_create" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_task_role_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginBottom="@dimen/lists_title_bottom_margin">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_task_role_create"
+                    android:background="@drawable/border"
+                    android:hint="@string/hint_enter_task_role"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="@dimen/login_buttons_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+            <!-- </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <Button
+                        android:id="@+id/btn_task_add_to_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/input_field_height"
+                        android:background="@color/primary"
+                        android:onClick="taskAddToList"
+                        android:text="@string/task_activity_add_to_list"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/login_buttons_text_size"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <Button
+                        android:id="@+id/btn_task_remove_from_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/input_field_height"
+                        android:background="@color/primary"
+                        android:onClick="taskRemoveFromList"
+                        android:text="@string/task_activity_remove_from_list"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/login_buttons_text_size"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"/>
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -411,30 +501,51 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingTop="@dimen/activity_vertical_margin">
+            android:gravity="center"
+            android:background="@drawable/border_all_side"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
 
-            <Button
-                android:id="@+id/btn_task_save"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/input_field_height"
-                android:layout_weight="1"
-                android:background="@color/primary"
-                android:onClick="taskSave"
-                android:text="@string/save"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/login_buttons_text_size" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
 
-            <Button
-                android:id="@+id/btn_task_back"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/input_field_height"
-                android:layout_weight="1"
-                android:background="@color/primary"
-                android:onClick="taskBack"
-                android:text="@string/back"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/login_buttons_text_size" />
+                <Button
+                    android:id="@+id/btn_task_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_field_height"
+                    android:background="@color/primary"
+                    android:onClick="taskSave"
+                    android:text="@string/save"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/login_buttons_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <Button
+                    android:id="@+id/btn_task_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_field_height"
+                    android:background="@color/primary"
+                    android:onClick="taskBack"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/login_buttons_text_size"/>
+            </LinearLayout>
+
         </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

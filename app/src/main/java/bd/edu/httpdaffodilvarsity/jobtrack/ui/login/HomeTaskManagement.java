@@ -9,10 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import bd.edu.httpdaffodilvarsity.jobtrack.JobManagement.JobManagement;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
 
 public class HomeTaskManagement extends android.support.v4.app.Fragment {
+
+    Button btnEmployeeJobManagement;
     Button btnEmployeeTaskManagement;
 
     public HomeTaskManagement() {
@@ -31,8 +34,8 @@ public class HomeTaskManagement extends android.support.v4.app.Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View rootView = inflater.inflate(R.layout.activity_home_task_management, container, false);
-        btnEmployeeTaskManagement = (Button) rootView.findViewById(R.id.btnTaskManagement);
+        View rootViewEmployeeTaskManagement = inflater.inflate(R.layout.activity_home_task_management, container, false);
+        btnEmployeeTaskManagement = (Button) rootViewEmployeeTaskManagement.findViewById(R.id.btnTaskManagement);
         btnEmployeeTaskManagement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,7 +44,21 @@ public class HomeTaskManagement extends android.support.v4.app.Fragment {
             }
         });
         //return inflater.inflate(R.layout.activity_profile_view, container, false);
-        return rootView;
+        //return rootViewEmployeeTaskManagement;
+        //return inflater.inflate(R.layout.activity_home_task_management, container, false);
+
+
+        //View rootViewEmployeeJobManagement = inflater.inflate(R.layout.activity_home_task_management, container, false);
+        btnEmployeeJobManagement = (Button) rootViewEmployeeTaskManagement.findViewById(R.id.btnJobManagement);
+        btnEmployeeJobManagement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeTaskManagement.this.getActivity(), JobManagement.class);
+                HomeTaskManagement.this.startActivity(intent);
+            }
+        });
+        //return inflater.inflate(R.layout.activity_profile_view, container, false);
+        return rootViewEmployeeTaskManagement;
         //return inflater.inflate(R.layout.activity_home_task_management, container, false);
 
 

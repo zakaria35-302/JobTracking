@@ -191,6 +191,28 @@
     </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_task_Attribute"
+        android:textColor="@color/primary"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:nextFocusDown="@+id/spinner_task_Accesibility_create"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/border_all_side">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -283,7 +305,7 @@
 
         </android.support.design.widget.TextInputLayout>
 
-        <TextView
+     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -292,7 +314,7 @@
             android:nextFocusDown="@+id/spinner_task_status_create"
             android:id="@+id/task_status_text_create" />
 
-        <android.support.design.widget.TextInputLayout
+     <android.support.design.widget.TextInputLayout
             android:id="@+id/til_task_status_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -342,6 +364,29 @@
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_task_assign_to"
+        android:textColor="@color/primary"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:nextFocusDown="@+id/spinner_task_Accesibility_create"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/border_all_side">
 
         <TextView
             android:layout_width="wrap_content"
@@ -404,69 +449,103 @@
         </android.support.design.widget.TextInputLayout>
         <!-- </LinearLayout>-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingTop="@dimen/activity_vertical_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
 
         <Button
             android:id="@+id/btn_task_add_to_list"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/input_field_height"
-            android:layout_weight="1"
             android:background="@color/primary"
             android:onClick="taskAddToList"
             android:text="@string/task_activity_add_to_list"
             android:textColor="@android:color/white"
             android:textSize="@dimen/login_buttons_text_size"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
 
         <Button
             android:id="@+id/btn_task_remove_from_list"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/input_field_height"
-            android:layout_weight="1"
             android:background="@color/primary"
             android:onClick="taskRemoveFromList"
             android:text="@string/task_activity_remove_from_list"
             android:textColor="@android:color/white"
             android:textSize="@dimen/login_buttons_text_size"
-            android:paddingLeft="@dimen/activity_horizontal_margin"/>
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"/>
+        </LinearLayout>
 
-    </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingTop="@dimen/activity_vertical_margin">
+        android:gravity="center"
+        android:background="@drawable/border_all_side"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
 
     <Button
         android:id="@+id/btn_task_save"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/input_field_height"
-        android:layout_weight="1"
         android:background="@color/primary"
         android:onClick="taskSave"
         android:text="@string/save"
         android:textColor="@android:color/white"
         android:textSize="@dimen/login_buttons_text_size" />
 
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
     <Button
         android:id="@+id/btn_task_back"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/input_field_height"
-        android:layout_weight="1"
         android:background="@color/primary"
         android:onClick="taskBack"
         android:text="@string/back"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/login_buttons_text_size" />
-    </LinearLayout>
+        android:textSize="@dimen/login_buttons_text_size"/>
+     </LinearLayout>
 
+    </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

@@ -46,6 +46,11 @@ public class TaskManagement extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_management);
 
+        list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
+
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, EMPLOYEE_TASK_TITTLE);
+        list_employee_task.setAdapter(adapter);
+
         buttonCreateTask = (FloatingActionButton) findViewById(R.id.fab);
         buttonCreateTask.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +69,7 @@ public class TaskManagement extends Activity {
         textViewTaskStatus = (TextView) findViewById(R.id.text_view_task_status);
         textViewTaskProgress = (TextView) findViewById(R.id.text_view_task_progress);
         textViewTaskPriority = (TextView) findViewById(R.id.text_view_task_priority);
-        listView();
+        //listView();
     }
 
     public void showTaskManagementActivity(View View){

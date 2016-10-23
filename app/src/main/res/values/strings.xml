@@ -63,7 +63,7 @@
     <string name="text_employee_religion">Religion</string>
     <string name="text_employee_mobile">Mobile</string>
     <string name="text_employee_office_phone">Office Phone</string>
-
+    <string name="text_task_Attribute">Attribute</string>
 
     <!-- Activity Titles  -->
     <string name="title_activity_create_account">Create Account</string>
@@ -101,7 +101,7 @@
     <string name="hint_enter_task_status">Select Task Status</string>
     <string name="hint_select_task_department">Select Task Department</string>
     <string name="hint_enter_task_department">Please Enter Task Department</string>
-    <string name="text_task_assign_to">Select Task assign to</string>
+    <string name="text_task_assign_to">Assign to</string>
     <string name="hint_enter_task_asign_to">Select Task Assign to</string>
     <string name="text_task_role">Role</string>
     <string name="hint_enter_task_role">Select Task Role</string>

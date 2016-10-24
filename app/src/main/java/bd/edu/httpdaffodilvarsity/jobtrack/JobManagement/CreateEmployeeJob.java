@@ -2,6 +2,7 @@ package bd.edu.httpdaffodilvarsity.jobtrack.JobManagement;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.Spinner;
 import java.util.Calendar;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
+import bd.edu.httpdaffodilvarsity.jobtrack.ui.login.TaskManagement;
 
 public class CreateEmployeeJob extends AppCompatActivity {
 
@@ -141,5 +143,9 @@ public class CreateEmployeeJob extends AppCompatActivity {
         public void onDateSet(DatePicker view, int year, int month, int day) {
             // Do something with the date chosen by the user
         }
+    }
+    public void taskBack(View view){
+        Intent taskBack = new Intent(CreateEmployeeJob.this, TaskManagement.class);
+        startActivity(taskBack);
     }
 }

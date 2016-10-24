@@ -52,6 +52,8 @@
     <string name="text_task_progress">Progress</string>
     <string name="text_task_priority">Priority</string>
 
+    <string name="text_select_job">Select Job</string>
+    <string name="hint_enter_job_title">Please Select Job for this Task</string>
     <string name="button_task_management">Task Management</string>
     <string name="text_employee_gender">Gender</string>
     <string name="text_employee_institute">Institute</string>

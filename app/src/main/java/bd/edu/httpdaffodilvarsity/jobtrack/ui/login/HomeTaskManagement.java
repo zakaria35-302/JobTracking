@@ -8,16 +8,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.JobManagement.JobManagement;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
+import bd.edu.httpdaffodilvarsity.jobtrack.taskManagement.AvailableTaskList;
+import bd.edu.httpdaffodilvarsity.jobtrack.taskManagement.MostUsedTask;
+import bd.edu.httpdaffodilvarsity.jobtrack.taskManagement.MostUsedTaskDetailsList;
 
 
 public class HomeTaskManagement extends android.support.v4.app.Fragment {
 
     Button btnEmployeeJobManagement;
     Button btnEmployeeTaskManagement;
-
+    TextView tvEmployeeAvailableTask;
+    TextView tvMostUsedTask;
     public HomeTaskManagement() {
         // Required empty public constructor
     }
@@ -26,6 +31,7 @@ public class HomeTaskManagement extends android.support.v4.app.Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+//        setContentView(R.layout.activity_change_password);
        // taskManagement();
     }
 
@@ -57,9 +63,32 @@ public class HomeTaskManagement extends android.support.v4.app.Fragment {
                 HomeTaskManagement.this.startActivity(intent);
             }
         });
+
+        tvEmployeeAvailableTask = (TextView) rootViewEmployeeTaskManagement.findViewById(R.id.textViewAvailableTask);
+        tvEmployeeAvailableTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeTaskManagement.this.getActivity(), AvailableTaskList.class);
+                HomeTaskManagement.this.startActivity(intent);
+            }
+        });
+
+
+        tvMostUsedTask = (TextView) rootViewEmployeeTaskManagement.findViewById(R.id.textViewMostUsedTask);
+        tvMostUsedTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeTaskManagement.this.getActivity(), MostUsedTaskDetailsList.class);
+                HomeTaskManagement.this.startActivity(intent);
+            }
+        });
+
         //return inflater.inflate(R.layout.activity_profile_view, container, false);
         return rootViewEmployeeTaskManagement;
         //return inflater.inflate(R.layout.activity_home_task_management, container, false);
+
+
+
 
 
     }

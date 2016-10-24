@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".taskManagement.AvailableTaskAttributes">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/created_on"
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="12/2/2016"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/deadline_date"
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="30/12/2016"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/progress"
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="35"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/progress"
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="35"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_ranking"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/priority"
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="High"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/status"
+                android:textStyle="normal"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:hint="Ongoing"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+    </LinearLayout>

@@ -24,5 +24,8 @@
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent">#c8e8ff</color>
 
+    <!--  <MY color>-->
+    <color name="app_bar_background">#0072BC</color>
+    <!--  <MY color>-->
 
 </resources>

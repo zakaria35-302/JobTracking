@@ -28,7 +28,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:hint="Set Supervisor"
                 android:textStyle="bold"
@@ -38,7 +37,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:hint="Prof. Aminul Islam"
                 android:textStyle="bold"
@@ -49,7 +47,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:hint="712929922"
                 android:id="@+id/textViewID"
@@ -57,7 +54,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:hint="Emeritus Professor"
                 android:id="@+id/textViewDesignation"
@@ -65,7 +61,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:hint="Department of Natural Science"
                 android:id="@+id/textViewDepartment"
@@ -73,7 +68,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:hint="Set Subordinate"
                 android:textStyle="bold"

@@ -1,5 +1,23 @@
 <resources>
 
+    <!--   <Available Task Attributes>-->
+    <string name="created_on">Created On</string>
+    <string name="deadline_date">Deadline</string>
+    <string name="progress">Progress</string>
+    <string name="priority">Priority</string>
+    <string name="status">Status</string>
+
+    <!--   <Available Task Attributes>-->
+
+
+    <!--   <Join Task>-->
+
+    <string name="join_task">Join Task</string>
+    <string name="description">Description</string>
+    <string name="department">Department</string>
+    <string name="message">Message</string>
+    <string name="join_task_button">Join Task</string>
+
     <string name="job_statistics"> <u>Job Statistics</u> </string>
 
     <!--String file for Task Management-->

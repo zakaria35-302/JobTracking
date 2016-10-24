@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bd.edu.httpdaffodilvarsity.jobtrack.JoinTask">
+
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:text="@string/join_task"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2" />
+
+            <TextView
+                android:hint="Access Control System"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_view_name"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/description"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2" />
+
+            <TextView
+                android:hint="Access Control System"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_view_institute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/department"
+                android:textSize="@dimen/list_item_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2" />
+
+            <TextView
+                android:hint="IT"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_profile_view_department"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/message"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2" />
+
+            <EditText
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:background="@color/grey"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/join_task_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+</LinearLayout>
+</LinearLayout>

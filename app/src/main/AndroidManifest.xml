@@ -55,32 +55,30 @@
         <activity android:name=".ui.login.SetPassword" />
         <activity android:name=".ui.login.EditEmployeeAccount" />
         <activity android:name=".ui.login.ProfileViewActivity" />
-
         <activity android:name=".ui.login.TaskManagement" />
         <activity android:name=".ui.login.CreateEmployeeTask" />
-        <activity android:name=".ui.login.HomeSettingTab"/>
+        <activity android:name=".ui.login.HomeSettingTab" />
         <activity android:name=".ui.login.Home_Admin_Tab" />
-        <activity android:name=".ui.login.HomeTaskManagement"/>
-        <activity android:name=".ui.login.SetDesignation"/>
+        <activity android:name=".ui.login.HomeTaskManagement" />
+        <activity android:name=".ui.login.SetDesignation" />
         <activity android:name=".ui.login.SetDepartment" />
         <activity android:name=".ui.login.JobMigration" />
         <activity android:name=".ui.login.HomeTabActivity" />
         <activity android:name=".ui.login.SuperiorSettingActivity" />
         <activity android:name=".ui.login.TaskMigration" />
         <activity android:name=".JobManagement.JobManagement" />
-        <activity android:name=".JobManagement.CreateEmployeeJob"></activity>
-
-
+        <activity android:name=".JobManagement.CreateEmployeeJob" />
         <activity android:name=".taskManagement.AvailableTaskList" />
         <activity android:name=".taskManagement.MostUsedTask" />
-        <activity android:name=".taskManagement.MostUsedTaskDetailsList"/>
-        <activity android:name=".taskManagement.JoinTask"/>
-        <activity android:name=".taskManagement.AvailableTaskAttributes"/>
+        <activity android:name=".taskManagement.MostUsedTaskDetailsList" />
+        <activity android:name=".taskManagement.JoinTask" />
+        <activity android:name=".taskManagement.AvailableTaskAttributes" />
 
-        <!--    <activity
+        <!--
+                <activity
                 android:label="@string/title_activity_navigation_drawer"
-                android:theme="@style/MyMaterialTheme"></activity>-->
-
+                android:theme="@style/MyMaterialTheme"></activity>
+        -->
 
         <activity
             android:name=".taskManagement.AvailableTaskDetails"
@@ -90,6 +88,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.login.LoginActivity" />
         </activity>
+        <activity
+            android:name=".drawer.MainDrawer"
+            android:label="@string/title_activity_main_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

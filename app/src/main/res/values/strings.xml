@@ -1,8 +1,6 @@
 <resources>
 
-
     <string name="job_statistics"> <u>Job Statistics</u> </string>
-
 
     <!--String file for Task Management-->
 
@@ -45,6 +43,7 @@
 
     <string name="advance_search">Advance Search</string>
     <string name="text_task_title">Task Title</string>
+    <string name="text_job_title">Job Title</string>
     <string name="text_task_owner">Task Owner</string>
     <string name="text_task_given_date">Given Date</string>
     <string name="text_task_est_date">EST. Date</string>
@@ -88,21 +87,30 @@
     <string name="hint_enter_office_phone">Enter Your Office Phone</string>
     <string name="hint_enter_task_title">Enter task Title</string>
     <string name="text_task_description">Description</string>
+    <string name="text_job_description">Job Description</string>
     <string name="hint_enter_task_description">Enter task Description</string>
+    <string name="hint_enter_job_description">Enter Job Description</string>
     <string name="hint_enter_task_deadline">Select Task Deadline</string>
     <string name="hint_enter_employee_designation">Please enter Designation</string>
     <string name="hint_enter_employee_new_designation">Please enter new Designation</string>
     <string name="text_task_date">Date</string>
     <string name="text_task_dead_line">Deadline</string>
     <string name="check_box_task_had_dead_line">This task has a dead line</string>
+    <string name="check_box_job_had_dead_line">This Job has a dead line</string>
     <string name="hint_enter_task_dead">Select Task Dead</string>
+    <string name="hint_enter_job_dead">Select Job Dead</string>
     <string name="text_task_Accesibility">Accesibility</string>
     <string name="hint_enter_task_Accesibility">Select Task Accesibility</string>
+    <string name="hint_enter_job_Accesibility">Select Job Accesibility</string>
     <string name="hint_enter_task_progress">Select Task Progress</string>
+    <string name="hint_enter_job_progress">Select Job Progress</string>
     <string name="hint_enter_task_priority">Select Task Priority</string>
+    <string name="hint_enter_job_priority">Select Job Priority</string>
     <string name="hint_enter_task_status">Select Task Status</string>
+    <string name="hint_enter_job_status">Select Job Status</string>
     <string name="hint_select_task_department">Select Task Department</string>
     <string name="hint_enter_task_department">Please Enter Task Department</string>
+    <string name="hint_enter_job_department">Please Enter Job Department</string>
     <string name="text_task_assign_to">Assign to</string>
     <string name="hint_enter_task_asign_to">Select Task Assign to</string>
     <string name="text_task_role">Role</string>
@@ -277,6 +285,12 @@
     <string-array name="employee_task_role">
         <item>In-Charge</item>
         <item>Member</item>
+    </string-array>
+
+    <string-array name="employee_job_title">
+        <item>Ecure</item>
+        <item>Student Portal</item>
+        <item>UNDP</item>
     </string-array>
 
 </resources>

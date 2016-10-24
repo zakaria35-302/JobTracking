@@ -7,7 +7,7 @@
     tools:context=".JobManagement.CreateEmployeeJob">
 
     <LinearLayout
-        android:id="@+id/linear_layout_create_employee_task_activity"
+        android:id="@+id/linear_layout_create_employee_job_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -37,25 +37,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/text_task_title"
+                android:text="@string/text_job_title"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/edit_text_task_title"
-                android:id="@+id/user_task_title_text_create" />
+                android:nextFocusDown="@+id/edit_text_job_title"
+                android:id="@+id/user_job_title_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_title_create"
+                android:id="@+id/til_job_title_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/lists_title_bottom_margin"
                 app:hintTextAppearance="@style/HintText">
 
                 <EditText
-                    android:id="@+id/edit_text_task_title_create"
+                    android:id="@+id/edit_text_job_title_create"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border"
-                    android:hint="@string/hint_enter_task_title"
-                    android:nextFocusDown="@+id/task_description_text"
+                    android:hint="@string/hint_enter_job_title"
+                    android:nextFocusDown="@+id/job_description_text"
                     android:padding="@dimen/edit_text_padding"
                     android:inputType="text"
                     android:textColor="@color/black"
@@ -68,24 +68,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/text_task_description"
+                android:text="@string/text_job_description"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/edit_text_task_description_create"
-                android:id="@+id/task_description_text_create" />
+                android:nextFocusDown="@+id/edit_text_job_description_create"
+                android:id="@+id/job_description_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_description_create"
+                android:id="@+id/til_job_description_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/lists_title_bottom_margin"
                 app:hintTextAppearance="@style/HintText">
 
                 <EditText
-                    android:id="@+id/edit_text_task_description_create"
+                    android:id="@+id/edit_text_job_description_create"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border"
-                    android:hint="@string/hint_enter_task_description"
+                    android:hint="@string/hint_enter_job_description"
                     android:inputType="textMultiLine"
                     android:ems="10"
                     android:gravity="left|top"
@@ -93,7 +93,7 @@
                     android:maxLines="6"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/black"
-                    android:nextFocusDown="@+id/task_deadline_text_create"
+                    android:nextFocusDown="@+id/job_deadline_text_create"
                     android:textColorHint="@color/dark_grey"
                     android:textSize="@dimen/login_buttons_text_size" />
             </android.support.design.widget.TextInputLayout>
@@ -119,11 +119,11 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_task_dead_line"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/checkBox_task_deadline_create"
-                android:id="@+id/task_deadline_text_create" />
+                android:nextFocusDown="@+id/checkBox_job_deadline_create"
+                android:id="@+id/job_deadline_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_deadline_create"
+                android:id="@+id/til_job_deadline_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintTextAppearance="@style/HintText"
@@ -132,11 +132,11 @@
                 <CheckBox
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/check_box_task_had_dead_line"
-                    android:id="@+id/checkBox_task_had_deadline_create"
+                    android:text="@string/check_box_job_had_dead_line"
+                    android:id="@+id/checkBox_job_had_deadline_create"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/black"
-                    android:nextFocusDown="@+id/task_date_tex_create"
+                    android:nextFocusDown="@+id/job_date_tex_create"
                     android:textColorHint="@color/dark_grey"
                     android:textSize="@dimen/login_buttons_text_size" />
             </android.support.design.widget.TextInputLayout>
@@ -147,8 +147,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_task_date"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/edit_text_task_dead_create"
-                android:id="@+id/task_date_tex_create" />
+                android:nextFocusDown="@+id/edit_text_job_dead_create"
+                android:id="@+id/job_date_tex_create" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -158,7 +158,7 @@
                 android:focusableInTouchMode="true" >
 
                 <android.support.design.widget.TextInputLayout
-                    android:id="@+id/til_task_date_create"
+                    android:id="@+id/til_job_date_create"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -166,15 +166,15 @@
                     android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
                     <EditText
-                        android:id="@+id/edit_text_task_dead_create"
+                        android:id="@+id/edit_text_job_dead_create"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/border"
-                        android:hint="@string/hint_enter_task_dead"
+                        android:hint="@string/hint_enter_job_dead"
                         android:inputType="date"
                         android:padding="@dimen/edit_text_padding"
                         android:textColor="@color/black"
-                        android:nextFocusDown="@+id/task_Accesibility_text_create"
+                        android:nextFocusDown="@+id/job_Accesibility_text_create"
                         android:textColorHint="@color/dark_grey"
                         android:textSize="@dimen/login_buttons_text_size" />
 
@@ -185,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@mipmap/calendar_green_icon"
-                    android:id="@+id/buttonTaskLastDateSelect"
+                    android:id="@+id/buttonjobLastDateSelect"
                     android:onClick="showDatePicDialog"/>
 
             </LinearLayout>
@@ -201,7 +201,7 @@
             android:layout_gravity="left"
             android:textStyle="bold"
             android:layout_margin="5dp"
-            android:nextFocusDown="@+id/spinner_task_Accesibility_create"/>
+            android:nextFocusDown="@+id/spinner_job_Accesibility_create"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -219,11 +219,11 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_task_Accesibility"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/spinner_task_Accesibility_create"
-                android:id="@+id/task_Accesibility_text_create" />
+                android:nextFocusDown="@+id/spinner_job_Accesibility_create"
+                android:id="@+id/job_Accesibility_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_Accesibility_create"
+                android:id="@+id/til_job_Accesibility_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintTextAppearance="@style/HintText"
@@ -232,13 +232,13 @@
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner_task_Accesibility_create"
+                    android:id="@+id/spinner_job_Accesibility_create"
                     android:background="@drawable/border"
-                    android:hint="@string/hint_enter_task_Accesibility"
+                    android:hint="@string/hint_enter_job_Accesibility"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/black"
                     android:textColorHint="@color/dark_grey"
-                    android:nextFocusDown="@+id/task_progress_text_create"
+                    android:nextFocusDown="@+id/job_progress_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
 
@@ -250,11 +250,11 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_task_progress"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/spinner_task_progress_create"
-                android:id="@+id/task_progress_text_create" />
+                android:nextFocusDown="@+id/spinner_job_progress_create"
+                android:id="@+id/job_progress_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_progress_create"
+                android:id="@+id/til_job_progress_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintTextAppearance="@style/HintText"
@@ -263,13 +263,13 @@
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner_task_progress_create"
+                    android:id="@+id/spinner_job_progress_create"
                     android:background="@drawable/border"
-                    android:hint="@string/hint_enter_task_progress"
+                    android:hint="@string/hint_enter_job_progress"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/black"
                     android:textColorHint="@color/dark_grey"
-                    android:nextFocusDown="@+id/task_priority_text_create"
+                    android:nextFocusDown="@+id/job_priority_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
             </android.support.design.widget.TextInputLayout>
@@ -280,12 +280,12 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_task_priority"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/spinner_task_priority_create"
-                android:id="@+id/task_priority_text_create" />
+                android:nextFocusDown="@+id/spinner_job_priority_create"
+                android:id="@+id/job_priority_text_create" />
 
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_priority_create"
+                android:id="@+id/til_job_priority_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintTextAppearance="@style/HintText"
@@ -294,13 +294,13 @@
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner_task_priority_create"
+                    android:id="@+id/spinner_job_priority_create"
                     android:background="@drawable/border"
-                    android:hint="@string/hint_enter_task_priority"
+                    android:hint="@string/hint_enter_job_priority"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/black"
                     android:textColorHint="@color/dark_grey"
-                    android:nextFocusDown="@+id/task_status_text_create"
+                    android:nextFocusDown="@+id/job_status_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
             </android.support.design.widget.TextInputLayout>
@@ -311,11 +311,11 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_task_status"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/spinner_task_status_create"
-                android:id="@+id/task_status_text_create" />
+                android:nextFocusDown="@+id/spinner_job_status_create"
+                android:id="@+id/job_status_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_status_create"
+                android:id="@+id/til_job_status_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintTextAppearance="@style/HintText"
@@ -324,13 +324,13 @@
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner_task_status_create"
+                    android:id="@+id/spinner_job_status_create"
                     android:background="@drawable/border"
-                    android:hint="@string/hint_enter_task_status"
+                    android:hint="@string/hint_enter_job_status"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/black"
                     android:textColorHint="@color/dark_grey"
-                    android:nextFocusDown="@+id/task_department_text_create"
+                    android:nextFocusDown="@+id/job_department_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
             </android.support.design.widget.TextInputLayout>
@@ -341,11 +341,11 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_employee_department"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/spinner_task_department_create"
-                android:id="@+id/task_department_text_create" />
+                android:nextFocusDown="@+id/spinner_job_department_create"
+                android:id="@+id/job_department_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_department_create"
+                android:id="@+id/til_job_department_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintTextAppearance="@style/HintText"
@@ -354,13 +354,13 @@
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner_task_department_create"
+                    android:id="@+id/spinner_job_department_create"
                     android:background="@drawable/border"
-                    android:hint="@string/hint_enter_task_department"
+                    android:hint="@string/hint_enter_job_department"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/black"
                     android:textColorHint="@color/dark_grey"
-                    android:nextFocusDown="@+id/task_asign_to_text_create"
+                    android:nextFocusDown="@+id/job_asign_to_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
             </android.support.design.widget.TextInputLayout>
@@ -376,7 +376,7 @@
             android:layout_gravity="left"
             android:textStyle="bold"
             android:layout_margin="5dp"
-            android:nextFocusDown="@+id/spinner_task_Accesibility_create"/>
+            android:nextFocusDown="@+id/spinner_job_Accesibility_create"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -394,18 +394,18 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_task_assign_to"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/spinner_task_asign_to_create"
-                android:id="@+id/task_asign_to_text_create" />
+                android:nextFocusDown="@+id/spinner_job_asign_to_create"
+                android:id="@+id/job_asign_to_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_asign_to_create"
+                android:id="@+id/til_job_asign_to_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintTextAppearance="@style/HintText"
                 android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
                 <EditText
-                    android:id="@+id/spinner_task_asign_to_create"
+                    android:id="@+id/spinner_job_asign_to_create"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border"
@@ -413,7 +413,7 @@
                     android:inputType="textAutoComplete"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/black"
-                    android:nextFocusDown="@+id/task_role_text_create"
+                    android:nextFocusDown="@+id/job_role_text_create"
                     android:textColorHint="@color/dark_grey"
                     android:textSize="@dimen/login_buttons_text_size" />
 
@@ -425,11 +425,11 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/text_task_role"
                 android:textColor="@color/primary"
-                android:nextFocusDown="@+id/spinner_task_role_create"
-                android:id="@+id/task_role_text_create" />
+                android:nextFocusDown="@+id/spinner_job_role_create"
+                android:id="@+id/job_role_text_create" />
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/til_task_role_create"
+                android:id="@+id/til_job_role_create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintTextAppearance="@style/HintText"
@@ -438,7 +438,7 @@
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner_task_role_create"
+                    android:id="@+id/spinner_job_role_create"
                     android:background="@drawable/border"
                     android:hint="@string/hint_enter_task_role"
                     android:padding="@dimen/edit_text_padding"
@@ -462,11 +462,11 @@
                     android:paddingRight="@dimen/activity_horizontal_margin">
 
                     <Button
-                        android:id="@+id/btn_task_add_to_list"
+                        android:id="@+id/btn_job_add_to_list"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/input_field_height"
                         android:background="@color/primary"
-                        android:onClick="taskAddToList"
+                        android:onClick="jobAddToList"
                         android:text="@string/task_activity_add_to_list"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/login_buttons_text_size"
@@ -481,11 +481,11 @@
                     android:paddingRight="@dimen/activity_horizontal_margin">
 
                     <Button
-                        android:id="@+id/btn_task_remove_from_list"
+                        android:id="@+id/btn_job_remove_from_list"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/input_field_height"
                         android:background="@color/primary"
-                        android:onClick="taskRemoveFromList"
+                        android:onClick="jobkRemoveFromList"
                         android:text="@string/task_activity_remove_from_list"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/login_buttons_text_size"
@@ -516,11 +516,11 @@
                 android:paddingRight="@dimen/activity_horizontal_margin">
 
                 <Button
-                    android:id="@+id/btn_task_save"
+                    android:id="@+id/btn_job_save"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/input_field_height"
                     android:background="@color/primary"
-                    android:onClick="taskSave"
+                    android:onClick="jobSave"
                     android:text="@string/save"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/login_buttons_text_size" />
@@ -535,11 +535,11 @@
                 android:paddingRight="@dimen/activity_horizontal_margin">
 
                 <Button
-                    android:id="@+id/btn_task_back"
+                    android:id="@+id/btn_job_back"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/input_field_height"
                     android:background="@color/primary"
-                    android:onClick="taskBack"
+                    android:onClick="jobBack"
                     android:text="@string/back"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/login_buttons_text_size"/>

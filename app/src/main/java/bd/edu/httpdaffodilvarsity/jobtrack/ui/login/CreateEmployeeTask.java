@@ -26,9 +26,10 @@ public class CreateEmployeeTask extends AppCompatActivity {
     int year_x,month_x,day_x;
 
     Spinner spinnerEmployeeTaskAccessibility, spinnerEmployeeTaskProgress, spinnerEmployeeTaskPriority,
-            spinnerEmployeeTaskStatus, spinnerEmployeeTaskDepartment, getSpinnerEmployeeTaskRole ;
+            spinnerEmployeeTaskStatus, spinnerEmployeeTaskDepartment, getSpinnerEmployeeTaskRole,
+            spinnerEmployeeJobSelect;
     ArrayAdapter<CharSequence> empTaskAccessibilityAdapter, empTaskProgressAdapter, empTaskPriorityAdapter,
-            empTaskStatusAdapter, empTaskDepartmentAdapter, empTaskRoleAdapter;
+            empTaskStatusAdapter, empTaskDepartmentAdapter, empTaskRoleAdapter, empJobSelectAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,14 @@ public class CreateEmployeeTask extends AppCompatActivity {
         month = calendar.get(Calendar.MONTH);
         day = calendar.get(Calendar.DAY_OF_MONTH);*/
         showDate(year_x, month_x+1, day_x);
+
+        spinnerEmployeeJobSelect = (Spinner) findViewById(R.id.spinner_job_select_task_create);
+        empJobSelectAdapter = ArrayAdapter.createFromResource(this,
+                R.array.employee_job_title, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        empJobSelectAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinnerEmployeeJobSelect.setAdapter(empJobSelectAdapter);
 
         spinnerEmployeeTaskAccessibility = (Spinner) findViewById(R.id.spinner_task_Accesibility_create);
         empTaskAccessibilityAdapter = ArrayAdapter.createFromResource(this,

@@ -20,15 +20,15 @@ import bd.edu.httpdaffodilvarsity.jobtrack.ui.login.TaskManagement;
 public class CreateEmployeeJob extends AppCompatActivity {
 
 
-    EditText editTextTaskDeadCreate;
+    EditText editTextJobDeadCreate;
 
     //Button btn;
     int year_x,month_x,day_x;
 
-    Spinner spinnerEmployeeTaskAccessibility, spinnerEmployeeTaskProgress, spinnerEmployeeTaskPriority,
-            spinnerEmployeeTaskStatus, spinnerEmployeeTaskDepartment, getSpinnerEmployeeTaskRole ;
-    ArrayAdapter<CharSequence> empTaskAccessibilityAdapter, empTaskProgressAdapter, empTaskPriorityAdapter,
-            empTaskStatusAdapter, empTaskDepartmentAdapter, empTaskRoleAdapter;
+    Spinner spinnerEmployeeJobAccessibility, spinnerEmployeeJobProgress, spinnerEmployeeJobPriority,
+            spinnerEmployeeJobStatus, spinnerEmployeejobDepartment, getSpinnerEmployeeJobRole ;
+    ArrayAdapter<CharSequence> empJobAccessibilityAdapter, empJobProgressAdapter, empJobPriorityAdapter,
+            empJobStatusAdapter, empJobDepartmentAdapter, empJobRoleAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class CreateEmployeeJob extends AppCompatActivity {
         setContentView(R.layout.activity_create_employee_job);
 
 
-        editTextTaskDeadCreate = (EditText) findViewById(R.id.edit_text_task_dead_create);
+        editTextJobDeadCreate = (EditText) findViewById(R.id.edit_text_job_dead_create);
         final Calendar cal = Calendar.getInstance();
         year_x = cal.get(Calendar.YEAR);
         month_x = cal.get(Calendar.MONTH);
@@ -49,48 +49,48 @@ public class CreateEmployeeJob extends AppCompatActivity {
         day = calendar.get(Calendar.DAY_OF_MONTH);*/
         showDate(year_x, month_x+1, day_x);
 
-        spinnerEmployeeTaskAccessibility = (Spinner) findViewById(R.id.spinner_task_Accesibility_create);
-        empTaskAccessibilityAdapter = ArrayAdapter.createFromResource(this,
+        spinnerEmployeeJobAccessibility = (Spinner) findViewById(R.id.spinner_job_Accesibility_create);
+        empJobAccessibilityAdapter = ArrayAdapter.createFromResource(this,
                 R.array.employee_task_accessability, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        empTaskAccessibilityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        empJobAccessibilityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinnerEmployeeTaskAccessibility.setAdapter(empTaskAccessibilityAdapter);
+        spinnerEmployeeJobAccessibility.setAdapter(empJobAccessibilityAdapter);
 
-        spinnerEmployeeTaskProgress = (Spinner) findViewById(R.id.spinner_task_progress_create);
-        empTaskProgressAdapter = ArrayAdapter.createFromResource(this, R.array.employee_task_progress,
+        spinnerEmployeeJobProgress = (Spinner) findViewById(R.id.spinner_job_progress_create);
+        empJobProgressAdapter = ArrayAdapter.createFromResource(this, R.array.employee_task_progress,
                 android.R.layout.simple_spinner_item);
-        empTaskProgressAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerEmployeeTaskProgress.setAdapter(empTaskProgressAdapter);
+        empJobProgressAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerEmployeeJobProgress.setAdapter(empJobProgressAdapter);
 
-        spinnerEmployeeTaskPriority = (Spinner) findViewById(R.id.spinner_task_priority_create);
-        empTaskPriorityAdapter = ArrayAdapter.createFromResource(this, R.array.employee_task_priority,
+        spinnerEmployeeJobPriority = (Spinner) findViewById(R.id.spinner_job_priority_create);
+        empJobPriorityAdapter = ArrayAdapter.createFromResource(this, R.array.employee_task_priority,
                 android.R.layout.simple_spinner_item);
-        empTaskPriorityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerEmployeeTaskPriority.setAdapter(empTaskPriorityAdapter);
+        empJobPriorityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerEmployeeJobPriority.setAdapter(empJobPriorityAdapter);
 
-        spinnerEmployeeTaskStatus = (Spinner) findViewById(R.id.spinner_task_status_create);
-        empTaskStatusAdapter = ArrayAdapter.createFromResource(this, R.array.employee_task_status,
+        spinnerEmployeeJobStatus = (Spinner) findViewById(R.id.spinner_job_status_create);
+        empJobStatusAdapter = ArrayAdapter.createFromResource(this, R.array.employee_task_status,
                 android.R.layout.simple_spinner_item);
-        empTaskStatusAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerEmployeeTaskStatus.setAdapter(empTaskStatusAdapter);
+        empJobStatusAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerEmployeeJobStatus.setAdapter(empJobStatusAdapter);
 
-        spinnerEmployeeTaskDepartment = (Spinner) findViewById(R.id.spinner_task_department_create);
-        empTaskDepartmentAdapter = ArrayAdapter.createFromResource(this, R.array.employee_department,
+        spinnerEmployeejobDepartment = (Spinner) findViewById(R.id.spinner_job_department_create);
+        empJobDepartmentAdapter = ArrayAdapter.createFromResource(this, R.array.employee_department,
                 android.R.layout.simple_spinner_item);
-        empTaskDepartmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerEmployeeTaskDepartment.setAdapter(empTaskDepartmentAdapter);
+        empJobDepartmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerEmployeejobDepartment.setAdapter(empJobDepartmentAdapter);
 
-        getSpinnerEmployeeTaskRole = (Spinner) findViewById(R.id.spinner_task_role_create);
-        empTaskRoleAdapter = ArrayAdapter.createFromResource(this, R.array.employee_task_role,
+        getSpinnerEmployeeJobRole = (Spinner) findViewById(R.id.spinner_job_role_create);
+        empJobRoleAdapter = ArrayAdapter.createFromResource(this, R.array.employee_task_role,
                 android.R.layout.simple_spinner_item);
-        empTaskRoleAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        getSpinnerEmployeeTaskRole.setAdapter(empTaskRoleAdapter);
+        empJobRoleAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        getSpinnerEmployeeJobRole.setAdapter(empJobRoleAdapter);
 
     }
 
     private void showDate(int year, int month, int day) {
-        editTextTaskDeadCreate.setText(new StringBuilder().append(day).append("/")
+        editTextJobDeadCreate.setText(new StringBuilder().append(day).append("/")
                 .append(month).append("/").append(year));
     }
 
@@ -144,7 +144,7 @@ public class CreateEmployeeJob extends AppCompatActivity {
             // Do something with the date chosen by the user
         }
     }
-    public void taskBack(View view){
+    public void jobBack(View view){
         Intent taskBack = new Intent(CreateEmployeeJob.this, TaskManagement.class);
         startActivity(taskBack);
     }

@@ -13,6 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import bd.edu.httpdaffodilvarsity.jobtrack.R;
+
 public class MainDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

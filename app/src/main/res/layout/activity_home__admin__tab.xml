@@ -20,7 +20,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/set_superior"
             android:onClick="setEmployeeSuperior"
-            android:padding="@dimen/btn_shopping_height"
+            android:padding="@dimen/edit_text_padding"
             android:id="@+id/textViewAdminSetSuparior" />
 
         <TextView
@@ -29,7 +29,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/set_department"
             android:onClick="setEmployeeDepartment"
-            android:padding="@dimen/btn_shopping_height"
+            android:padding="@dimen/edit_text_padding"
             android:id="@+id/textViewAdminSetDepartment" />
 
         <TextView
@@ -38,7 +38,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/set_designation"
             android:onClick="setEmployeeDesignation"
-            android:padding="@dimen/btn_shopping_height"
+            android:padding="@dimen/edit_text_padding"
             android:id="@+id/textViewAdminSetDesignation" />
 
         <TextView
@@ -47,7 +47,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/job_migration"
             android:onClick="migrateEmployeeJob"
-            android:padding="@dimen/btn_shopping_height"
+            android:padding="@dimen/edit_text_padding"
             android:id="@+id/textViewAdminJobMigration" />
 
         <TextView
@@ -56,7 +56,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/task_migration"
             android:onClick="migrateEmployeeTask"
-            android:padding="@dimen/btn_shopping_height"
+            android:padding="@dimen/edit_text_padding"
             android:id="@+id/textViewAdminTaskMigration" />
     </LinearLayout>
 </RelativeLayout>

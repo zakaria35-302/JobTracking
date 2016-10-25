@@ -44,6 +44,11 @@ public class JobManagement extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_job_management);
 
+        list_employee_job = (ListView) findViewById(R.id.listEmployeeJob);
+
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, EMPLOYEE_Job_TITTLE);
+        list_employee_job.setAdapter(adapter);
+
         buttonCreateJob = (FloatingActionButton) findViewById(R.id.fabJob);
         buttonCreateJob.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,15 +66,15 @@ public class JobManagement extends Activity {
         textViewJobStatus = (TextView) findViewById(R.id.text_view_job_status);
         textViewJobProgress = (TextView) findViewById(R.id.text_view_job_progress);
         textViewJobPriority = (TextView) findViewById(R.id.text_view_job_priority);
-        listView();
+        //listView();
     }
 
-    public void showJobManagementActivity(View View){
+    /*public void showJobManagementActivity(View View){
         Intent intent = new Intent(JobManagement.this, CreateEmployeeJob.class);
         startActivity(intent);
-    }
+    }*/
 
-    public void listView(){
+   /* public void listView(){
         list_employee_job = (ListView) findViewById(R.id.listEmployeeJob);
         adapter_employee_Job_tittle = new ArrayAdapter<String>(this,R.layout.job_list_employee,
                 R.id.text_view_job_title, EMPLOYEE_Job_TITTLE);
@@ -108,16 +113,16 @@ public class JobManagement extends Activity {
         list_employee_job = (ListView) findViewById(R.id.listEmployeeJob);
         adapter_employee_Job_priority = new ArrayAdapter<String>(this,R.layout.job_list_employee,
                 R.id.text_view_job_priority, EMPLOYEE_Job_PRIORITY);
-        list_employee_job.setAdapter(adapter_employee_Job_priority);
+        list_employee_job.setAdapter(adapter_employee_Job_priority);*/
         //listAdapter = new ArrayAdapter<Job>(this, R.layout.list_item, R.id.TEXT_VIEW_ID, items)
 
-        list_employee_job.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*list_employee_job.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String value = (String) list_employee_job.getItemAtPosition(position);
                 Toast.makeText(JobManagement.this, "Position : " + position + " Values : " + value, Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
-    }
+   // }
 }

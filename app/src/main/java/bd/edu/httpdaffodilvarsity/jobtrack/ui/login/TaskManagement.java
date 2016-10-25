@@ -118,13 +118,13 @@ public class TaskManagement extends Activity {
         list_employee_task.setAdapter(adapter_employee_task_priority);
         //listAdapter = new ArrayAdapter<Task>(this, R.layout.list_item, R.id.TEXT_VIEW_ID, items)
 
-        list_employee_task.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*list_employee_task.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String value = (String) list_employee_task.getItemAtPosition(position);
                 Toast.makeText(TaskManagement.this, "Position : " + position + " Values : " + value, Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
     }
 

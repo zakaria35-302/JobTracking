@@ -1,4 +1,4 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,18 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="20dp">
+        android:elevation="8dp"
+        android:layout_marginBottom="@dimen/activity_bottom_margin">
 
         <ImageView
             android:layout_width="140dp"
-            android:layout_height="160dp"
+            android:layout_height="140dp"
             android:src="@drawable/avatar"
             android:id="@+id/seperiorImage"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="@dimen/edit_text_padding">
+            android:layout_margin="@dimen/list_item_text_size">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -41,7 +43,7 @@
                 android:hint="Prof. Aminul Islam"
                 android:textStyle="bold"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/textViewName"
+                android:id="@+id/textViewSuperiorName"
                 android:allowUndo="false" />
 
             <TextView
@@ -49,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:hint="712929922"
-                android:id="@+id/textViewID"
+                android:id="@+id/textViewSuperiorID"
                 android:textSize="@dimen/list_item_text_size" />
             <TextView
                 android:layout_width="wrap_content"
@@ -81,4 +83,4 @@
 
     </LinearLayout>
 
-</ScrollView>
+</RelativeLayout>

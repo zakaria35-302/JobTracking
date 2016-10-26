@@ -34,7 +34,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:text="@string/text_employee_name"
                 android:layout_margin="@dimen/edit_text_padding"
@@ -43,7 +42,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:text="Profile View"
                 android:layout_margin="@dimen/edit_text_padding"
@@ -52,21 +50,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Udacity.Button.Login"
                 android:textColor="@android:color/black"
                 android:text="Change Password"
                 android:layout_margin="@dimen/edit_text_padding"
                 android:textSize="@dimen/list_item_text_size" />
 
 
-
         </LinearLayout>
 
 
-
-
         </LinearLayout>
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -96,7 +89,7 @@
         <TextView
             android:hint="357"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_profile_ranking"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -126,7 +119,7 @@
             android:hint="35"
             android:textStyle="bold"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_own_task_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -154,7 +147,7 @@
         <TextView
             android:hint="35"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_completed_task_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -182,7 +175,7 @@
         <TextView
             android:hint="00"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_incompleted_task_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -210,7 +203,7 @@
         <TextView
             android:hint="35"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_ever_ending_task_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -239,7 +232,7 @@
             android:hint="35"
             android:textStyle="bold"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_total_task_activity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -268,7 +261,7 @@
         <TextView
             android:hint="10"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_own_activity_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -284,7 +277,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:text="Total Parcipator "
+            android:text="Total Participator "
             android:textStyle="normal"
             android:textSize="@dimen/list_item_text_size"
             android:textColor="@android:color/black"
@@ -296,7 +289,7 @@
         <TextView
             android:hint="2"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_activity_total_participator_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -325,7 +318,7 @@
         <TextView
             android:hint="3"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_activity_involvement_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
@@ -354,7 +347,7 @@
             android:hint="2"
             android:textStyle="bold"
             android:textSize="@dimen/list_item_text_size"
-            android:id="@+id/text_profile_ranking"
+            android:id="@+id/text_employee_activity_regular_job_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"

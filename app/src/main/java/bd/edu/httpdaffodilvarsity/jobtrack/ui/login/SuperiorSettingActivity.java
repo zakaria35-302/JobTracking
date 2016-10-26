@@ -15,12 +15,52 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.MainActivity;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 import bd.edu.httpdaffodilvarsity.jobtrack.model.EmployeeList;
+import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorAdapter;
+import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorClass;
 
 public class SuperiorSettingActivity extends AppCompatActivity {
+
+    public ArrayList<HashMap<String, String>> list;
+
+    int[] image_resource = {R.drawable.avatar, R.drawable.apple_ex, R.drawable.igfdq,R.drawable.img1, R.drawable.mario};
+    String[] superior_name = {"Set Superior", "Set Superior", "Set Superior","Set Superior", "Set Superior"};
+    String[] superior_set = {"Sabur Khan", "Imran Hossain", "Sabbir Rahman","Mahbub al islam", "Akter Hossain"};
+    String[] superior_id = {"6564458", "5654987", "7888254","5455555", "4785545"};
+    String[] superior_department = {"it", "swe", "English","cse", "EEE"};
+    String[] superior_designation = {"Director", "Deputy", "Senior Assistant","Assistant", "Officer"};
+    String[] set_subordinate = {"Set Subordinator", "Set Subordinator", "Set Subordinator","Set Subordinator", "Set Subordinator"};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_superior_setting);
+
+        ListView list_view = (ListView) findViewById(R.id.listViewSeperiorSetting);
+        SuperiorAdapter adapter = new SuperiorAdapter(getApplicationContext(),R.layout.row_superior_setting_view);
+
+        int i = 0;
+        for (String Name : superior_name){
+            SuperiorClass obj  = new SuperiorClass(image_resource[i],superior_name[i], superior_set[i],
+                    superior_id[i],superior_department[i],superior_designation[i],set_subordinate[i]);
+            adapter.add(obj);
+            i++;
+        }
+
+        // populateList();
+
+        //ListViewAdapter adapter = new ListViewAdapter(this,list);
+        list_view.setAdapter(adapter);
+
+    }
+
+
+
+/*extends AppCompatActivity {
 
     private static ListView list_view_superior_setting;
 
@@ -33,8 +73,8 @@ public class SuperiorSettingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_superior_setting);
 
-        /*RecipeAdapter adapter = new RecipeAdapter(this, recipeList);
-        list_view_superior_setting.setAdapter(adapter);*/
+        *//*RecipeAdapter adapter = new RecipeAdapter(this, recipeList);
+        list_view_superior_setting.setAdapter(adapter);*//*
 
         list_view_superior_setting = (ListView) findViewById(R.id.listViewSeperiorSetting);
 // 1
@@ -42,34 +82,45 @@ public class SuperiorSettingActivity extends AppCompatActivity {
 // 2
        // String[] listItems = new String[employeeList.size()];
 // 3
-       /* for(int i = 0; i < employeeList.size(); i++){
+       *//* for(int i = 0; i < employeeList.size(); i++){
             EmployeeList employee = employeeList.get(i);
             listItems[i] = employee.name;
-        }*/
+        }*//*
 // 4
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, NAMES);
+        //list_view = (ListView) findViewById(R.id.listView);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.row_superior_setting_view);
         list_view_superior_setting.setAdapter(adapter);
+        list_view_superior_setting.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String value = (String) list_view_superior_setting.getItemAtPosition(position);
+                Toast.makeText(SuperiorSettingActivity.this, "Position : " + position + " Values : " + value, Toast.LENGTH_LONG).show();
+            }
+        });
+
+        *//*ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, NAMES);
+        list_view_superior_setting.setAdapter(adapter);*//*
 
 
         //listView();
 
     }
 
-    /*public void listView(){
+    *//*public void listView(){
         list_view_superior_setting = (ListView) findViewById(R.id.listViewSeperiorSetting);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.row_superior_setting_view);
-        list_view_superior_setting.setAdapter(adapter);;*/
-        /*list_view_superior_setting.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        list_view_superior_setting.setAdapter(adapter);;*//*
+        *//*list_view_superior_setting.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String value = (String) list_view_superior_setting.getItemAtPosition(position);
                 Toast.makeText(SuperiorSettingActivity.this, "Position : " + position + " Values : " + value, Toast.LENGTH_LONG).show();
             }
-        });*/
+        });*//*
 
    // }
 
-    /*public class EmployeeSuperiorAdapter extends ArrayAdapter<EmployeeList> {
+    *//*public class EmployeeSuperiorAdapter extends ArrayAdapter<EmployeeList> {
         public EmployeeSuperiorAdapter(Context context, ArrayList<EmployeeList> emplistSuperior) {
             super(context, 0, emplistSuperior);
         }
@@ -91,9 +142,9 @@ public class SuperiorSettingActivity extends AppCompatActivity {
             // Return the completed view to render on screen
             return convertView;
         }
-    }*/
+    }*//*
 
-    /*public class EmployeeAdapter extends BaseAdapter {
+    *//*public class EmployeeAdapter extends BaseAdapter {
 
 
         private Context mContext;

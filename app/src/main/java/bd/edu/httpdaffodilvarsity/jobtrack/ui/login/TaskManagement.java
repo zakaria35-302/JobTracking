@@ -11,11 +11,73 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
+import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorAdapter;
+import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorClass;
+import bd.edu.httpdaffodilvarsity.jobtrack.taskManagement.TaskManagementAdapter;
+import bd.edu.httpdaffodilvarsity.jobtrack.taskManagement.TaskManagementClass;
 
 public class TaskManagement extends Activity {
 
-    FloatingActionButton buttonCreateTask;
+    public ArrayList<HashMap<String, String>> list;
+
+    private static String[] EMPLOYEE_TASK_TITTLE = new String[]{"eCure Android Apps","Job Tracking System in Android " +
+            "Platform", "Hospital Management", "Student Portal","School Management system","Attendance System"};
+    private static String[] EMPLOYEE_TASK_OWNER = new String[]{"Mahmud Hasan","Abdul Gaffar", "Abu Jafar", "Akas Khan",
+            "Anabil karim","Abul Rashed", "Limin Islam"};
+    private static String[] EMPLOYEE_TASK_DEPARTMENT = new String[]{"IT","Software", "Computer science",
+            "Software Engieering","EEE","IS", "Islamic Studies"};
+    private static String[] EMPLOYEE_TASK_GIVEN_DATE = new String[]{"10/10/2015","10/10/2015", "10/10/2015",
+            "10/10/2015","10/10/2015","10/10/2015", "10/10/2015"};
+    private static String[] EMPLOYEE_TASK_EST_DATE = new String[]{"10/10/2016","10/10/2016", "10/10/2016",
+            "10/10/2016","10/10/2016","10/10/2016", "10/10/2016"};
+    private static String[] EMPLOYEE_TASK_STATUS = new String[]{"Ongoing","Ongoing", "Completed", "Ongoing","Ongoing",
+            "Ongoing", "Ongoing"};
+    private static String[] EMPLOYEE_TASK_PROGRESS = new String[]{"50","10", "58", "2","30","80", "47"};
+    private static String[] EMPLOYEE_TASK_PRIORITY = new String[]{"High","Very High", "Very High", "Very High","High",
+            "Very High", "High"};
+
+    /*int[] image_resource = {R.drawable.avatar, R.drawable.apple_ex, R.drawable.igfdq,R.drawable.img1, R.drawable.mario};
+    String[] superior_name = {"Set Superior", "Set Superior", "Set Superior","Set Superior", "Set Superior"};
+    String[] superior_set = {"Sabur Khan", "Imran Hossain", "Sabbir Rahman","Mahbub al islam", "Akter Hossain"};
+    String[] superior_id = {"6564458", "5654987", "7888254","5455555", "4785545"};
+    String[] superior_department = {"it", "swe", "English","cse", "EEE"};
+    String[] superior_designation = {"Director", "Deputy", "Senior Assistant","Assistant", "Officer"};
+    String[] set_subordinate = {"Set Subordinator", "Set Subordinator", "Set Subordinator","Set Subordinator", "Set Subordinator"};*/
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_task_management);
+
+        ListView list_view_task_management = (ListView) findViewById(R.id.listEmployeeTask);
+        TaskManagementAdapter adapter = new TaskManagementAdapter(getApplicationContext(),R.layout.task_list_employee);
+
+        int i = 0;
+        for (String EMPLOYEETASKTITTILE : EMPLOYEE_TASK_TITTLE){
+
+            /*ArrayAdapter<String> adapter_employee_task_tittle,adapter_employee_task_owner,adapter_employee_task_department,
+                    adapter_employee_task_given_date,adapter_employee_task_est_date,adapter_employee_task_status,adapter_employee_task_priority;
+            ArrayAdapter<Integer>adapter_employee_task_progress;*/
+
+            TaskManagementClass obj  = new TaskManagementClass(EMPLOYEE_TASK_TITTLE[i],EMPLOYEE_TASK_OWNER[i],
+                    EMPLOYEE_TASK_DEPARTMENT[i], EMPLOYEE_TASK_GIVEN_DATE[i],EMPLOYEE_TASK_EST_DATE[i],
+                    EMPLOYEE_TASK_STATUS[i],EMPLOYEE_TASK_PROGRESS[i],EMPLOYEE_TASK_PRIORITY[i]);
+            adapter.add(obj);
+            i++;
+        }
+
+        // populateList();
+
+        //ListViewAdapter adapter = new ListViewAdapter(this,list);
+        list_view_task_management.setAdapter(adapter);
+
+    }
+
+    /*FloatingActionButton buttonCreateTask;
     private static ListView list_employee_task;
     TextView textViewTaskTitle,textViewTaskOwner, textViewTaskDepartment, textViewTaskGivenDate, textViewTaskEstDate,
             textViewTaskStatus, textViewTaskProgress, textViewTaskPriority;
@@ -60,7 +122,7 @@ public class TaskManagement extends Activity {
             }
         });
         textViewTaskTitle = (TextView) findViewById(R.id.text_view_task_title);
-       /* textViewTaskTitle.setText("Title : ");*/
+       *//* textViewTaskTitle.setText("Title : ");*//*
 
         textViewTaskOwner = (TextView) findViewById(R.id.text_view_task_owner);
         textViewTaskDepartment = (TextView) findViewById(R.id.text_view_task_department);
@@ -118,14 +180,14 @@ public class TaskManagement extends Activity {
         list_employee_task.setAdapter(adapter_employee_task_priority);
         //listAdapter = new ArrayAdapter<Task>(this, R.layout.list_item, R.id.TEXT_VIEW_ID, items)
 
-        /*list_employee_task.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        *//*list_employee_task.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String value = (String) list_employee_task.getItemAtPosition(position);
                 Toast.makeText(TaskManagement.this, "Position : " + position + " Values : " + value, Toast.LENGTH_SHORT).show();
             }
-        });*/
+        });*//*
 
-    }
+    }*/
 
 }

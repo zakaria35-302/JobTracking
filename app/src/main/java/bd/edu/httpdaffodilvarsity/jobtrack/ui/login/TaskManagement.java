@@ -1,22 +1,13 @@
 package bd.edu.httpdaffodilvarsity.jobtrack.ui.login;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
-import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorAdapter;
-import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorClass;
 import bd.edu.httpdaffodilvarsity.jobtrack.taskManagement.TaskManagementAdapter;
 import bd.edu.httpdaffodilvarsity.jobtrack.taskManagement.TaskManagementClass;
 
@@ -54,7 +45,7 @@ public class TaskManagement extends Activity {
         setContentView(R.layout.activity_task_management);
 
         ListView list_view_task_management = (ListView) findViewById(R.id.listEmployeeTask);
-        TaskManagementAdapter adapter = new TaskManagementAdapter(getApplicationContext(),R.layout.task_list_employee);
+        TaskManagementAdapter adapter = new TaskManagementAdapter(getApplicationContext(),R.layout.row_employee_task_list);
 
         int i = 0;
         for (String EMPLOYEETASKTITTILE : EMPLOYEE_TASK_TITTLE){
@@ -140,42 +131,42 @@ public class TaskManagement extends Activity {
     }
     public void listView(){
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_tittle = new ArrayAdapter<String>(this,R.layout.task_list_employee,
+        adapter_employee_task_tittle = new ArrayAdapter<String>(this,R.layout.row_employee_task_list,
                 R.id.text_view_task_title, EMPLOYEE_TASK_TITTLE);
         list_employee_task.setAdapter(adapter_employee_task_tittle);
 
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_owner = new ArrayAdapter<String>(this,R.layout.task_list_employee,
+        adapter_employee_task_owner = new ArrayAdapter<String>(this,R.layout.row_employee_task_list,
                 R.id.text_view_task_owner, EMPLOYEE_TASK_OWNER);
         list_employee_task.setAdapter(adapter_employee_task_owner);
 
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_department = new ArrayAdapter<String>(this,R.layout.task_list_employee,
+        adapter_employee_task_department = new ArrayAdapter<String>(this,R.layout.row_employee_task_list,
                 R.id.text_view_task_department, EMPLOYEE_TASK_DEPARTMENT);
         list_employee_task.setAdapter(adapter_employee_task_department);
 
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_given_date = new ArrayAdapter<String>(this,R.layout.task_list_employee,
+        adapter_employee_task_given_date = new ArrayAdapter<String>(this,R.layout.row_employee_task_list,
                 R.id.text_view_task_given_date, EMPLOYEE_TASK_GIVEN_DATE);
         list_employee_task.setAdapter(adapter_employee_task_given_date);
 
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_est_date = new ArrayAdapter<String>(this,R.layout.task_list_employee,
+        adapter_employee_task_est_date = new ArrayAdapter<String>(this,R.layout.row_employee_task_list,
                 R.id.text_view_task_est_date, EMPLOYEE_TASK_EST_DATE);
         list_employee_task.setAdapter(adapter_employee_task_est_date);
 
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_status = new ArrayAdapter<String>(this,R.layout.task_list_employee,
+        adapter_employee_task_status = new ArrayAdapter<String>(this,R.layout.row_employee_task_list,
                 R.id.text_view_task_status, EMPLOYEE_TASK_STATUS);
         list_employee_task.setAdapter(adapter_employee_task_status);
 
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_progress = new ArrayAdapter<Integer>(this,R.layout.task_list_employee,
+        adapter_employee_task_progress = new ArrayAdapter<Integer>(this,R.layout.row_employee_task_list,
                 R.id.text_view_task_progress,EMPLOYEE_TASK_PROGRESS);
         list_employee_task.setAdapter(adapter_employee_task_progress);
 
         list_employee_task = (ListView) findViewById(R.id.listEmployeeTask);
-        adapter_employee_task_priority = new ArrayAdapter<String>(this,R.layout.task_list_employee,
+        adapter_employee_task_priority = new ArrayAdapter<String>(this,R.layout.row_employee_task_list,
                 R.id.text_view_task_priority, EMPLOYEE_TASK_PRIORITY);
         list_employee_task.setAdapter(adapter_employee_task_priority);
         //listAdapter = new ArrayAdapter<Task>(this, R.layout.list_item, R.id.TEXT_VIEW_ID, items)

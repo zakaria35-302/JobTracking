@@ -96,7 +96,7 @@ public class JobManagement extends Activity {
         list_employee_job.setAdapter(adapter_employee_Job_given_date);
 
         list_employee_job = (ListView) findViewById(R.id.listEmployeeJob);
-        adapter_employee_Job_est_date = new ArrayAdapter<String>(this,R.layout.task_list_employee,
+        adapter_employee_Job_est_date = new ArrayAdapter<String>(this,R.layout.row_employee_task_list,
                 R.id.text_view_job_est_date, EMPLOYEE_Job_EST_DATE);
         list_employee_job.setAdapter(adapter_employee_Job_est_date);
 

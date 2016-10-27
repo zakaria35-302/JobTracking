@@ -5,14 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
-import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorClass;
 
 /**
  * Created by mahmud on 10/26/16.
@@ -62,7 +60,7 @@ public class TaskManagementAdapter extends ArrayAdapter {
 
         if (convertView==null){
             LayoutInflater inflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            row = inflater.inflate(R.layout.task_list_employee, parent, false);
+            row = inflater.inflate(R.layout.row_employee_task_list, parent, false);
 
             //convertView = inflater.inflate(R.layout.row_superior_setting_view,null);
             holder = new ViewHolder();

@@ -497,7 +497,6 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/input_field_height"
             android:background="@color/primary"
-            android:onClick="taskAddToList"
             android:text="@string/task_activity_add_to_list"
             android:textColor="@android:color/white"
             android:textSize="@dimen/login_buttons_text_size"
@@ -516,7 +515,6 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/input_field_height"
             android:background="@color/primary"
-            android:onClick="taskRemoveFromList"
             android:text="@string/task_activity_remove_from_list"
             android:textColor="@android:color/white"
             android:textSize="@dimen/login_buttons_text_size"
@@ -551,7 +549,6 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/input_field_height"
         android:background="@color/primary"
-        android:onClick="taskSave"
         android:text="@string/save"
         android:textColor="@android:color/white"
         android:textSize="@dimen/login_buttons_text_size" />

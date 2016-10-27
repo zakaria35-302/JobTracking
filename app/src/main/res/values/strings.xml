@@ -63,6 +63,7 @@
     <string name="text_task_title">Task Title</string>
     <string name="text_job_title">Job Title</string>
     <string name="text_task_owner">Task Owner</string>
+    <string name="text_job_owner">Job Owner</string>
     <string name="text_task_given_date">Given Date</string>
     <string name="text_task_est_date">EST. Date</string>
     <string name="text_task_status">Status</string>

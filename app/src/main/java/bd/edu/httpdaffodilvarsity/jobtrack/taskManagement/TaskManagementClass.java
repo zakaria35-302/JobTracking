@@ -5,26 +5,36 @@ package bd.edu.httpdaffodilvarsity.jobtrack.taskManagement;
  */
 public class TaskManagementClass {
 
+    private String employeeJobTittle;
     private String employeeTaskTittle;
     private String employeeTaskOwner;
-    private String employeeTaskGivenDate;
     private String employeeTaskDepartment;
+    private String employeeTaskGivenDate;
     private String employeeTaskEstDate;
     private String employeeTaskStatus;
     private String employeeTaskProgress;
     private String employeeTaskPriority;
 
-    public TaskManagementClass(String employeeTaskPriority, String employeeTaskTittle, String employeeTaskOwner,
-                               String employeeTaskGivenDate, String employeeTaskDepartment, String employeeTaskEstDate,
-                               String employeeTaskStatus, String employeeTaskProgress) {
-        this.employeeTaskPriority = employeeTaskPriority;
+    public TaskManagementClass(String employeeJobTittle, String employeeTaskTittle, String employeeTaskOwner,
+                               String employeeTaskDepartment, String employeeTaskGivenDate, String employeeTaskEstDate,
+                               String employeeTaskStatus, String employeeTaskProgress, String employeeTaskPriority) {
+        this.employeeJobTittle = employeeJobTittle;
         this.employeeTaskTittle = employeeTaskTittle;
         this.employeeTaskOwner = employeeTaskOwner;
-        this.employeeTaskGivenDate = employeeTaskGivenDate;
         this.employeeTaskDepartment = employeeTaskDepartment;
+        this.employeeTaskGivenDate = employeeTaskGivenDate;
         this.employeeTaskEstDate = employeeTaskEstDate;
         this.employeeTaskStatus = employeeTaskStatus;
         this.employeeTaskProgress = employeeTaskProgress;
+        this.employeeTaskPriority = employeeTaskPriority;
+    }
+
+    public String getEmployeeJobTittle() {
+        return employeeJobTittle;
+    }
+
+    public void setEmployeeJobTittle(String employeeJobTittle) {
+        this.employeeJobTittle = employeeJobTittle;
     }
 
     public String getEmployeeTaskTittle() {
@@ -43,20 +53,20 @@ public class TaskManagementClass {
         this.employeeTaskOwner = employeeTaskOwner;
     }
 
-    public String getEmployeeTaskGivenDate() {
-        return employeeTaskGivenDate;
-    }
-
-    public void setEmployeeTaskGivenDate(String employeeTaskGivenDate) {
-        this.employeeTaskGivenDate = employeeTaskGivenDate;
-    }
-
     public String getEmployeeTaskDepartment() {
         return employeeTaskDepartment;
     }
 
     public void setEmployeeTaskDepartment(String employeeTaskDepartment) {
         this.employeeTaskDepartment = employeeTaskDepartment;
+    }
+
+    public String getEmployeeTaskGivenDate() {
+        return employeeTaskGivenDate;
+    }
+
+    public void setEmployeeTaskGivenDate(String employeeTaskGivenDate) {
+        this.employeeTaskGivenDate = employeeTaskGivenDate;
     }
 
     public String getEmployeeTaskEstDate() {

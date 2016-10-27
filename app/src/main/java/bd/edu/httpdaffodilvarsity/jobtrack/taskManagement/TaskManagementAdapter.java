@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
 /**
@@ -30,10 +29,11 @@ public class TaskManagementAdapter extends ArrayAdapter {
     }
 
     private class ViewHolder{
+        TextView employeeJobTittle;
         TextView employeeTaskTittle;
         TextView employeeTaskOwner;
-        TextView employeeTaskGivenDate;
         TextView employeeTaskDepartment;
+        TextView employeeTaskGivenDate;
         TextView employeeTaskEstDate;
         TextView employeeTaskStatus;
         TextView employeeTaskProgress;
@@ -64,10 +64,11 @@ public class TaskManagementAdapter extends ArrayAdapter {
 
             //convertView = inflater.inflate(R.layout.row_superior_setting_view,null);
             holder = new ViewHolder();
+            holder.employeeJobTittle = (TextView) row.findViewById(R.id.text_view_job_title);
             holder.employeeTaskTittle = (TextView) row.findViewById(R.id.text_view_task_title);
             holder.employeeTaskOwner = (TextView) row.findViewById(R.id.text_view_task_owner);
-            holder.employeeTaskGivenDate = (TextView) row.findViewById(R.id.text_view_task_department);
-            holder.employeeTaskDepartment = (TextView) row.findViewById(R.id.text_task_given_date);
+            holder.employeeTaskDepartment = (TextView) row.findViewById(R.id.text_view_task_department);
+            holder.employeeTaskGivenDate = (TextView) row.findViewById(R.id.text_task_given_date);
             holder.employeeTaskEstDate = (TextView) row.findViewById(R.id.text_task_est_date);
             holder.employeeTaskStatus = (TextView) row.findViewById(R.id.text_view_task_status);
             holder.employeeTaskProgress = (TextView) row.findViewById(R.id.text_task_progress);
@@ -83,10 +84,11 @@ public class TaskManagementAdapter extends ArrayAdapter {
 
         //HashMap<String, String> map = list.get(position);
         TaskManagementClass SC = (TaskManagementClass) getItem(position);
+        holder.employeeJobTittle.setText(SC.getEmployeeJobTittle());
         holder.employeeTaskTittle.setText(SC.getEmployeeTaskTittle());
         holder.employeeTaskOwner.setText(SC.getEmployeeTaskOwner());
-        holder.employeeTaskGivenDate.setText(SC.getEmployeeTaskGivenDate());
         holder.employeeTaskDepartment.setText(SC.getEmployeeTaskDepartment());
+        holder.employeeTaskGivenDate.setText(SC.getEmployeeTaskGivenDate());
         holder.employeeTaskEstDate.setText(SC.getEmployeeTaskEstDate());
         holder.employeeTaskStatus.setText(SC.getEmployeeTaskStatus());
         holder.employeeTaskProgress.setText(SC.getEmployeeTaskProgress());

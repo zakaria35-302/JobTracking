@@ -1,7 +1,10 @@
 package bd.edu.httpdaffodilvarsity.jobtrack.ui.login;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,6 +18,8 @@ public class TaskManagement extends Activity {
 
     public ArrayList<HashMap<String, String>> list;
 
+    private static String[] EMPLOYEE_JOB_TITTLE = new String[]{"eCure Android Apps","Job Tracking System in Android " +
+            "Platform", "Hospital Management", "Student Portal","School Management system","Attendance System"};
     private static String[] EMPLOYEE_TASK_TITTLE = new String[]{"eCure Android Apps","Job Tracking System in Android " +
             "Platform", "Hospital Management", "Student Portal","School Management system","Attendance System"};
     private static String[] EMPLOYEE_TASK_OWNER = new String[]{"Mahmud Hasan","Abdul Gaffar", "Abu Jafar", "Akas Khan",
@@ -44,6 +49,15 @@ public class TaskManagement extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_management);
 
+        FloatingActionButton buttonCreateTask = (FloatingActionButton) findViewById(R.id.fab);
+        buttonCreateTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TaskManagement.this, CreateEmployeeTask.class);
+                startActivity(intent);
+            }
+        });
+
         ListView list_view_task_management = (ListView) findViewById(R.id.listEmployeeTask);
         TaskManagementAdapter adapter = new TaskManagementAdapter(getApplicationContext(),R.layout.row_employee_task_list);
 
@@ -54,7 +68,7 @@ public class TaskManagement extends Activity {
                     adapter_employee_task_given_date,adapter_employee_task_est_date,adapter_employee_task_status,adapter_employee_task_priority;
             ArrayAdapter<Integer>adapter_employee_task_progress;*/
 
-            TaskManagementClass obj  = new TaskManagementClass(EMPLOYEE_TASK_TITTLE[i],EMPLOYEE_TASK_OWNER[i],
+            TaskManagementClass obj  = new TaskManagementClass(EMPLOYEE_JOB_TITTLE[i],EMPLOYEE_TASK_TITTLE[i],EMPLOYEE_TASK_OWNER[i],
                     EMPLOYEE_TASK_DEPARTMENT[i], EMPLOYEE_TASK_GIVEN_DATE[i],EMPLOYEE_TASK_EST_DATE[i],
                     EMPLOYEE_TASK_STATUS[i],EMPLOYEE_TASK_PROGRESS[i],EMPLOYEE_TASK_PRIORITY[i]);
             adapter.add(obj);

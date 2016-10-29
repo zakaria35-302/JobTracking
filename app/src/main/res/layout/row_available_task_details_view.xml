@@ -19,6 +19,7 @@
         <ImageView
             android:layout_width="140dp"
             android:layout_height="160dp"
+            android:id="@+id/imageViewAvailableTask"
             android:src="@drawable/avatar"
             android:layout_margin="10dp"/>
         <LinearLayout
@@ -32,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:hint="Name"
+                android:id="@+id/textViewAvailableTaskName"
                 android:layout_margin="@dimen/edit_text_padding"
                 android:textSize="@dimen/list_item_text_size" />
 
@@ -40,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:hint="Member"
+                android:id="@+id/textViewAvailableTaskRole"
                 android:layout_margin="@dimen/edit_text_padding"
                 android:textSize="@dimen/list_item_text_size" />
 
@@ -48,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:hint="3.5 % (Participation)"
+                android:id="@+id/textViewAvailableTaskParticipation"
                 android:layout_margin="@dimen/edit_text_padding"
                 android:textSize="@dimen/list_item_text_size" />
 

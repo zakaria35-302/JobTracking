@@ -78,7 +78,7 @@ public class HomeTaskManagement extends android.support.v4.app.Fragment {
         tvMostUsedTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeTaskManagement.this.getActivity(), MostUsedTaskDetailsList.class);
+                Intent intent = new Intent(HomeTaskManagement.this.getActivity(), MostUsedTask.class);
                 HomeTaskManagement.this.startActivity(intent);
             }
         });

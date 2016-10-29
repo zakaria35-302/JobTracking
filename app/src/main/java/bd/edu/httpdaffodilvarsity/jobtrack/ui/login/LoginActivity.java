@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
+import bd.edu.httpdaffodilvarsity.jobtrack.drawer.MainDrawer;
 
 public class LoginActivity extends Activity {
 
@@ -23,6 +24,7 @@ public class LoginActivity extends Activity {
     }
     public void onSignInPressed(View v){
         Intent in = new Intent(LoginActivity.this, HomeTabActivity.class);
+        //Intent in = new Intent(LoginActivity.this, MainDrawer.class);
         startActivity(in);
     }
 

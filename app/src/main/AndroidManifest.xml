@@ -69,6 +69,7 @@
         <activity android:name=".JobManagement.JobManagement" />
         <activity android:name=".JobManagement.CreateEmployeeJob" />
         <activity android:name=".taskManagement.AvailableTaskList" />
+        <activity android:name=".taskManagement.AvailableTaskDetails"/>
         <activity android:name=".taskManagement.MostUsedTask" />
         <activity android:name=".taskManagement.MostUsedTaskDetailsList" />
         <activity android:name=".taskManagement.JoinTask" />
@@ -80,14 +81,14 @@
                 android:theme="@style/MyMaterialTheme"></activity>
         -->
 
-        <activity
+       <!-- <activity
             android:name=".taskManagement.AvailableTaskDetails"
             android:label="Available usak deatls"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.login.LoginActivity" />
-        </activity>
+        </activity>-->
         <activity
             android:name=".drawer.MainDrawer"
             android:label="@string/title_activity_main_drawer"

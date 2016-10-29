@@ -139,6 +139,8 @@
     <string name="save">Save</string>
     <string name="back">Back</string>
 
+    <string name="button_upload_document_file">Upload File</string>
+    <string name="attach_more_file"><u>Attach more files?</u></string>
     <!--Admin Activity -->
     <string name="set_superior">Set Superior</string>
     <string name="set_department">Set Department</string>

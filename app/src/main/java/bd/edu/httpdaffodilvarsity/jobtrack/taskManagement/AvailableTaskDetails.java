@@ -11,17 +11,48 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
+import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorAdapter;
+import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorClass;
 
 
 public class AvailableTaskDetails extends AppCompatActivity {
     public   Dialog dialog;
+    ListView list_view_available_task_details;
+
+    public ArrayList<HashMap<String, String>> list;
+
+    int[] available_task_image_resource = {R.drawable.avatar, R.drawable.apple_ex, R.drawable.igfdq,R.drawable.img1, R.drawable.mario};
+    String[] available_task_name = {"Sabur Khan", "Imran Hossain", "Sabbir Rahman","Mahbub al islam", "Akter Hossain"};
+    String[] available_task_role = {"Member", "Incharge", "Owner","Member", "Incharge"};
+    String[] available_task_perticipation = {"20%", "25%", "2%","50%", "45%"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_available__task_details);
+
+        list_view_available_task_details = (ListView) findViewById(R.id.listviewAvailableTaskDetails);
+        ListviewAvailableTaskDetailsAdapter adapter = new ListviewAvailableTaskDetailsAdapter(getApplicationContext(),R.layout.row_available_task_details_view);
+
+        int i = 0;
+        for (String Name : available_task_name){
+            ListviewAvailableTaskDetailsClass obj  = new ListviewAvailableTaskDetailsClass(available_task_image_resource[i],available_task_name[i],
+                    available_task_role[i], available_task_perticipation[i]);
+            adapter.add(obj);
+            i++;
+        }
+
+        // populateList();
+
+        //ListViewAdapter adapter = new ListViewAdapter(this,list);
+        list_view_available_task_details.setAdapter(adapter);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

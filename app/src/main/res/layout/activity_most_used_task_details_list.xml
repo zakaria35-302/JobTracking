@@ -7,6 +7,20 @@
     android:background="@color/grey"
     tools:context=".taskManagement.MostUsedTaskDetailsList">
 
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
 
     <LinearLayout
         android:orientation="vertical"
@@ -22,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
-                android:hint="@string/hint_enter_employee_designation"
+                android:hint="@string/hint_enter_task_title"
                 android:inputType="text"
                 android:id="@+id/editTextSearchTask"
                 android:padding="@dimen/edit_text_padding"
@@ -31,15 +45,13 @@
                 android:textSize="@dimen/login_buttons_text_size"/>
 
         </LinearLayout>
-
-
     </LinearLayout>
 
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listEmployeeTask"
+        android:id="@+id/listEmployeeMostUsedTask"
         android:layout_marginTop="50dp"/>
 
 

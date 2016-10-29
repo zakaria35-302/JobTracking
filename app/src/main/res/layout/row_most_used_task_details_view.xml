@@ -17,6 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/text_view_most_used_task_detail_name"
             android:hint="Name"
             android:padding="8dp"
             android:textSize="@dimen/list_item_text_size"
@@ -25,6 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/text_view_most_used_task_title"
             android:hint="Job Title- e-Cure Android Application"
             android:padding="8dp"
             android:textSize="@dimen/list_item_text_size"
@@ -32,6 +34,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/text_view_most_used_task_detail_create_time"
             android:hint="12.30 AM"
             android:padding="8dp"
             android:textSize="@dimen/list_item_text_size"
@@ -39,6 +42,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/text_view_most_used_task_comment"
             android:hint="Comment-Create Home Activity"
             android:padding="8dp"
             android:textSize="@dimen/list_item_text_size"
@@ -47,6 +51,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/text_view_most_used_task_attachment"
             android:hint="Attachment-"
             android:clickable="true"
             android:padding="8dp"

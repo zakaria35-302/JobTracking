@@ -58,8 +58,8 @@
                     android:nextFocusDown="@+id/job_description_text"
                     android:padding="@dimen/edit_text_padding"
                     android:inputType="text"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:textSize="@dimen/login_buttons_text_size" />
             </android.support.design.widget.TextInputLayout>
 
@@ -92,9 +92,9 @@
                     android:minLines="6"
                     android:maxLines="6"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
                     android:nextFocusDown="@+id/job_deadline_text_create"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:textSize="@dimen/login_buttons_text_size" />
             </android.support.design.widget.TextInputLayout>
 
@@ -173,9 +173,9 @@
                         android:hint="@string/hint_enter_job_dead"
                         android:inputType="date"
                         android:padding="@dimen/edit_text_padding"
-                        android:textColor="@color/black"
                         android:nextFocusDown="@+id/job_Accesibility_text_create"
-                        android:textColorHint="@color/dark_grey"
+                        android:textColor="@color/navigationBarColor"
+                        android:textColorHint="@color/black"
                         android:textSize="@dimen/login_buttons_text_size" />
 
                 </android.support.design.widget.TextInputLayout>
@@ -236,8 +236,8 @@
                     android:background="@drawable/border"
                     android:hint="@string/hint_enter_job_Accesibility"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:nextFocusDown="@+id/job_progress_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
@@ -267,8 +267,8 @@
                     android:background="@drawable/border"
                     android:hint="@string/hint_enter_job_progress"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:nextFocusDown="@+id/job_priority_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
@@ -298,8 +298,8 @@
                     android:background="@drawable/border"
                     android:hint="@string/hint_enter_job_priority"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:nextFocusDown="@+id/job_status_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
@@ -328,8 +328,8 @@
                     android:background="@drawable/border"
                     android:hint="@string/hint_enter_job_status"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:nextFocusDown="@+id/job_department_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
@@ -358,8 +358,8 @@
                     android:background="@drawable/border"
                     android:hint="@string/hint_enter_job_department"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:nextFocusDown="@+id/job_asign_to_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
@@ -412,9 +412,9 @@
                     android:hint="@string/hint_enter_task_asign_to"
                     android:inputType="textAutoComplete"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
                     android:nextFocusDown="@+id/job_role_text_create"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:textSize="@dimen/login_buttons_text_size" />
 
             </android.support.design.widget.TextInputLayout>
@@ -442,8 +442,8 @@
                     android:background="@drawable/border"
                     android:hint="@string/hint_enter_task_role"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:textSize="@dimen/login_buttons_text_size" />
 
             </android.support.design.widget.TextInputLayout>

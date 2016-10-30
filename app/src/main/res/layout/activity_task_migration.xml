@@ -29,7 +29,9 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="6"
+                android:layout_weight="8"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:id="@+id/editText" />
 
             <Button
@@ -55,8 +57,10 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="6"
-                android:id="@+id/editText2" />
+                android:layout_weight="8"
+                android:id="@+id/editText2"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"/>
 
             <Button
                 android:layout_width="0dp"

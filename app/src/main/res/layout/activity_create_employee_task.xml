@@ -56,8 +56,8 @@
                     android:background="@drawable/border"
                     android:hint="@string/hint_enter_job_title"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:nextFocusDown="@+id/user_job_title_text_create"
                     android:textSize="@dimen/login_buttons_text_size" />
 
@@ -89,8 +89,8 @@
                     android:nextFocusDown="@+id/task_description_text"
                     android:padding="@dimen/edit_text_padding"
                     android:inputType="text"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:textSize="@dimen/login_buttons_text_size" />
             </android.support.design.widget.TextInputLayout>
 
@@ -123,9 +123,9 @@
                     android:minLines="6"
                     android:maxLines="6"
                     android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/black"
                     android:nextFocusDown="@+id/task_deadline_text_create"
-                    android:textColorHint="@color/dark_grey"
+                    android:textColor="@color/navigationBarColor"
+                    android:textColorHint="@color/black"
                     android:textSize="@dimen/login_buttons_text_size" />
             </android.support.design.widget.TextInputLayout>
 
@@ -166,9 +166,9 @@
                 android:text="@string/check_box_task_had_dead_line"
                 android:id="@+id/checkBox_task_had_deadline_create"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/task_date_tex_create"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
@@ -204,9 +204,9 @@
                 android:hint="@string/hint_enter_task_dead"
                 android:inputType="date"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/task_Accesibility_text_create"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>
@@ -267,9 +267,9 @@
                 android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_Accesibility"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
                 android:nextFocusDown="@+id/task_progress_text_create"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
 
 
@@ -298,8 +298,8 @@
                 android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_progress"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/task_priority_text_create"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -329,8 +329,8 @@
                 android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_priority"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/task_status_text_create"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -359,8 +359,8 @@
                 android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_status"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/task_department_text_create"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -389,8 +389,8 @@
                 android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_department"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/task_asign_to_text_create"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -443,9 +443,9 @@
                 android:hint="@string/hint_enter_task_asign_to"
                 android:inputType="textAutoComplete"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/task_role_text_create"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>
@@ -473,8 +473,8 @@
                 android:background="@drawable/border"
                 android:hint="@string/hint_enter_task_role"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>

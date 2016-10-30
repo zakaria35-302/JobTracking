@@ -47,9 +47,9 @@
                 android:hint="@string/hint_enter_employeename"
                 android:inputType="textCapWords"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/employee_email_text"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
@@ -75,8 +75,8 @@
                 android:id="@+id/spinner_employee_institute_edit"
                 android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/employee_department_text"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -104,8 +104,8 @@
                 android:id="@+id/spinner_employee_department_edit"
                 android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/employee_date_of_birth_text"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -143,9 +143,9 @@
                 android:hint="@string/hint_enter_date_of_birth"
                 android:padding="@dimen/edit_text_padding"
                 android:inputType="date"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/spinner_employee_gender"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size"/>
 
         </android.support.design.widget.TextInputLayout>
@@ -158,11 +158,6 @@
                 android:onClick="showDatePicDialog"/>
 
         </LinearLayout>
-
-
-
-
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -186,8 +181,8 @@
                 android:id="@+id/spinner_employee_gender_edit"
                 android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/employee_marital_status_text"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -217,8 +212,8 @@
                 android:id="@+id/spinner_employee_marital_status_edit"
                 android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/text"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -247,8 +242,8 @@
                 android:id="@+id/spinner_employee_blood_group_edit"
                 android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/employee_im_text"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -278,9 +273,9 @@
                 android:hint="@string/hint_enter_im"
                 android:inputType="text"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/employee_religion_text"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
@@ -307,8 +302,8 @@
                 android:id="@+id/spinner_employee_religion_edit"
                 android:background="@drawable/border"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:nextFocusDown="@+id/employee_mobile_text"
                 android:textSize="@dimen/login_buttons_text_size" />
 
@@ -338,9 +333,9 @@
                 android:hint="@string/hint_enter_mobile_number"
                 android:inputType="number"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/employee_office_phone_text"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
@@ -368,9 +363,9 @@
                 android:hint="@string/hint_enter_office_phone"
                 android:inputType="phone"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/employee_email_text"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
@@ -399,9 +394,9 @@
                 android:hint="@string/hint_enter_email"
                 android:inputType="textEmailAddress"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
                 android:nextFocusDown="@+id/employee_gender_text"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 

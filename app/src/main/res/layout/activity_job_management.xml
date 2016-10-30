@@ -26,6 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:inputType="text"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:id="@+id/editTextSearchTask" />
 
             <Button

@@ -6,6 +6,7 @@
         android:layout_marginBottom="10dp"
         android:hint="Advanced Task List"
         android:elevation="8dp"
-        android:textColor="@android:color/black"
+        android:textColor="@color/navigationBarColor"
+        android:textColorHint="@color/black"
         android:textSize="@dimen/list_item_text_size"/>
 

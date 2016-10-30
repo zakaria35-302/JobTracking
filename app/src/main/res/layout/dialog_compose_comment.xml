@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
+        android:textColor="@color/navigationBarColor"
+        android:textColorHint="@color/black"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:hint="Comment" >
 

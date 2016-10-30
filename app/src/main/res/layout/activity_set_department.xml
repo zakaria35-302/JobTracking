@@ -32,8 +32,8 @@
                 android:inputType="text"
                 android:id="@+id/editTextSearchTask"
                 android:padding="@dimen/edit_text_padding"
-                android:textColor="@color/black"
-                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
                 android:textSize="@dimen/login_buttons_text_size"/>
 
         </LinearLayout>

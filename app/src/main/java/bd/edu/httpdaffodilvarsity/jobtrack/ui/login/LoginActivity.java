@@ -23,8 +23,8 @@ public class LoginActivity extends Activity {
         startActivity(in);
     }
     public void onSignInPressed(View v){
-        //Intent in = new Intent(LoginActivity.this, HomeTabActivity.class);
-        Intent in = new Intent(LoginActivity.this, MainDrawer.class);
+        Intent in = new Intent(LoginActivity.this, HomeTabActivity.class);
+        //Intent in = new Intent(LoginActivity.this, MainDrawer.class);
         startActivity(in);
     }
 

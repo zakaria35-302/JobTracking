@@ -1,43 +1,32 @@
 package bd.edu.httpdaffodilvarsity.jobtrack.ui.login;
 
-import android.content.Context;
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import android.view.WindowManager;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import bd.edu.httpdaffodilvarsity.jobtrack.MainActivity;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
-import bd.edu.httpdaffodilvarsity.jobtrack.model.EmployeeList;
 import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorAdapter;
 import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorClass;
 
-public class SuperiorSettingActivity extends AppCompatActivity {
+public class SuperiorSettingActivity extends Activity {
 
     public ArrayList<HashMap<String, String>> list;
 
     int[] image_resource = {R.drawable.avatar, R.drawable.apple_ex, R.drawable.igfdq,R.drawable.img1, R.drawable.mario};
-    String[] superior_name = {"Set Superior", "Set Superior", "Set Superior","Set Superior", "Set Superior"};
-    String[] superior_set = {"Sabur Khan", "Imran Hossain", "Sabbir Rahman","Mahbub al islam", "Akter Hossain"};
+    String[] superior_name = {"Sabur Khan", "Imran Hossain", "Sabbir Rahman","Mahbub al islam", "Akter Hossain"};
+    String[] superior_set = {"Set Superior", "Set Superior", "Set Superior","Set Superior", "Set Superior"};
     String[] superior_id = {"6564458", "5654987", "7888254","5455555", "4785545"};
     String[] superior_department = {"it", "swe", "English","cse", "EEE"};
-    String[] superior_designation = {"Director", "Deputy", "Senior Assistant","Assistant", "Officer"};
+    String[] superior_designation = {"Director", "Deputy Director", "Senior Assistant Director","Assistant Director", "Officer"};
     String[] set_subordinate = {"Set Subordinator", "Set Subordinator", "Set Subordinator","Set Subordinator", "Set Subordinator"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_superior_setting);
 
         ListView list_view = (ListView) findViewById(R.id.listViewSeperiorSetting);

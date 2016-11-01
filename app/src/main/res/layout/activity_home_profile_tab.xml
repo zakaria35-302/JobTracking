@@ -1,93 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rl_fragment_shopping_lists"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.login.TaskManagement">
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Most Used Task List"
-            android:padding="0dp"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:textSize="20dp"/>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:inputType="text"
-                android:textColor="@color/navigationBarColor"
-                android:textColorHint="@color/black"
-                android:id="@+id/editTextSearchTask" />
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="@string/advance_search"
-                android:background="@color/primary"
-                android:id="@+id/buttonTaskAdvanceSearch"
-                />
-        </LinearLayout>
-
-        <!-- <ListView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:id="@+id/listEmployeeTask"
-             android:background="@color/dark_grey"
-             android:layout_marginTop="60dp"></ListView>-->
-
-
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/listEmployeeTask"/>
-    </LinearLayout>
-
-    <!-- <ListView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:id="@+id/listEmployeeTask"
-         android:background="@color/dark_grey"
-         android:layout_marginTop="60dp"/>-->
-
-
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        style="@style/FAB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:onClick="showTaskManagementActivity"
-        android:src="@drawable/icon_add"
-        app:borderWidth="0dp"
-        app:elevation="6dp"
-        app:pressedTranslationZ="12dp" />
-
-    <!--</ScrollView>-->
-</RelativeLayout>
-
-
-    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -95,73 +6,71 @@
     android:background="@android:color/white"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".TaskManagement">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Mahmud Hasan"
+                    android:layout_margin="@dimen/edit_text_padding"
+                    android:textSize="@dimen/list_item_text_size" />
+
+                <TextView
+                    android:id="@+id/textViewProfileViewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Profile View"
+                    android:layout_margin="@dimen/edit_text_padding"
+                    android:textSize="@dimen/list_item_text_size"/>
+
+                <TextView
+                    android:id="@+id/textViewChangePassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Change Password"
+                    android:layout_margin="@dimen/edit_text_padding"
+                    android:textSize="@dimen/list_item_text_size" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/my_daily_activities"
+            android:text="@string/job_statistics"
             android:textStyle="bold"
             android:layout_marginBottom="20dp"
             android:textSize="@dimen/text_title_top"
             android:textColor="@android:color/black"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/search_other_activities"
-            android:textStyle="bold"
-            android:layout_marginBottom="20dp"
-            android:textSize="@dimen/text_title_top"
-            android:textColor="@android:color/black"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/task_management"
-            android:textSize="@dimen/text_title_top"
-            android:onClick="taskManagement"
-            android:textColor="@android:color/black"
-            android:background="@color/primary"
-            android:layout_marginBottom="20dp"
-            android:textStyle="bold"
-
-            style="@style/Widget.Udacity.Button.Login"
-            android:padding="5dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/job_management"
-            android:textSize="@dimen/text_title_top"
-            android:onClick="jobManagement"
-            android:textColor="@android:color/black"
-            android:background="@color/primary"
-            android:layout_marginBottom="20dp"
-            android:textStyle="bold"
-            style="@style/Widget.Udacity.Button.Login"
-            android:padding="5dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/contacts"
-        android:textStyle="bold"
-        android:layout_marginBottom="20dp"
-        android:textSize="@dimen/text_title_top"
-        android:textColor="@android:color/black"/>
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -170,26 +79,23 @@
             android:orientation="horizontal">
 
             <TextView
-                android:text="@string/available_task"
+                android:text="My Ranking "
                 android:textStyle="bold"
-                android:textSize="@dimen/text_title_top"
+                android:textSize="@dimen/list_item_text_size"
                 android:textColor="@android:color/black"
                 android:layout_width="0dp"
-                android:background="@color/primary"
                 android:paddingRight="15dp"
-                android:padding="5dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="1.5" />
 
             <TextView
                 android:hint="357"
-                android:textSize="@dimen/text_title_top"
-                android:id="@+id/number_of_available_task"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_employee_profile_ranking"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:background="@color/primary"
+                android:padding="10dp"
                 android:layout_weight="2" />
 
         </LinearLayout>
@@ -215,7 +121,7 @@
                 android:hint="35"
                 android:textStyle="bold"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/text_profile_ranking"
+                android:id="@+id/text_employee_own_task_quantity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
@@ -243,7 +149,7 @@
             <TextView
                 android:hint="35"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/text_profile_ranking"
+                android:id="@+id/text_employee_completed_task_quantity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
@@ -271,7 +177,7 @@
             <TextView
                 android:hint="00"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/text_profile_ranking"
+                android:id="@+id/text_employee_incompleted_task_quantity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
@@ -299,7 +205,7 @@
             <TextView
                 android:hint="35"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/text_profile_ranking"
+                android:id="@+id/text_employee_ever_ending_task_quantity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
@@ -315,26 +221,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:text="@string/most_used_tasks"
+                android:text="Total Activity "
                 android:textStyle="bold"
                 android:textSize="@dimen/text_title_top"
                 android:textColor="@android:color/black"
                 android:layout_width="0dp"
-                android:background="@color/primary"
                 android:paddingRight="15dp"
-                android:padding="5dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="1.5" />
 
             <TextView
-                android:hint="357"
-                android:textSize="@dimen/text_title_top"
-                android:id="@+id/number_of_available_task"
+                android:hint="35"
+                android:textStyle="bold"
+                android:textSize="@dimen/list_item_text_size"
+                android:id="@+id/text_employee_total_task_activity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:background="@color/primary"
+                android:padding="10dp"
                 android:layout_weight="2" />
 
         </LinearLayout>
@@ -359,7 +263,7 @@
             <TextView
                 android:hint="10"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/text_profile_ranking"
+                android:id="@+id/text_employee_own_activity_quantity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
@@ -375,7 +279,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:text="Total Parcipator "
+                android:text="Total Participator "
                 android:textStyle="normal"
                 android:textSize="@dimen/list_item_text_size"
                 android:textColor="@android:color/black"
@@ -387,7 +291,7 @@
             <TextView
                 android:hint="2"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/text_profile_ranking"
+                android:id="@+id/text_employee_activity_total_participator_quantity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
@@ -416,7 +320,7 @@
             <TextView
                 android:hint="3"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/text_profile_ranking"
+                android:id="@+id/text_employee_activity_involvement_quantity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
@@ -445,7 +349,7 @@
                 android:hint="2"
                 android:textStyle="bold"
                 android:textSize="@dimen/list_item_text_size"
-                android:id="@+id/text_profile_ranking"
+                android:id="@+id/text_employee_activity_regular_job_quantity"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
@@ -458,10 +362,4 @@
 
     </LinearLayout>
 
-</ScrollView>-->
-
-<!--<ScrollView android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/scrollView"
-    xmlns:android="http://schemas.android.com/apk/res/android" >-->
-
+</ScrollView>

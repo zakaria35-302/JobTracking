@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
+import bd.edu.httpdaffodilvarsity.jobtrack.home_tab.HomeProfileTab;
+
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -39,7 +41,8 @@ public class HomeTabActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new ProfileViewActivity(), "Profile");
+        //adapter.addFragment(new ProfileViewActivity(), "Profile");
+        adapter.addFragment(new HomeProfileTab(), "Profile");
         adapter.addFragment(new HomeTaskManagement(), "Task Management");
         adapter.addFragment(new HomeSettingTab(), "Setting");
         adapter.addFragment(new Home_Admin_Tab(), "Admin");

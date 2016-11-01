@@ -1,5 +1,6 @@
 package bd.edu.httpdaffodilvarsity.jobtrack.ui.login;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,7 +12,7 @@ import android.widget.Button;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
 
-public class ProfileViewActivity extends android.support.v4.app.Fragment {
+public class ProfileViewActivity extends Activity {
 
     Button btnEmployeeProfileEdit;
 
@@ -20,26 +21,26 @@ public class ProfileViewActivity extends android.support.v4.app.Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_profile_view);
+        setContentView(R.layout.activity_profile_view);
         //GoToEditUser();
 
-        /*btnEmployeeProfileEdit = (Button) getView().findViewById(R.id.buttonEditPersonalProfile);
+        btnEmployeeProfileEdit = (Button) findViewById(R.id.buttonEditPersonalProfile);
         btnEmployeeProfileEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ProfileViewActivity.this.getActivity(), EditEmployeeAccount.class);
+                Intent intent = new Intent(ProfileViewActivity.this, EditEmployeeAccount.class);
                 ProfileViewActivity.this.startActivity(intent);
             }
-        });*/
+        });
     }
 
     /*private void GoToEditUser() {
         Intent in = new Intent(ProfileViewActivity.this.getActivity(), EditEmployeeAccount.class);
         startActivity(in);
     }*/
-
+/*
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -56,7 +57,7 @@ public class ProfileViewActivity extends android.support.v4.app.Fragment {
         //return inflater.inflate(R.layout.activity_profile_view, container, false);
         return rootView;
 
-    }
+    }*/
 
     /*public  void  GoToEditUser(View v){
         Intent in = new Intent(ProfileViewActivity.this.getActivity(), EditEmployeeAccount.class);

@@ -29,7 +29,10 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/edit_text_padding"
+            android:paddingTop="@dimen/edit_text_padding"
+            android:paddingBottom="@dimen/edit_text_padding">
 
             <EditText
                 android:layout_width="match_parent"
@@ -70,7 +73,7 @@
 
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fabSetDesignation"
         style="@style/FAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,6 +85,7 @@
         android:src="@drawable/icon_add"
         app:borderWidth="0dp"
         app:elevation="6dp"
+        android:layout_margin="@dimen/activity_bottom_margin"
         app:pressedTranslationZ="12dp" />
 
     <!--</ScrollView>-->

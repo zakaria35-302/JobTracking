@@ -85,11 +85,6 @@
                 android:src="@drawable/cross_icon"/>
         </RelativeLayout>
 
-
     </LinearLayout>
-
-
-
-
 
 </LinearLayout>

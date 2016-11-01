@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:background="@color/grey"
         android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
@@ -13,20 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@android:color/white"
         android:weightSum="1"
         android:elevation="8dp">
 
         <ImageView
-            android:layout_width="140dp"
-            android:layout_height="160dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/imageViewAvailableTask"
-            android:src="@drawable/avatar"
-            android:layout_margin="10dp"/>
+            android:src="@drawable/avatar"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -34,7 +33,7 @@
                 android:textColor="@android:color/black"
                 android:hint="Name"
                 android:id="@+id/textViewAvailableTaskName"
-                android:layout_margin="@dimen/edit_text_padding"
+                android:layout_margin="10dp"
                 android:textSize="@dimen/list_item_text_size" />
 
             <TextView
@@ -43,7 +42,7 @@
                 android:textColor="@android:color/black"
                 android:hint="Member"
                 android:id="@+id/textViewAvailableTaskRole"
-                android:layout_margin="@dimen/edit_text_padding"
+                android:layout_margin="10dp"
                 android:textSize="@dimen/list_item_text_size" />
 
             <TextView
@@ -52,13 +51,10 @@
                 android:textColor="@android:color/black"
                 android:hint="3.5 % (Participation)"
                 android:id="@+id/textViewAvailableTaskParticipation"
-                android:layout_margin="@dimen/edit_text_padding"
+                android:layout_margin="10dp"
                 android:textSize="@dimen/list_item_text_size" />
 
-
-
         </LinearLayout>
-
 
     </LinearLayout>
 

@@ -28,7 +28,7 @@ public class AvailableTaskDetails extends AppCompatActivity {
     public ArrayList<HashMap<String, String>> list;
 
     int[] available_task_image_resource = {R.drawable.avatar, R.drawable.apple_ex, R.drawable.igfdq,R.drawable.img1, R.drawable.mario};
-    String[] available_task_name = {"Sabur Khan", "Imran Hossain", "Sabbir Rahman","Mahbub al islam", "Akter Hossain"};
+    String[] available_task_name = {"Saiful Islam", "Imran Nazir", "Abdur Rahman","Mahbub al islam", "Abul Hossain"};
     String[] available_task_role = {"Member", "Incharge", "Owner","Member", "Incharge"};
     String[] available_task_perticipation = {"20%", "25%", "2%","50%", "45%"};
 

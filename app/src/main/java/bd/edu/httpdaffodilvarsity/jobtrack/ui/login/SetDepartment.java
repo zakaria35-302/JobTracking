@@ -6,7 +6,9 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import bd.edu.httpdaffodilvarsity.jobtrack.JobManagement.CreateEmployeeJob;
 import bd.edu.httpdaffodilvarsity.jobtrack.MainActivity;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
@@ -29,12 +32,34 @@ public class SetDepartment extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_department);
 
+        FloatingActionButton departmentFloatingButton=(FloatingActionButton)findViewById(R.id.fabSetDepartment);
+
+        departmentFloatingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Dialog dialog=new Dialog(SetDepartment.this);
+                dialog.setTitle("Compose Comment");
+                dialog.setContentView(R.layout.create_department_dialog);
+                dialog.show();
+            }
+
+        });
 
         list_view_department = (ListView) findViewById(R.id.listEmployeeDepartment);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, DEPARTMENTS);
         list_view_department.setAdapter(adapter);
 
+
+        /*FloatingActionButton buttonCreateJob = (FloatingActionButton) findViewById(R.id.fabJob);
+        buttonCreateJob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SetDepartment.this, CreateEmployeeJob.class);
+                startActivity(intent);
+            }
+        });*/
 
         //listView();
     }

@@ -16,7 +16,7 @@ public class SuperiorSettingActivity extends Activity {
     public ArrayList<HashMap<String, String>> list;
 
     int[] image_resource = {R.drawable.avatar, R.drawable.apple_ex, R.drawable.igfdq,R.drawable.img1, R.drawable.mario};
-    String[] superior_name = {"Sabur Khan", "Imran Hossain", "Sabbir Rahman","Mahbub al islam", "Akter Hossain"};
+    String[] superior_name = {"Saiful Islam", "Imran Nazir", "Abdur Rahman Rahman","Mahbub al islam", "Abul Hossain"};
     String[] superior_set = {"Set Superior", "Set Superior", "Set Superior","Set Superior", "Set Superior"};
     String[] superior_id = {"6564458", "5654987", "7888254","5455555", "4785545"};
     String[] superior_department = {"it", "swe", "English","cse", "EEE"};

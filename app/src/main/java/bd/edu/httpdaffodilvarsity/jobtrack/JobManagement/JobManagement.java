@@ -19,7 +19,7 @@ public class JobManagement extends Activity {
     private static String[] EMPLOYEE_JOB_TITTLE = new String[]{"eCure Android Apps","Job Tracking System in Android " +
             "Platform", "Hospital Management", "Student Portal","School Management system","Attendance System"};
     private static String[] EMPLOYEE_JOB_OWNER = new String[]{"Mahmud Hasan","Abdul Gaffar", "Abu Jafar", "Akas Khan",
-            "Anabil karim","Abul Rashed", "Limin Islam"};
+            "Anabil karim","Abul Hosen", "Limin Islam"};
     private static String[] EMPLOYEE_JOB_DEPARTMENT = new String[]{"IT","Software", "Computer science",
             "Software Engieering","EEE","IS", "Islamic Studies"};
     private static String[] EMPLOYEE_JOB_GIVEN_DATE = new String[]{"10/10/2015","10/10/2015", "10/10/2015",

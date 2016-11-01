@@ -13,19 +13,46 @@
         android:gravity="center"
         android:textSize="20dp"/>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
     <EditText
         android:id="@+id/employee_designation"
         android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="4dp"
         android:textColor="@color/navigationBarColor"
         android:textColorHint="@color/black"
         android:hint="@string/hint_enter_employee_designation" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/position_button_cancel"
+            android:id="@+id/cancelCompose"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_ok"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
    <!-- <EditText
         android:id="@+id/password"
         android:inputType="textPassword"

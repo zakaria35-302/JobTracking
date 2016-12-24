@@ -7,6 +7,7 @@ import android.view.View;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 import bd.edu.httpdaffodilvarsity.jobtrack.drawer.MainDrawer;
+import bd.edu.httpdaffodilvarsity.jobtrack.role.EmployeeRole;
 
 public class LoginActivity extends Activity {
 
@@ -30,6 +31,7 @@ public class LoginActivity extends Activity {
 
     public void EmployeeFogetPassword(View v){
         Intent in = new Intent(LoginActivity.this, ChangePassword.class);
+        //Intent in = new Intent(LoginActivity.this, EmployeeRole.class);
         startActivity(in);
     }
 

@@ -8,32 +8,32 @@
    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-     android:paddingLeft="@dimen/activity_horizontal_margin">
+    android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="20dp"
-        android:weightSum="1">
+        android:weightSum="2">
 
         <ImageView
-            android:layout_width="140dp"
-            android:layout_height="160dp"
-            android:src="@drawable/avatar" />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/avatar"
+            android:layout_weight="1"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:text="@string/text_employee_name"
-                android:layout_margin="@dimen/edit_text_padding"
+                android:layout_margin="10dp"
                 android:textSize="@dimen/list_item_text_size" />
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:text="Profile View"
-                android:layout_margin="@dimen/edit_text_padding"
+                android:layout_margin="10dp"
                 android:textSize="@dimen/list_item_text_size" />
 
             <TextView
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:text="Change Password"
-                android:layout_margin="@dimen/edit_text_padding"
+                android:layout_margin="10dp"
                 android:textSize="@dimen/list_item_text_size" />
 
 
@@ -57,6 +57,13 @@
 
 
         </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -69,19 +76,18 @@
 
        <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
         <TextView
-            android:text="My Ranking "
+            android:text="My Ranking"
             android:textStyle="bold"
             android:textSize="@dimen/list_item_text_size"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="357"
@@ -89,28 +95,27 @@
             android:id="@+id/text_employee_profile_ranking"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
         <TextView
-            android:text="Own Task "
+            android:text="Own Task"
             android:textStyle="bold"
             android:textSize="@dimen/text_title_top"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="35"
@@ -119,15 +124,15 @@
             android:id="@+id/text_employee_own_task_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
@@ -137,9 +142,8 @@
             android:textSize="@dimen/list_item_text_size"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="35"
@@ -147,15 +151,15 @@
             android:id="@+id/text_employee_completed_task_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
@@ -165,9 +169,8 @@
             android:textSize="@dimen/list_item_text_size"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="00"
@@ -175,15 +178,15 @@
             android:id="@+id/text_employee_incompleted_task_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
@@ -193,9 +196,8 @@
             android:textSize="@dimen/list_item_text_size"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="35"
@@ -203,15 +205,15 @@
             android:id="@+id/text_employee_ever_ending_task_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
@@ -221,9 +223,8 @@
             android:textSize="@dimen/text_title_top"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="35"
@@ -232,16 +233,16 @@
             android:id="@+id/text_employee_total_task_activity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
@@ -251,9 +252,8 @@
             android:textSize="@dimen/list_item_text_size"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="10"
@@ -261,27 +261,26 @@
             android:id="@+id/text_employee_own_activity_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
         <TextView
-            android:text="Total Participator "
+            android:text="Total Participator"
             android:textStyle="normal"
             android:textSize="@dimen/list_item_text_size"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="2"
@@ -289,16 +288,16 @@
             android:id="@+id/text_employee_activity_total_participator_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
@@ -308,9 +307,8 @@
             android:textSize="@dimen/list_item_text_size"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="3"
@@ -318,15 +316,15 @@
             android:id="@+id/text_employee_activity_involvement_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textColor="@android:color/black"
         android:orientation="horizontal">
 
@@ -336,9 +334,8 @@
             android:textSize="@dimen/text_title_top"
             android:textColor="@android:color/black"
             android:layout_width="0dp"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5" />
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
 
         <TextView
             android:hint="2"
@@ -347,11 +344,13 @@
             android:id="@+id/text_employee_activity_regular_job_quantity"
             android:layout_width="0dp"
             android:textColor="@android:color/black"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
     </LinearLayout>
+
+       </LinearLayout>
 
 
 

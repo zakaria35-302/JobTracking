@@ -2,13 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="bd.edu.httpdaffodilvarsity.jobtrack">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!-- android:name="bd.edu.httpdaffodilvarsity.jobtrack.MainActivity" -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/MyMaterialTheme.PopupOverlay">
 
         <!-- <activity android:name=".MainActivity"> -->
 
@@ -33,7 +37,9 @@
         -->
         <activity android:name=".ui.login.LoginActivity">
             <intent-filter android:label="@string/app_name">
-                <action android:name="android.intent.action.MAIN" />
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/MyMaterialTheme.PopupOverlay" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -50,30 +56,83 @@
         -->
 
         <activity android:name=".MainActivity" />
-        <activity android:name=".ui.login.ChangePassword" />
-        <activity android:name=".ui.login.CreateUserAccount" />
-        <activity android:name=".ui.login.SetPassword" />
-        <activity android:name=".ui.login.EditEmployeeAccount" />
-        <activity android:name=".ui.login.ProfileViewActivity" />
+        <activity
+            android:name=".ui.login.ChangePassword"
+            android:label="Change Password" />
+        <activity
+            android:name=".ui.login.CreateUserAccount"
+            android:label="Create Account" />
+        <activity
+            android:name=".ui.login.SetPassword"
+            android:label="Password Setting" />
+        <activity
+            android:name=".ui.login.EditEmployeeAccount"
+            android:label="Edit Account"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".ui.login.ProfileViewActivity"
+            android:label="Profile" />
         <activity android:name=".ui.login.TaskManagement" />
-        <activity android:name=".ui.login.CreateEmployeeTask" />
-        <activity android:name=".ui.login.HomeSettingTab" />
+        <activity
+            android:name=".ui.login.CreateEmployeeTask"
+            android:label="Create Task"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+
+        <!--
+        <activity android:name=".ui.login.HomeSettingTab"/>
         <activity android:name=".ui.login.Home_Admin_Tab" />
         <activity android:name=".ui.login.HomeTaskManagement" />
-        <activity android:name=".ui.login.SetDesignation" />
-        <activity android:name=".ui.login.SetDepartment" />
-        <activity android:name=".ui.login.JobMigration" />
-        <activity android:name=".ui.login.HomeTabActivity" />
-        <activity android:name=".ui.login.SuperiorSettingActivity" />
-        <activity android:name=".ui.login.TaskMigration" />
+        -->
+
+        <activity
+            android:name=".ui.login.SetDesignation"
+            android:label="Designation" />
+        <activity
+            android:name=".ui.login.SetDepartment"
+            android:label="Department" />
+        <activity
+            android:name=".ui.login.JobMigration"
+            android:label="Job Migration"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".ui.login.HomeTabActivity"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".ui.login.SuperiorSettingActivity"
+            android:label="Superior" />
+        <activity
+            android:name=".ui.login.TaskMigration"
+            android:label="Task Migration"
+            android:theme="@style/AppTheme.AppBarOverlay" />
         <activity android:name=".JobManagement.JobManagement" />
-        <activity android:name=".JobManagement.CreateEmployeeJob" />
-        <activity android:name=".taskManagement.AvailableTaskList" />
-        <activity android:name=".taskManagement.AvailableTaskDetails" />
-        <activity android:name=".taskManagement.MostUsedTask" />
-        <activity android:name=".taskManagement.MostUsedTaskDetailsList" />
-        <activity android:name=".taskManagement.JoinTask" />
-        <activity android:name=".taskManagement.AvailableTaskAttributes" />
+        <activity
+            android:name=".JobManagement.CreateEmployeeJob"
+            android:label="Create Job"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".taskManagement.AvailableTaskList"
+            android:label="Available Task List"
+            android:theme="@style/MyMaterialTheme.PopupOverlay" />
+        <activity
+            android:name=".taskManagement.AvailableTaskDetails"
+            android:label="Available Task Details"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".taskManagement.MostUsedTask"
+            android:label="Most Used Task"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".taskManagement.MostUsedTaskDetailsList"
+            android:label="Most Used Task Details"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".taskManagement.JoinTask"
+            android:label="Join Task"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".taskManagement.AvailableTaskAttributes"
+            android:label="Attributes"
+            android:theme="@style/AppTheme.AppBarOverlay" />
 
         <!--
                 <activity
@@ -92,11 +151,14 @@
                 android:value=".ui.login.LoginActivity" />
         </activity>
         -->
+        <!--
         <activity
             android:name=".drawer.MainDrawer"
             android:label="@string/title_activity_main_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".home_tab.HomeProfileTab"></activity>
+        -->
+        <activity android:name=".role.EmployeeRole"></activity>
     </application>
 
 </manifest>

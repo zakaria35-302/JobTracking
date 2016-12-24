@@ -16,9 +16,7 @@ import android.widget.Toast;
 import java.util.Calendar;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
-
 public class EditEmployeeAccount extends AppCompatActivity {
-
     //private DatePicker datePicker;
     //private Calendar calendar;
     //private TextView dateView;

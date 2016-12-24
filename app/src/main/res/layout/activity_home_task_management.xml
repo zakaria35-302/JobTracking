@@ -249,7 +249,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:text="Own Activity "
+                android:text="Own Activity"
                 android:textStyle="normal"
                 android:textSize="@dimen/list_item_text_size"
                 android:textColor="@android:color/black"

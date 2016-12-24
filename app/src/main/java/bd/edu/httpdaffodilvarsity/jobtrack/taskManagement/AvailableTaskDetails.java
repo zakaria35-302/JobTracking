@@ -6,7 +6,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -17,8 +16,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
-import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorAdapter;
-import bd.edu.httpdaffodilvarsity.jobtrack.superior.SuperiorClass;
 
 
 public class AvailableTaskDetails extends AppCompatActivity {
@@ -53,8 +50,8 @@ public class AvailableTaskDetails extends AppCompatActivity {
         //ListViewAdapter adapter = new ListViewAdapter(this,list);
         list_view_available_task_details.setAdapter(adapter);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+      /*  Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);*/
 
         // initialize the Floating button
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -115,5 +112,3 @@ public class AvailableTaskDetails extends AppCompatActivity {
     }
 
 }
-
-

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android_list_view_tutorial_with_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <ImageView
+        android:id="@+id/listview_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatar"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/listview_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:hint="norhing"/>
+
+        <TextView
+            android:id="@+id/listview_item_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:hint="another"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:hint="Theme">
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/hint_enter_password"
+                android:scaleY="@style/Widget.AppCompat.EditText"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/navigationBarColor"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/login_buttons_text_size" />
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/listview_item_ription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:hint="another"/>
+        <TextView
+            android:id="@+id/listview_item_cription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:hint="another"/>
+        <TextView
+            android:id="@+id/listview__description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:hint="another"/>
+        <TextView
+            android:id="@+id/listview_item_escription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:hint="another"/>
+        <TextView
+            android:id="@+id/listview_item_short_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:hint="another"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

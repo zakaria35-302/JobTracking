@@ -44,7 +44,6 @@ public class CreateUserAccount extends Activity {
         empDepartmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinnerEmployeeDepartment.setAdapter(empDepartmentAdapter);
-
     }
 
     public  void  GoToLoginActivity(View v){

@@ -16,13 +16,18 @@
     <color name="black">#616161</color>
     <color name="google">#C6412C</color>
 
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#000000</color>
 
-    <color name="colorPrimary">#125688</color>
-    <color name="colorPrimaryDark">#125688</color>
+
+   <!-- <color name="colorPrimary">#125688</color>-->
+    <!--<color name="colorPrimaryDark">#125688</color>-->
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>
-    <color name="colorAccent">#c8e8ff</color>
+   <!-- <color name="colorAccent">#c8e8ff</color>-->
 
     <!--  <MY color>-->
     <color name="app_bar_background">#0072BC</color>

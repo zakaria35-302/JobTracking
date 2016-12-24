@@ -1,23 +1,13 @@
 package bd.edu.httpdaffodilvarsity.jobtrack.ui.login;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.Fragment;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import bd.edu.httpdaffodilvarsity.jobtrack.JobManagement.CreateEmployeeJob;
-import bd.edu.httpdaffodilvarsity.jobtrack.MainActivity;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 
 public class SetDepartment extends Activity {
@@ -39,7 +29,7 @@ public class SetDepartment extends Activity {
             public void onClick(View v) {
 
                 Dialog dialog=new Dialog(SetDepartment.this);
-                dialog.setTitle("Compose Comment");
+                dialog.setTitle("Add New Department");
                 dialog.setContentView(R.layout.create_department_dialog);
                 dialog.show();
             }

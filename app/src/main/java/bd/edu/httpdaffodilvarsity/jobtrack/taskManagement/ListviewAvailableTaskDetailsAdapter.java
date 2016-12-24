@@ -16,6 +16,7 @@ import bd.edu.httpdaffodilvarsity.jobtrack.R;
 /**
  * Created by mahmud on 10/27/16.
  */
+
     public class ListviewAvailableTaskDetailsAdapter extends ArrayAdapter{
 
     private List list = new ArrayList();
@@ -45,7 +46,8 @@ import bd.edu.httpdaffodilvarsity.jobtrack.R;
     }
 
     @Override
-    public Object getItem(int position) {
+    public Object getItem(int position)
+    {
         return this.list.get(position);
     }
 

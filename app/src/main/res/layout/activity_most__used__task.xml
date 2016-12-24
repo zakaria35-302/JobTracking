@@ -8,15 +8,7 @@
     android:orientation="vertical"
     tools:context=".taskManagement.MostUsedTask">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Most Used Task List"
-        android:padding="0dp"
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@android:color/white"
-        android:gravity="center"
-        android:textSize="20dp"/>
+
 
     <ListView
         android:layout_width="wrap_content"

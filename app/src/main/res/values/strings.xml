@@ -169,8 +169,24 @@
         <item>EEE</item>
         <item>SWE</item>
         <item>English</item>
-        <item>IT</item>
+        <item>BBA</item>
         <item>ETE</item>
+        <item>Commerce</item>
+        <item>Real Estate</item>
+        <item>THM</item>
+        <item>Entrepreneurship</item>
+        <item>MCT</item>
+        <item>NS</item>
+        <item>ESDP</item>
+        <item>TE</item>
+        <item>Architecture</item>
+        <item>CE</item>
+        <item>Pharmachy</item>
+        <item>NFE</item>
+        <item>PH</item>
+        <item>Law</item>
+        <item>JMC</item>
+        <item>DS</item>
     </string-array>
 
     <string-array name="employee_marital_status">

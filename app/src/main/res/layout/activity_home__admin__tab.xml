@@ -25,14 +25,14 @@
             android:padding="@dimen/edit_text_padding"
             android:id="@+id/textViewAdminSetSuparior" />
 
-        <TextView
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/set_department"
             android:onClick="setEmployeeDepartment"
             android:padding="@dimen/edit_text_padding"
-            android:id="@+id/textViewAdminSetDepartment" />
+            android:id="@+id/textViewAdminSetDepartment" />-->
 
         <TextView
             android:layout_width="wrap_content"

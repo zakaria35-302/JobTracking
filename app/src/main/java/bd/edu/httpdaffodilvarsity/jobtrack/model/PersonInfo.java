@@ -1,23 +1,20 @@
 package bd.edu.httpdaffodilvarsity.jobtrack.model;
 
-/*import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;*/
+
 import java.util.Date;
 
 /**
  * Created by mahmud on 12/10/16.
  */
 
-//@Entity
-//@Table(name = "hrm_employee")
-public class EmployeeInfo {
+public class PersonInfo {
 
     //@Id
     //@GeneratedValue
     private int id;
     private String employee_id;
     private String emp_name;
+    private String emp_email;
     private int designation_id;
     private String current_dept_id;
     private int current_branch;
@@ -33,17 +30,18 @@ public class EmployeeInfo {
     private String current_status;
     private Date status_update_time;
 
-    public EmployeeInfo() {
+    public PersonInfo() {
     }
 
-    public EmployeeInfo(int id, String employee_id, String emp_name, int designation_id,
-                        String current_dept_id, int current_branch, String reports_to,
-                        String active, String created_by, Date created_time, String modified_by,
-                        Date modified_time, int user_group_id, String password, String authenticate_code,
-                        String current_status, Date status_update_time) {
+    public PersonInfo(int id, String employee_id, String emp_name, String emp_email, int designation_id,
+                      String current_dept_id, int current_branch, String reports_to,
+                      String active, String created_by, Date created_time, String modified_by,
+                      Date modified_time, int user_group_id, String password, String authenticate_code,
+                      String current_status, Date status_update_time) {
         this.id = id;
         this.employee_id = employee_id;
         this.emp_name = emp_name;
+        this.emp_email = emp_email;
         this.designation_id = designation_id;
         this.current_dept_id = current_dept_id;
         this.current_branch = current_branch;
@@ -74,6 +72,14 @@ public class EmployeeInfo {
 
     public void setEmployee_id(String employee_id) {
         this.employee_id = employee_id;
+    }
+
+    public String getEmp_email() {
+        return emp_email;
+    }
+
+    public void setEmp_email(String emp_email) {
+        this.emp_email = emp_email;
     }
 
     public String getEmp_name() {

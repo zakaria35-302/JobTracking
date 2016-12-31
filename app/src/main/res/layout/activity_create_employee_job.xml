@@ -410,7 +410,7 @@
                 android:layout_marginBottom="@dimen/lists_title_bottom_margin">
 
                 <EditText
-                    android:id="@+id/spinner_job_asign_to_create"
+                    android:id="@+id/edit_text_job_asign_to_create"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border"
@@ -462,8 +462,6 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin">
-
-
 
                     <Button
                         android:id="@+id/btn_job_add_to_list"

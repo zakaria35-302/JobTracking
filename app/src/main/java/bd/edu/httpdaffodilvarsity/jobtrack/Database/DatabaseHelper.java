@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -18,7 +17,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
     // Logcat tag
     private static final String LOG = "DatabaseHelper";
 
-    static  final int DATABASE_VERSION=1;
+    static  final int DATABASE_VERSION=3;
     static  final String DATABASE_NAME="jobtrack.db";
 
     //common column
@@ -52,9 +51,9 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
             + COL_DESIGNATION +" TEXT ,"
             + COL_VIEW_ORDER +" INTEGER,"
             + COL_DESIG_CREATED_BY +" TEXT,"
-            + COL_DESIG_CREATED_TIME +" date,"
+            + COL_DESIG_CREATED_TIME +" DATETIME,"
             + COL_DESIG_MODIFIED_BY +" TEXT,"
-            + COL_DESIG_MODIFIED_TIME+" date);";
+            + COL_DESIG_MODIFIED_TIME+" DATETIME);";
 
 
     public boolean insertHRMDesignation( String designation){
@@ -84,13 +83,46 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
         return res;
     }
 */
+
+    static final String TABLE_DEPARTMENT_INFO="department_info";
+    static final String COL_DEPARTMETN_ID="dept_id";
+    static final String COL_DEPARTMETN_NAME="dept_name";
+
+
+    String CREATE_TABLE_DEPARTMENT_INFO=" CREATE TABLE IF NOT EXISTS " + TABLE_DEPARTMENT_INFO + " ( "
+            + COL_DEPARTMETN_ID +" INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + COL_DEPARTMETN_NAME +" TEXT UNIQUE);";
+
+
+    public boolean insertHRMDepartment( String designation){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        //contentValues.put(COL_DESIGNATION_ID,desig_id);
+        contentValues.put(COL_DESIGNATION,designation);
+        //contentValues.put(COL_VIEW_ORDER,view_order);
+        //contentValues.put(COL_DESIG_CREATED_BY, created_by);
+        // SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        //contentValues.put("created_time", dateFormat.format(created_time));
+        //contentValues.put(COL_DESIG_MODIFIED_BY,modified_by);
+        //contentValues.put("modified_time", dateFormat.format(modified_time));
+        //contentValues.put(COL_DESIG_MODIFIED_TIME, modified_time);
+
+        long result = db.insert(TABLE_DEPARTMENT_INFO,null,contentValues);
+        if(result ==-1)
+            return false;
+        else
+            return true;
+
+    }
+
     // TABLE_HRM_EMPLOYEE
 
-    static  final String TABLE_HRM_EMPLOYEE="hrm_employee";
+    static  final String TABLE_PERSON_INFO="person_info";
     static final String COL_ID="id";
     //static final String COL_EMPLOYEE_ID="employee_id";
     static final String COL_EMP_NAME="emp_name";
     //static final String COL_DESIGNATION_ID="designation_id";
+    static final String COL_EMP_EMAIL="emp_email";
     static final String COL_CURRENT_DEPT_ID="current_dept_id";
     static final String COL_CURRENT_BRANCH="current_branch";
     static final String COL_REPORTS_TO="reports_to";
@@ -106,42 +138,42 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
     static final String COL_STATUS_UPDATE_TIME="status_update_time";
 
 
-    String CREATE_TABLE_HRM_EMPLOYEE=" CREATE TABLE IF NOT EXISTS " + TABLE_HRM_EMPLOYEE + " ( "
+    String CREATE_TABLE_PERSON_INFO =" CREATE TABLE IF NOT EXISTS " + TABLE_PERSON_INFO + " ( "
             + COL_ID +" INTEGER PRIMARY KEY,"
             + COL_EMPLOYEE_ID +" TEXT ,"
             + COL_EMP_NAME +" TEXT,"
+            + COL_EMP_EMAIL +" TEXT,"
             + COL_DESIGNATION_ID +" INTEGER,"
-            + COL_CURRENT_DEPT_ID +" TEXT,"
+            + COL_CURRENT_DEPT_ID +" INTEGER,"
             + COL_CURRENT_BRANCH +" INTEGER,"
             + COL_REPORTS_TO +" TEXT,"
             + COL_ACTIVE +" TEXT,"
             + COL_CREATED_BY +" TEXT,"
-            + COL_CREATED_TIME +" date,"
+            + COL_CREATED_TIME +" DATETIME,"
             + COL_MODIFIED_BY +" TEXT,"
-            + COL_MODIFIED_TIME +" date,"
+            + COL_MODIFIED_TIME +" DATETIME,"
             + COL_USER_GROUP_ID +" INTEGER,"
             + COL_PASSWORD +" TEXT,"
             + COL_AUTHENTICATE_CODE +" TEXT,"
             + COL_CURRENT_STATUS +" TEXT,"
-            + COL_STATUS_UPDATE_TIME+" date, "
+            + COL_STATUS_UPDATE_TIME+" DATETIME, "
+            + " FOREIGN KEY ("+COL_CURRENT_DEPT_ID+") REFERENCES "+TABLE_DEPARTMENT_INFO+"("+COL_DEPARTMENT_ID+")"
             + " FOREIGN KEY ("+COL_DESIGNATION_ID+") REFERENCES "+TABLE_HRM_DESIGNATION+"("+COL_DESIGNATION_ID+"));";
 
 
 
-    public boolean insertHRMEmployeeInfo(int id, String employee_id, String emp_name, int designation_id,
-                                         String current_dept_id, int current_branch, String reports_to,
-                                         String active, String created_by, Date created_time, String modified_by,
-                                         Date modified_time, int user_group_id, String password, String authenticate_code,
-                                         String current_status, Date status_update_time){
+    public boolean insertHRMPersonInfo(String employee_id, String emp_name, String emp_email,
+                                         String current_dept_id){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_ID,id);
+        //contentValues.put(COL_ID,id);
         contentValues.put(COL_EMPLOYEE_ID,employee_id);
         contentValues.put(COL_EMP_NAME, emp_name);
-        contentValues.put(COL_DEPARTMENT_ID,designation_id);
+        contentValues.put(COL_EMP_EMAIL, emp_email);
+        //contentValues.put(COL_DEPARTMENT_ID,designation_id);
         contentValues.put(COL_CURRENT_DEPT_ID,current_dept_id);
-        contentValues.put(COL_CURRENT_BRANCH, current_branch);
-        contentValues.put(COL_REPORTS_TO,reports_to);
+        //contentValues.put(COL_CURRENT_BRANCH, current_branch);
+        /*contentValues.put(COL_REPORTS_TO,reports_to);
         contentValues.put(COL_ACTIVE,active);
         contentValues.put(COL_CREATED_BY, created_by);
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -152,9 +184,9 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
         contentValues.put(COL_PASSWORD,password);
         contentValues.put(COL_AUTHENTICATE_CODE, authenticate_code);
         contentValues.put(COL_CURRENT_STATUS,current_status);
-        contentValues.put("status_update_time", dateFormat.format(status_update_time));
+        contentValues.put("status_update_time", dateFormat.format(status_update_time));*/
 
-        long result = db.insert(TABLE_HRM_EMPLOYEE,null,contentValues);
+        long result = db.insert(TABLE_PERSON_INFO,null,contentValues);
         if(result ==-1)
             return false;
         else
@@ -226,7 +258,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
             + COL_EMAIL_WANT +" boolean,"
             + COL_VISIBLE +" boolean,"
             + COL_CREATED_BY +" TEXT,"
-            + COL_CREATED_TIME+" date, "
+            + COL_CREATED_TIME+" DATETIME, "
          + " PRIMARY KEY (" + COL_WHO + "," + COL_WHOM + "));";
 
     public boolean insertHRMOrgJobTracker(int who, int whom, int read_flag, boolean email_want, boolean visible,
@@ -303,9 +335,9 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
             + COL_TASK_ID +" INTEGER PRIMARY KEY,"
             + COL_TASK_TITLE +" TEXT,"
             + COL_TASK_DESCRIPTION +" TEXT,"
-            + COL_START_DATE +" date,"
-            + COL_ESTIMATED_DATE +" date,"
-            + COL_ACTUAL_ENDDATE +" date,"
+            + COL_START_DATE +" DATETIME,"
+            + COL_ESTIMATED_DATE +" DATETIME,"
+            + COL_ACTUAL_ENDDATE +" DATETIME,"
             + COL_STATUS +" TEXT,"
             + COL_PERCENT_DONE +" TEXT,"
             + COL_PRIORITY +" TEXT,"
@@ -316,9 +348,9 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
             + COL_ACCESIBILITY +" TEXT,"
             + COL_PREV_OWNER_ID +" TEXT,"
             + COL_CREATED_BY +" TEXT,"
-            + COL_CREATED_TIME +" date,"
+            + COL_CREATED_TIME +" DATETIME,"
             + COL_UPDATE_BY +" TEXT,"
-            + COL_UPDATE_TIME+" date, "
+            + COL_UPDATE_TIME+" DATETIME, "
             + " FOREIGN KEY ("+COL_STATUS+") REFERENCES "+TABLE_HRM_ORG_TASK_STATUS+"("+COL_STATUS+")"
             + " FOREIGN KEY ("+COL_PRIORITY+") REFERENCES "+TABLE_HRM_ORG_PRIORITY+"("+COL_PRIORITY+")"
             + " FOREIGN KEY ("+COL_JOB_ID+") REFERENCES "+TABLE_JOB_MANAGEMENT+"("+COL_JOB_ID+"));";
@@ -381,7 +413,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
     String CREATE_TABLE_HRM_ORG_TASK_ACTIVITIES=" CREATE TABLE  IF NOT EXISTS " + TABLE_HRM_ORG_TASK_ACTIVITIES + " ( "
             + COL_ACTIVITY_ID +" INTEGER PRIMARY KEY,"
             + COL_TASK_ID +" INTEGER,"
-            + COL_DATE +" TEXT,"
+            + COL_DATE +" DATETIME,"
             + COL_ACTIVITY_DESC +" TEXT,"
             + COL_ACTIVITY_GRADE +" TEXT,"
             + COL_ACTIVITY_GRADE_BY +" TEXT,"
@@ -432,8 +464,8 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
 
 
     String CREATE_TABLE_HRM_ORG_TASK_STATUS=" CREATE TABLE IF NOT EXISTS " + TABLE_HRM_ORG_TASK_STATUS + " ( "
-            +COL_STATUS +" TEXT PRIMARY KEY,"
-            +COL_STATUS_ID +" INTEGER );";
+            +COL_STATUS +" TEXT PRIMARY KEY);";
+            /*+COL_STATUS_ID +" INTEGER );";*/
 
 
     public boolean insertHRMOrgTaskStatus(int status_id, String status){
@@ -499,14 +531,14 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
 
     static  final String TABLE_HRM_ROLE="hrm_role";
     //static final String COL_ROLE="role";
-    static final String COL_ROLE_ID="role_id";
+    //static final String COL_ROLE_ID="role_id";
 
 
 
     String CREATE_TABLE_HRM_ROLE=" CREATE TABLE IF NOT EXISTS " + TABLE_HRM_ROLE + " ( "
-            + COL_ROLE_ID +" INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + COL_ROLE +" TEXT);";
-            /*+COL_ROLE +" TEXT PRIMARY KEY);";*/
+            /*+ COL_ROLE_ID +" INTEGER PRIMARY KEY AUTOINCREMENT,"*/
+            + COL_ROLE +" TEXT PRIMARY KEY);";
+
 
 
     public boolean insertHRMRole(String role){
@@ -547,32 +579,38 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
             + COL_JOB_ID +" INTEGER PRIMARY KEY,"
             + COL_JOB_TITLE +" TEXT,"
             + COL_JOB_DESCRIPTION +" TEXT,"
-            + COL_JOB_HAS_DEADLINE +" TEXT,"
-            + COL_JOB_STARTDATE +" TEXT,"
-            + COL_JOB_ENDDATE +" TEXT,"
+            + COL_JOB_HAS_DEADLINE +" INTEGER,"
+            + COL_JOB_STARTDATE +" DATETIME DEFAULT CURRENT_TIMESTAMP,"
+            + COL_JOB_ENDDATE +" DATETIME ,"
             + COL_JOB_PROGRESS +" TEXT,"
             + COL_JOB_PRIORITY +" TEXT,"
             + COL_JOB_STATUS +" TEXT,"
             + COL_DEPARTMENT_ID +" INTEGER,"
             + COL_CREATED_BY +" TEXT,"
-            + COL_CREATED_TIME +" TEXT,"
+            + COL_CREATED_TIME +" DATETIME,"
             + COL_UPDATE_BY +" TEXT,"
-            + COL_UPDATE_TIME +" TEXT,"
-            + COL_JOB_OWNER +" TEXT);";
+            + COL_UPDATE_TIME +" DATETIME,"
+            + COL_JOB_OWNER +" TEXT,"
+        + " FOREIGN KEY ("+COL_DEPARTMENT_ID+") REFERENCES "+TABLE_DEPARTMENT_INFO+"("+COL_DEPARTMENT_ID+"));";
 
 
-    public boolean insertJobManagement(int job_id, String job_title, String job_description, int job_has_deadline,
+
+    /*public boolean insertJobManagement(int job_id, String job_title, String job_description, int job_has_deadline,
                                        Date job_startdate, Date job_enddate, int job_progress, int job_priority, String job_status,
                                        int department_id, int created_by, Date created_time, int update_by, Date update_time,
-                                       int job_owner){
+                                       int job_owner){*/
+
+    public boolean insertJobManagement(String job_title, String job_description, int job_has_deadline, Date job_enddate,
+                                       int job_progress, int job_priority, String job_status,
+                                       int department_id, int job_owner){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_JOB_ID, job_id);
+        //contentValues.put(COL_JOB_ID, job_id);
         contentValues.put(COL_JOB_TITLE, job_title);
         contentValues.put(COL_JOB_DESCRIPTION,job_description);
         contentValues.put(COL_JOB_HAS_DEADLINE, job_has_deadline);
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        contentValues.put("job_startdate", dateFormat.format(job_startdate));
+        //contentValues.put("job_startdate", dateFormat.format(job_startdate));
         //contentValues.put(COL_JOB_STARTDATE, job_startdate);
         contentValues.put("job_enddate", dateFormat.format(job_enddate));
         //contentValues.put(COL_JOB_ENDDATE, job_enddate);
@@ -580,12 +618,12 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
         contentValues.put(COL_JOB_PRIORITY, job_priority);
         contentValues.put(COL_JOB_STATUS,job_status);
         contentValues.put(COL_DEPARTMENT_ID, department_id);
-        contentValues.put(COL_CREATED_BY, created_by);
-        contentValues.put("created_time", dateFormat.format(created_time));
+        //contentValues.put(COL_CREATED_BY, created_by);
+        //contentValues.put("created_time", dateFormat.format(created_time));
         //contentValues.put(COL_JOB_ENDDATE, created_time);
-        contentValues.put(COL_JOB_ID, update_by);
-        contentValues.put("update_time", dateFormat.format(update_time));
-        ///contentValues.put(COL_JOB_TITLE, update_time);
+        //contentValues.put(COL_JOB_ID, update_by);
+        //contentValues.put("update_time", dateFormat.format(update_time));
+        //contentValues.put(COL_JOB_TITLE, update_time);
         contentValues.put(COL_JOB_OWNER,job_owner);
 
         long result = db.insert(TABLE_JOB_MANAGEMENT,null,contentValues);
@@ -593,7 +631,6 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
             return false;
         else
             return true;
-
     }
 
     public DatabaseHelper(Context context) {
@@ -604,7 +641,8 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db){
         db.execSQL(CREATE_TABLE_HRM_DESIGNATION);
-        db.execSQL(CREATE_TABLE_HRM_EMPLOYEE);
+        db.execSQL(CREATE_TABLE_DEPARTMENT_INFO);
+        db.execSQL(CREATE_TABLE_PERSON_INFO);
         db.execSQL(CREATE_TABLE_HRM_ORG_JOB_MEMBER);
         db.execSQL(CREATE_TABLE_HRM_ORG_JOB_TRACKER);
         db.execSQL(CREATE_TABLE_HRM_ORG_PRIORITY);
@@ -619,7 +657,8 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_HRM_DESIGNATION);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_HRM_EMPLOYEE);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_DEPARTMENT_INFO);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_PERSON_INFO);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_HRM_ORG_JOB_MEMBER);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_HRM_ORG_JOB_TRACKER);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_HRM_ORG_PRIORITY);

@@ -34,14 +34,14 @@ public class Home_Admin_Tab extends android.support.v4.app.Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.activity_home__admin__tab, container, false);
 
-        tvEmployeeDepartment = (TextView) rootView.findViewById(R.id.textViewAdminSetDepartment);
+        /*tvEmployeeDepartment = (TextView) rootView.findViewById(R.id.textViewAdminSetDepartment);
         tvEmployeeDepartment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home_Admin_Tab.this.getActivity(), SetDepartment.class);
                 Home_Admin_Tab.this.startActivity(intent);
             }
-        });
+        });*/
 
         tvEmployeeDesignation = (TextView) rootView.findViewById(R.id.textViewAdminSetDesignation);
         tvEmployeeDesignation.setOnClickListener(new View.OnClickListener() {

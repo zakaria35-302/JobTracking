@@ -8,25 +8,41 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
+import bd.edu.httpdaffodilvarsity.jobtrack.Database.DatabaseHelper;
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
 import bd.edu.httpdaffodilvarsity.jobtrack.ui.login.TaskManagement;
 
 public class CreateEmployeeJob extends AppCompatActivity {
 
+    DatabaseHelper myDB;
+
+    Button  btnJobSave;
+    EditText edittextCreateJobTittle, edittextCreateJobDescription, edittextCreateJobDeadline, edittextCreateJobAssignto;
+    CheckBox checkboxCreateJobHadDeadline;
+    //Spinner edittextCreateJobAccessAbility;
+    //Spinner edittextCreateJobPriority;
+    //Spinner edittextCreateStatus;
+    //Spinner edittextCreateJobDepartment;
+    //Spinner edittextCreateJobRole;
+
 
     EditText editTextJobDeadCreate;
+
 
     //Button btn;
     int year_x,month_x,day_x;
 
     Spinner spinnerEmployeeJobAccessibility, spinnerEmployeeJobProgress, spinnerEmployeeJobPriority,
-            spinnerEmployeeJobStatus, spinnerEmployeejobDepartment, getSpinnerEmployeeJobRole ;
+            spinnerEmployeeJobStatus, spinnerEmployeejobDepartment, getSpinnerEmployeeJobRole;
     ArrayAdapter<CharSequence> empJobAccessibilityAdapter, empJobProgressAdapter, empJobPriorityAdapter,
             empJobStatusAdapter, empJobDepartmentAdapter, empJobRoleAdapter;
 
@@ -35,6 +51,16 @@ public class CreateEmployeeJob extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_employee_job);
 
+        myDB = new  DatabaseHelper(this);
+
+
+        edittextCreateJobTittle = (EditText) findViewById(R.id.edit_text_job_title_create);
+        edittextCreateJobDescription = (EditText) findViewById(R.id.edit_text_job_description_create);
+        checkboxCreateJobHadDeadline = (CheckBox) findViewById(R.id.checkBox_job_had_deadline_create);
+        edittextCreateJobDeadline = (EditText) findViewById(R.id.edit_text_job_dead_create);
+        edittextCreateJobAssignto = (EditText) findViewById(R.id.edit_text_job_asign_to_create);
+
+        btnJobSave = (Button) findViewById(R.id.btn_job_save);
 
         editTextJobDeadCreate = (EditText) findViewById(R.id.edit_text_job_dead_create);
         final Calendar cal = Calendar.getInstance();
@@ -86,6 +112,8 @@ public class CreateEmployeeJob extends AppCompatActivity {
                 android.R.layout.simple_spinner_item);
         empJobRoleAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         getSpinnerEmployeeJobRole.setAdapter(empJobRoleAdapter);
+
+        //addJobManagement();
 
     }
 
@@ -144,6 +172,25 @@ public class CreateEmployeeJob extends AppCompatActivity {
             // Do something with the date chosen by the user
         }
     }
+
+    /*public void addJobManagement(){
+        btnJobSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                boolean isInserted = myDB.insertJobManagement(edittextCreateJobTittle.getText().toString(),
+                        edittextCreateJobDescription.getText().toString(), Integer.parseInt(checkboxCreateJobHadDeadline.getText().toString()),
+                        edittextCreateJobDeadline.getText(), spinnerEmployeeJobAccessibility.getSelectedItem().toString(),
+                        spinnerEmployeeJobProgress.getSelectedItem().toString(),spinnerEmployeeJobPriority.getSelectedItem().toString(),
+                        spinnerEmployeeJobStatus.getSelectedItem().toString(), spinnerEmployeejobDepartment.getSelectedItem().toString(),
+                        edittextCreateJobAssignto.getText().toString(), getSpinnerEmployeeJobRole.getSelectedItem().toString());
+                if (isInserted == true)
+                    Toast.makeText(CreateEmployeeJob.this, "Data Inserted", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(CreateEmployeeJob.this, "Data is not Inserted", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }*/
     public void jobBack(View view){
         Intent taskBack = new Intent(CreateEmployeeJob.this, TaskManagement.class);
         startActivity(taskBack);

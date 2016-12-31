@@ -84,6 +84,7 @@
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,6 +115,7 @@
                 android:textSize="@dimen/login_buttons_text_size" />
         </android.support.design.widget.TextInputLayout>
 
+        <!--
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -166,7 +168,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_institute"
                 android:background="@drawable/border"
-                android:hint="@string/hint_enter_email"
+                android:hint="@string/text_employee_institute"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/navigationBarColor"
                 android:textColorHint="@color/black"
@@ -174,6 +176,7 @@
                 android:textSize="@dimen/login_buttons_text_size" />
 
         </android.support.design.widget.TextInputLayout>
+-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -196,7 +199,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_employee_department"
                 android:background="@drawable/border"
-                android:hint="@string/hint_enter_email"
+                android:hint="@string/hint_enter_job_department"
                 android:padding="@dimen/edit_text_padding"
                 android:textColor="@color/navigationBarColor"
                 android:textColorHint="@color/black"
@@ -206,7 +209,7 @@
    <!-- </LinearLayout>-->
 
         <Button
-            android:id="@+id/btn_create_account_final"
+            android:id="@+id/btn_create_employee_account"
             android:layout_width="match_parent"
             android:layout_height="@dimen/input_field_height"
             android:background="@color/primary"

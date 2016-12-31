@@ -7,8 +7,8 @@ import java.util.Date;
  * Created by mahmud on 12/10/16.
  */
 
-/*@Entity
-@Table(name = "hrm_designation")*/
+//@Entity
+//@Table(name = "hrm_designation")
 public class DesignationInfo {
 
         //@Id

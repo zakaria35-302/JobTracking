@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import bd.edu.httpdaffodilvarsity.jobtrack.R;
-import bd.edu.httpdaffodilvarsity.jobtrack.drawer.MainDrawer;
 import bd.edu.httpdaffodilvarsity.jobtrack.role.EmployeeRole;
 
 public class LoginActivity extends Activity {
